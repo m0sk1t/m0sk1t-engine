@@ -13,9 +13,9 @@ So, this is an using example:
 
 ```javascript
 //you may do it by this method
-var canvas = me.util.$('.gameCAnvas'); //canvas is now equal the first <canvas> element with ClassName equal gameCanvas
+var cnv = me.util.$('.gameCanvas'); //canvas is now equal the first <canvas> element with ClassName equal gameCanvas
 //or by the shorten way
-var canvas = $('.gameCAnvas');
+var cnv = $('.gameCanvas');
 ```
 
 #####me.util.rAF()#####

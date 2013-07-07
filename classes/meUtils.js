@@ -56,11 +56,11 @@
 	me.util.globalize = function() {
 		var vClassList = ["$","rAF","tFS"];
 		vClassList.forEach(function(key) {
-		    if (!window[key]) {
-			window[key] = me.util[key];
-		    } else {
-			console.log(key+' already exist');
-		    }
+			if (!window[key]) {
+				window[key] = me.util[key];
+			} else {
+				console.log(key+' already exist');
+			}
 		});
 	};
 })();

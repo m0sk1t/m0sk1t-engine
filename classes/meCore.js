@@ -4,9 +4,15 @@
 		var vClassList = ["core","util","primitive","assets","physics"];
 		vClassList.forEach(function(key) { me[key]={}; });
 	}
+	me.core.layers = [];
+	me.core.init = function(aName) {
+		aName.forEach(function(key,value){
+			me.core.layers[key] = me.util.$(value);
+		});
+	};
 	me.core.getMousePos = function(e) {
-		this.mouseX		= (e.pageX || e.clientX);
-		this.mouseY		= (e.pageY || e.clientY);
+		this.mouseX	= (e.pageX || e.clientX);
+		this.mouseY	= (e.pageY || e.clientY);
 		return this;
 	};
 	me.core.isImage = function(aObj)  {

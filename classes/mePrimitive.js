@@ -11,46 +11,46 @@
 	this.eY = aVec[1].y;
 	return this;
     };
-    me.primitive.circle = function(aPT,aR) {
+    me.primitive.circle = function(aCtx,aPT,aR) {
 	this.type = "circle";
 	this.X = aPT.X;
 	this.Y = aPT.Y;
 	this.R = aR;
-	ctx.beginPath();
-	ctx.arc(this.X,this.Y,this.R,0,Math.PI*2,true);
-	ctx.stroke();
+	aCtx.beginPath();
+	aCtx.arc(this.X,this.Y,this.R,0,Math.PI*2,true);
+	aCtx.stroke();
 	return this;
     };
-    me.primitive.rectF = function(aPTC,aPTS,aColor) {
+    me.primitive.rectF = function(aCtx,aPTC,aPTS,aColor) {
 	this.type = "rectF";
-	ctx.fillStyle=aColor;
-	ctx.fillRect(aPTC.X,aPTC.Y,aPTS.X,aPTS.Y);
+	aCtx.fillStyle=aColor;
+	aCtx.fillRect(aPTC.X,aPTC.Y,aPTS.X,aPTS.Y);
     };
-    me.primitive.rectS = function(aPTC,aPTS,aColor) {
+    me.primitive.rectS = function(aCtx,aPTC,aPTS,aColor) {
 	this.type = "rectS";
-	ctx.strokeStyle=aColor;
-	ctx.strokeRect(aPTC.X,aPTC.Y,aPTS.X,aPTS.Y);
+	aCtx.strokeStyle=aColor;
+	aCtx.strokeRect(aPTC.X,aPTC.Y,aPTS.X,aPTS.Y);
     };
-    me.primitive.polyF = function(aPointSet,aColor) {
+    me.primitive.polyF = function(aCtx,aPointSet,aColor) {
 	this.type = "polyF";
-	ctx.fillStyle = aColor;
-	ctx.beginPath();
-	ctx.moveTo(aPointSet[0].X, aPointSet[0].Y);
+	aCtx.fillStyle = aColor;
+	aCtx.beginPath();
+	aCtx.moveTo(aPointSet[0].X, aPointSet[0].Y);
 	for (var i=1, len = aPointSet.length; i < len; i++) {
-		ctx.lineTo(aPointSet[i].X,aPointSet[i].Y);
+		aCtx.lineTo(aPointSet[i].X,aPointSet[i].Y);
 	}
-	ctx.closePath();
-	ctx.fill();
+	aCtx.closePath();
+	aCtx.fill();
     };
-    me.primitive.polyS = function(aPointSet,aColor) {
+    me.primitive.polyS = function(aCtx,aPointSet,aColor) {
 	this.type = "polyS";
-	ctx.strokeStyle = aColor;
-	ctx.beginPath();
-	ctx.moveTo(aPointSet[0].X, aPointSet[0].Y);
+	aCtx.strokeStyle = aColor;
+	aCtx.beginPath();
+	aCtx.moveTo(aPointSet[0].X, aPointSet[0].Y);
 	for (var i=1, len = aPointSet.length; i < len; i++) {
-		ctx.lineTo(aPointSet[i].X,aPointSet[i].Y);
+		aCtx.lineTo(aPointSet[i].X,aPointSet[i].Y);
 	}
-	ctx.closePath();
-	ctx.stroke();
+	aCtx.closePath();
+	aCtx.stroke();
     };
 })();

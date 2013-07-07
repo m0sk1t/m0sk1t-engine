@@ -2,27 +2,27 @@
 	me.util.$ = function(aAttr){
 		var obj = document.querySelectorAll(aAttr);
 		if (obj.length === 1) {
-		    return obj[0];
+			return obj[0];
 		} else {
-		    return obj;
+			return obj;
 		}
 	};
 	me.util.log = function(aMessage, aType){
 		var vLogDiv = me.util.$('#meLog')||false;
 		if (vLogDiv) {
-		    if (vLogDiv.innerHTML !== '') {
-			switch (aType) {
-			    case 'm':vLogDiv.innerHTML += '<span style="color:green;">'+aMessage+'</span><br />\n\r';	break;
-			    case 'w':vLogDiv.innerHTML += '<span style="color:yellow;">'+aMessage+'</span><br />\n\r';	break;
-			    case 'e':vLogDiv.innerHTML += '<span style="color:red;">'+aMessage+'</span><br />\n\r';		break;
-			}
+			if (vLogDiv.innerHTML !== '') {
+				switch (aType) {
+					case 'm':vLogDiv.innerHTML += '<span style="color:green;">'+aMessage+'</span><br />\n\r';	break;
+					case 'w':vLogDiv.innerHTML += '<span style="color:yellow;">'+aMessage+'</span><br />\n\r';	break;
+					case 'e':vLogDiv.innerHTML += '<span style="color:red;">'+aMessage+'</span><br />\n\r';		break;
+				}
 			} else {
-			switch (aType) {
-			    case 'm':vLogDiv.innerHTML = '<span style="color:green;">'+aMessage+'</span><br />\n\r';	break;
-			    case 'w':vLogDiv.innerHTML = '<span style="color:yellow;">'+aMessage+'</span><br />\n\r';	break;
-			    case 'e':vLogDiv.innerHTML = '<span style="color:red;">'+aMessage+'</span><br />\n\r';		break;
+				switch (aType) {
+					case 'm':vLogDiv.innerHTML = '<span style="color:green;">'+aMessage+'</span><br />\n\r';	break;
+					case 'w':vLogDiv.innerHTML = '<span style="color:yellow;">'+aMessage+'</span><br />\n\r';	break;
+					case 'e':vLogDiv.innerHTML = '<span style="color:red;">'+aMessage+'</span><br />\n\r';		break;
+				}
 			}
-		    }
 		}
 	};
 	me.util.rAF = function(aCallback) {

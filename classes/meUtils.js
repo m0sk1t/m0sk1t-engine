@@ -1,4 +1,5 @@
 (function(){
+	// simple crossbrowser id/class/tagname selector
 	me.util.$ = function(aAttr){
 		var obj = document.querySelectorAll(aAttr);
 		if (obj.length === 1) {
@@ -7,6 +8,7 @@
 			return obj;
 		}
 	};
+	// logging into <div> element with ID equal meLog
 	me.util.log = function(aMessage, aType){
 		var vLogDiv = me.util.$('#meLog')||false;
 		if (vLogDiv) {
@@ -25,6 +27,7 @@
 			}
 		}
 	};
+	// crossbrowser shorthand for requestAnimationFrame
 	me.util.rAF = function(aCallback) {
 		var requestAnimationFrame =	window.requestAnimationFrame		||
 						window.mozRequestAnimationFrame		||
@@ -33,6 +36,7 @@
 		return	requestAnimationFrame(aCallback)				||
 			window.setTimeout(aCallback, 1000 / 60);
 	};
+	// crossbrowser shorthand for toggleFullscreen
 	me.util.tFS = function() {
 		if (!document.fullscreenElement &&
 			!document.mozFullScreenElement && !document.webkitFullscreenElement) {

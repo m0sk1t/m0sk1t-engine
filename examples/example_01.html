@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Simple Pong! game with m0sk1t::engine</title>
 		<script src="./../classes/meCore.js"></script>
 		<script src="./../classes/meUtils.js"></script>
-		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
 		<script src="example_01.js"></script>
-		<link rel="stylesheet" href="style.css" />
 	</head>
 	
 	<body onload="initGame();">
-		<canvas id="gameArea" style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
-		<canvas id="inner" style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+		<canvas id="bg" style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+		<canvas id="gameArea" style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
 	</body>
 </html>

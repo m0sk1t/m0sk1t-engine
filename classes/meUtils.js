@@ -1,6 +1,6 @@
 (function(){
 	// simple crossbrowser id/class/tagname selector
-	me.util.$ = function(aAttr){
+	me.utils.$ = function(aAttr){
 		var obj = document.querySelectorAll(aAttr);
 		if (obj.length === 1) {
 			return obj[0];
@@ -9,8 +9,8 @@
 		}
 	};
 	// logging into <div> element with ID equal meLog
-	me.util.log = function(aMessage, aType){
-		var vLogDiv = me.util.$('#meLog')||false;
+	me.utils.log = function(aMessage, aType){
+		var vLogDiv = me.utils.$('#meLog')||false;
 		if (vLogDiv) {
 			if (vLogDiv.innerHTML !== '') {
 				switch (aType) {
@@ -28,7 +28,7 @@
 		}
 	};
 	// crossbrowser shorthand for requestAnimationFrame
-	me.util.rAF = function(aCallback) {
+	me.utils.rAF = function(aCallback) {
 		var requestAnimationFrame =	window.requestAnimationFrame		||
 						window.mozRequestAnimationFrame		||
 						window.webkitRequestAnimationFrame	||
@@ -37,7 +37,7 @@
 			window.setTimeout(aCallback, 1000 / 60);
 	};
 	// crossbrowser shorthand for toggleFullscreen
-	me.util.tFS = function() {
+	me.utils.tFS = function() {
 		if (!document.fullscreenElement &&
 			!document.mozFullScreenElement && !document.webkitFullscreenElement) {
 			if (document.documentElement.requestFullscreen) {
@@ -57,11 +57,11 @@
 			}
 		}
 	};
-	me.util.globalize = function() {
+	me.utils.globalize = function() {
 		var vClassList = ["$","rAF","tFS"];
 		vClassList.forEach(function(key) {
 			if (!window[key]) {
-				window[key] = me.util[key];
+				window[key] = me.utils[key];
 			} else {
 				console.log(key+' already exist');
 			}

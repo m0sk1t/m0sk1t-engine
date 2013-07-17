@@ -4,21 +4,24 @@
 		var vClassList = ["core","utils","primitive","assets","physics","input"];
 		vClassList.forEach(function(key) { me[key]={}; });
 	}
-	me.core.cnv = [];
+	me.core.canvas = [];
 	me.core.layers = [];
-	me.core.init = function(aName, aW, aH) {
-		aName.forEach(function(key){
-			me.core.cnv[key] = me.utils.$(key);
-			me.core.cnv[key].width = aW  || document.width;
-			me.core.cnv[key].height = aH || document.height;
-			me.core.layers[key] = me.core.cnv[key].getContext('2d');
-		});
+	me.core.init = function(aName,aW,aH) {
+		var tmp = me.utils.$(aName);
+		for (var i = 0, len = tmp.length;i < len;i++) {
+			me.core.canvas[aName[i]] = tmp.item(i);
+			me.core.canvas[aName[i]].width = aW  || document.width;
+			me.core.canvas[aName[i]].height = aH || document.height;
+			if (me.core.isCanvas(me.core.canvas[aName[i]])) {
+				me.core.layers[aName[i]] = me.core.canvas[aName[i]].getContext('2d');
+			}
+		};
 	};
-	me.core.cls = function(aCnv) {
-		me.core.cnv[aCnv].width = me.core.cnv[aCnv].width;
+	me.core.clear = function(aCnv) {
+		me.core.canvas[aCnv].width = me.core.canvas[aCnv].width;
 	};
-	me.core.ifOut = function(aItem, aCtx) {
-		return (aItem.X < 0 || aItem.Y < 0 || aItem.X > me.core.cnv[aCtx].width || aItem.Y > me.core.cnv[aCtx].height);
+	me.core.isOut = function(aItem, aCtx) {
+		return (aItem.X < 0 || aItem.Y < 0 || aItem.X > me.core.canvas[aCtx].width || aItem.Y > me.core.canvas[aCtx].height);
 	};
 	me.core.collision = function(aFirst,aSecond) {
 		var coll=false;

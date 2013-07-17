@@ -1,18 +1,18 @@
 (function() {
 	me.input.mX = 0;
 	me.input.mY = 0;
-	me.input.k = [];
+	me.input.keys = [];
 	me.input.isPressed = [];
 	me.input.setKeys = function() {
-		me.input.k["left"] = 37;
-		me.input.k["up"] = 38;
-		me.input.k["right"] = 39;
-		me.input.k["down"] = 40;
+		me.input.keys["left"] = 37;
+		me.input.keys["up"] = 38;
+		me.input.keys["right"] = 39;
+		me.input.keys["down"] = 40;
 		
-		me.input.k["w"] = 87;
-		me.input.k["a"] = 65;
-		me.input.k["s"] = 83;
-		me.input.k["d"] = 68;
+		me.input.keys["w"] = 87;
+		me.input.keys["a"] = 65;
+		me.input.keys["s"] = 83;
+		me.input.keys["d"] = 68;
 /*		me.input.k[8] = "backspace";
 		me.input.k[9] = "tab";
 		me.input.k[13] = "enter";

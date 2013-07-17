@@ -2,15 +2,15 @@
 	// simple crossbrowser id/class/tagname selector
 	me.utils.$ = function(aAttr){
 		var obj = document.querySelectorAll(aAttr);
-		if (obj.length === 1) {
-			return obj[0];
+		if (obj.length === 0) {
+			throw "Element(s) not found!";
 		} else {
 			return obj;
 		}
 	};
 	// logging into <div> element with ID equal meLog
 	me.utils.log = function(aMessage, aType){
-		var vLogDiv = me.utils.$('#meLog')||false;
+		var vLogDiv = me.utils.$(['#meLog']).item(0) || false;
 		if (vLogDiv) {
 			if (vLogDiv.innerHTML !== '') {
 				switch (aType) {
@@ -38,8 +38,8 @@
 	};
 	// crossbrowser shorthand for toggleFullscreen
 	me.utils.tFS = function() {
-		if (!document.fullscreenElement &&
-			!document.mozFullScreenElement && !document.webkitFullscreenElement) {
+		if (!!document.fullscreenElement &&
+			!!document.mozFullScreenElement && !!document.webkitFullscreenElement) {
 			if (document.documentElement.requestFullscreen) {
 				document.documentElement.requestFullscreen();
 			} else if (document.documentElement.mozRequestFullScreen) {
@@ -57,10 +57,10 @@
 			}
 		}
 	};
-	me.utils.globalize = function() {
-		var vClassList = ["$","rAF","tFS"];
+	me.utils.globalize = function(aFunc) {
+		var vClassList = aFunc || ["$","log","rAF","tFS"];
 		vClassList.forEach(function(key) {
-			if (!window[key]) {
+			if (!!window[key]) {
 				window[key] = me.utils[key];
 			} else {
 				console.log(key+' already exist');

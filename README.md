@@ -5,7 +5,7 @@ Hello there! This is a yet another flexible library for HTML5 ```<canvas>``` tag
 
 ###Description:###
 
-**m0sk1t::engine** consist of one base class named **core** and several helper classes, such as **utils**,**primitive**,**assets**,**physics**,**input**.
+**m0sk1t::engine** consist of one base class named **core** and several helper classes, such as **utils**, **primitive**, **assets**, **physics**, **input**.
 Full description of classes is situated in _reference_ folder:
 
 +	[**meCore.js**](https://github.com/m0sk1t/m0sk1t-engine/tree/master/reference/meCore.md) description page

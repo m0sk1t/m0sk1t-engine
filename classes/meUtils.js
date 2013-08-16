@@ -28,14 +28,14 @@
 		}
 	};
 	// crossbrowser shorthand for requestAnimationFrame
-	me.utils.rAF = function(callbackFunction) {
-		var requestAnimationFrame =	window.requestAnimationFrame		||
-						window.mozRequestAnimationFrame		||
-						window.webkitRequestAnimationFrame	||
-						window.msRequestAnimationFrame;
-		return	requestAnimationFrame(callbackFunction)				||
-			window.setTimeout(callbackFunction, 1000 / 60);
-	};
+	me.utils.rAF = (function(){
+		return  window.requestAnimationFrame	||
+		window.webkitRequestAnimationFrame	||
+		window.mozRequestAnimationFrame		||
+		function( callback ){
+			window.setTimeout(callback, 1000 / 60);
+		};
+	})();
 	// crossbrowser shorthand for toggleFullscreen
 	me.utils.tFS = function() {
 		if (!!document.fullscreenElement &&

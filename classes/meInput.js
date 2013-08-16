@@ -1,4 +1,4 @@
-(function() {
+;(function() {
 	me.input.mX = 0;
 	me.input.mY = 0;
 	me.input.keys = [];

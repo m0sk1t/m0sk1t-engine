@@ -1,68 +1,123 @@
-(function() {
-    me.primitive.point = function(aX,aY) {
-		this.X = aX;
-		this.Y = aY;
+;(function() {
+    me.primitive.point = function(x,y) {
+		this.x = x;
+		this.y = y;
 		return this;
     };
-    me.primitive.vector = function(aFirstPoint,aSecondPoint) {
-		this.first = aFirstPoint;
-		this.second = aSecondPoint;
+    me.primitive.vector = function(firstPoint,secondPoint) {
+		this.first = firstPoint;
+		this.second = secondPoint;
 		return this;
     };
-    me.primitive.circle = function(aCtx,aPTCenter,aRadius) {
+    me.primitive.circle = function(centerPoint,radius,method,color) {
 		this.type = "circle";
-		this.coord = aPTCenter;
-		this.radius = aRadius;
-		aCtx.beginPath();
-		aCtx.arc(this.coord.X,this.coord.Y,this.radius,0,Math.PI*2,true);
-		aCtx.stroke();
-		return this;
-    };
-    me.primitive.rectangle = function(aCtx,aPTCoord,aPTSize,aColor,aMethod) {
-		this.type = "rect";
-		this.coord = aPTCoord;
-		this.width = aPTSize.X;
-		this.height = aPTSize.Y;
-		switch (aMethod) {
+		this.color=color;
+		this.prevcoord = centerPoint;
+		this.coord = centerPoint;
+		this.radius = radius;
+		this.method = method;
+		this.getCoord = function() {
+			return this.coord;
+		};
+		this.setCoord = function(coordPoint) {
+			this.prevcoord = this.coord;
+			this.coord = coordPoint;
+		};
+		this.setRadius = function(radius) {
+			this.radius = radius;
+		};
+		this.draw = function(context) {
+			context.clearRect(this.prevcoord.x-this.radius,this.prevcoord.y-this.radius,this.radius*2,this.radius*2);
+			context.clearRect(this.coord.x-this.radius,this.coord.y-this.radius,this.radius*2,this.radius*2);
+			context.beginPath();
+			context.arc(this.coord.x,this.coord.y,this.radius,0,Math.PI*2,true);
+			switch (this.method) {
 			case "fill": {
-				aCtx.fillStyle=aColor;
-				aCtx.fillRect(this.coord.X,this.coord.Y,this.width,this.height);
+				context.fillStyle=this.color;
+				context.fill();
 			}; break;
 			case "stroke": {
-				aCtx.strokeStyle=aColor;
-				aCtx.strokeRect(this.coord.X,this.coord.Y,this.width,this.height);
+				context.strokeStyle=this.color;
+				context.stroke();
 			}; break;
-		}
+			}
+		};
 		return this;
     };
-    me.primitive.polygon = function(aCtx,aPointSet,aColor,aMethod) {
+    me.primitive.rectangle = function(coordPoint,sizePoint,color,method) {
+		this.type = "rectangle";
+		this.color=color;
+		this.prevcoord = coordPoint;
+		this.coord = coordPoint;
+		this.width = sizePoint.x;
+		this.height = sizePoint.y;
+		this.method = method;
+		this.getCoord = function() {
+			return this.coord;
+		};
+		this.getSize = function() {
+			return {x:this.width,y:this.height};
+		};
+		this.setCoord = function(coordPoint) {
+			this.prevcoord = this.coord;
+			this.coord = coordPoint;
+		};
+		this.setSize = function(sizePoint) {
+			this.width = sizePoint.x;
+			this.height = sizePoint.y;
+		};
+		this.draw = function(context) {
+			context.clearRect(this.prevcoord.x-(this.coord.x-this.prevcoord.x),this.prevcoord.y-(this.coord.y-this.prevcoord.y),this.width,this.height);
+			context.clearRect(this.coord.x,this.coord.y,this.width,this.height);
+			switch (this.method) {
+			case "fill": {
+				context.fillStyle=this.color;
+				context.fillRect(this.coord.x,this.coord.y,this.width,this.height);
+			}; break;
+			case "stroke": {
+				context.strokeStyle=this.color;
+				context.strokeRect(this.coord.x,this.coord.y,this.width,this.height);
+			}; break;
+			}
+		};
+		return this;
+    };
+    me.primitive.polygon = function(context,pointSet,color,method) {
 		this.type = "polygon";
-		this.points = aPointSet;
-		aCtx.fillStyle = aColor;
-		aCtx.beginPath();
-		aCtx.moveTo(aPointSet[0].X, aPointSet[0].Y);
-		for (var i=1, len = aPointSet.length; i < len; i++) {
-			aCtx.lineTo(aPointSet[i].X,aPointSet[i].Y);
+		this.points = pointSet;
+		this.method = method;
+		context.fillStyle = color;
+		context.beginPath();
+		context.moveTo(pointSet[0].x, pointSet[0].y);
+		for (var i=1, len = pointSet.length; i < len; i++) {
+			context.lineTo(pointSet[i].x,pointSet[i].y);
 		}
-		aCtx.closePath();
-		switch (aMethod) {
+		context.closePath();
+		switch (this.method) {
 			case "fill": {
-				aCtx.fill();
+				context.fill();
 			};  break;
 			case "stroke": {
-				aCtx.stroke();
+				context.stroke();
 			};  break;
 		}
     };
-	me.primitive.drawTextFill = function(aCtx,aFont,aText,aPTCoord,aFillStyle,aStrokeStyle) {
-		aCtx.fillStyle = aFillStyle;
-		aCtx.strokeStyle = aStrokeStyle;
-		aCtx.font = aFont;
-		aCtx.fillText(aText, aPTCoord.X, aPTCoord.Y);
+    me.primitive.TextFill = function() {
+		this.draw = function(context,fontArray,text,coordPoint,fillStyle,strokeStyle) {
+			context.fillStyle = fillStyle;
+			context.strokeStyle = strokeStyle;
+			this.fontSize = Number(fontArray[0]);
+			fontArray[0] += 'px';
+			context.font = fontArray.join(" ");
+			context.clearRect(coordPoint.x,coordPoint.y-this.fontSize,text.toString().length*this.fontSize,this.fontSize);
+			context.fillText(text, coordPoint.x, coordPoint.y);
+		};
 	};
-	me.primitive.drawTextStroke = function(aCtx,aFont,aText,aPTCoord,aStrokeStyle) {
-		aCtx.strokeStyle = aStrokeStyle;
-		aCtx.font = aFont;
-		aCtx.strokeText(aText, aPTCoord.X, aPTCoord.Y);
-	};
+	me.primitive.TextStroke = function() {
+		this.draw = function(context,font,text,coordPoint,strokeStyle) {
+			context.strokeStyle = strokeStyle;
+			context.font = aFont;
+			context.strokeText(text, coordPoint.x, coordPoint.y);
+		};
+    };
 })();

@@ -58,6 +58,7 @@
 		me.input.k[222] = "singlequote '"; */
 	};
 	me.input.mPos = function(e) {
+		e = e || window.event;
 		me.input.mX	= (e.pageX || e.clientX);
 		me.input.mY	= (e.pageY || e.clientY);
 	};

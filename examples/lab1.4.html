@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>lab1.4 with m0sk1t::engine</title>
+		<script src="./../classes/meCore.js"></script>
+		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="main">canvas</canvas>
+	</body>
+	<script>
+		function init() {
+			me.core.init(["#main"],500,500);
+			var start = false;
+			var pt		= me.primitive.point,
+				rect	= me.primitive.rectangle,
+				circ	= me.primitive.circle;
+			var r = new rect(new pt(0,0), new pt(500,500),"#077","stroke"),
+				r2 = new rect(new pt(0,0), new pt(50,20),"#077","fill"),
+				c = new circ(new pt(250,250),30,"fill","#337");
+			window.addEventListener("click", starter);
+			function starter(e)
+			{
+				me.input.mPos(e);
+				var p = new pt(me.input.mX,me.input.mY);
+				if (me.core.circleAndPointCollision(c,p)){
+					start?start=false:start=true;
+				}
+			}
+
+			(function loop(){
+				if (start) {
+					r2.setCoord(new pt(r2.getCoord().x+3,r2.getCoord().y+3));
+				}
+				r.draw(me.core.layers["#main"]);
+				r2.draw(me.core.layers["#main"]);
+				c.draw(me.core.layers["#main"]);
+				rAF(loop);
+			}());
+		}
+	</script>
+</html>

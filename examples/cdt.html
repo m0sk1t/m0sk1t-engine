@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>lab1.2 Collision detection test with m0sk1t::engine</title>
+		<script src="./../classes/meCore.js"></script>
+		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="main" width="500px" height="500px"></canvas>
+	</body>
+	<script>
+		function init() {
+			me.core.init(["#main"],500,500);
+			var pt		= me.primitive.point,
+				rect	= me.primitive.rectangle,
+				vect	= me.primitive.vector,
+				circ	= me.primitive.circle;
+			var r = new rect(new pt(20,20), new pt(50,30),"#077","fill"),
+				c = new circ(new pt(250,250),10,"fill","#337"),
+				v = new vect(new pt(0,0), new pt(500,0));
+				p = new pt(333,333);
+			window.addEventListener("mousemove", me.input.mPos);
+			(function loop(){
+				if (me.core.circleAndPointCollision(c,p)||
+					me.core.circleAndRectangleCollision(c,r)||
+					me.core.circleAndLineCollision(c,v)) {
+						alert("collision detected");
+						c.setCoord(new pt(250,250));
+				} else {
+					if ((me.input.mY !== 0)&&(me.input.mX !== 0)) {c.setCoord(new pt(me.input.mX,me.input.mY))};
+					c.draw(me.core.layers["#main"]);
+					r.draw(me.core.layers["#main"]);
+				}
+				window.rAF(loop);
+			})();
+		}
+	</script>
+</html>

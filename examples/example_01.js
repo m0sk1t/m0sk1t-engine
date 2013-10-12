@@ -1,5 +1,5 @@
 function initGame() {
-	var point = me.primitive.point;
+	var point = me.primitive.point, vect = me.primitive.vector;
 	me.core.init(["#gameArea","#bg"]);
 	me.input.setKeys();
 	var pressed = {"w":false,"s":false};
@@ -18,32 +18,30 @@ function initGame() {
 		PlayerTwoScoreCoord = new point(Math.floor(canvasWidth/2)+50,50),
 		fpsCoord = new point(canvasWidth-20,20);
 		PlayerOneScore = PlayerTwoScore = 0;
+	var left = new vect(new point(0,0),new point(0,canvasHeight)),
+		right = new vect(new point(canvasWidth,0),new point(canvasWidth,canvasHeight)),
+		top = new vect(new point(0,0),new point(canvasWidth,0)),
+		bottom = new vect(new point(0,canvasHeight),new point(canvasWidth,canvasHeight));
 	var	playerOneTxT = new me.primitive.TextFill, playerTwoTxT = new me.primitive.TextFill,
 		delimeterTxT = new me.primitive.TextFill, fpsTxT = new me.primitive.TextFill;
 	var ballFunc = function() {
-		var	ballCoord = Ball.getCoord(),
-			PlayerOneSize = Player.getSize(),
-			PlayerTwoSize = Enemy.getSize(),
-			PlayerOnePos = Player.getCoord(),
-			PlayerTwoPos = Enemy.getCoord();
+		var	currentBallCoord = {},
+			ballCoord = Ball.getCoord();
 		fpsCoord.x = Math.floor(canvasWidth-(20*fps.toString.length));
 		PlayerOneScoreCoord.x = Math.floor(canvasWidth/2)-(50*PlayerOneScore.toString.length);
-		if (ballCoord.y <= ballRadius || ballCoord.y+ballRadius >= canvasHeight) {
+		if (me.core.circleAndLineCollision(Ball,top) || me.core.circleAndLineCollision(Ball,bottom)) {
 			ballSpeedy *= -1;
-		}
-		if (ballCoord.x <= ballRadius) {
-			PlayerTwoScore++; Ball.setCoord({x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)});
-		}
-		if (ballCoord.x+ballRadius >= canvasWidth) {
-			PlayerOneScore++; Ball.setCoord({x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)});
-		}
-		if ((ballCoord.x-ballRadius <= PlayerOneSize.x && ballCoord.y > PlayerOnePos.y - ballRadius && ballCoord.y < PlayerOnePos.y+PlayerOneSize.y + ballRadius)||
-		    (ballCoord.x+ballRadius >= PlayerTwoPos.x && ballCoord.y > PlayerTwoPos.y - ballRadius&& ballCoord.y < PlayerTwoPos.y + PlayerTwoSize.y + ballRadius)) {
+			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
+		} else if (me.core.circleAndLineCollision(Ball,left)) {
+			PlayerTwoScore++; currentBallCoord = {x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)};
+		} else if (me.core.circleAndLineCollision(Ball,right)) {
+			PlayerOneScore++; currentBallCoord = {x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)};
+		} else if (me.core.circleAndRectangleCollision(Ball, Player) || me.core.circleAndRectangleCollision(Ball, Enemy)) {
 			ballSpeedx *= -1;
+			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
+		} else {
+			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
 		}
-		var currentBallCoord = {x:0,y:0};
-		currentBallCoord.x = ballSpeedx + ballCoord.x;
-		currentBallCoord.y = ballSpeedy + ballCoord.y;
 		Ball.setCoord(currentBallCoord);
 	};
 	var AIFunc = function() {
@@ -51,47 +49,36 @@ function initGame() {
 	};
 	var moveToCanvas = function() {
 		if (Player.getCoord().y < 0) {
-			Player.setCoord(new point(0,3));
+			Player.setCoord(new point(0,1));
 		}
 		if (Player.getCoord().y + platformLength > canvasHeight) {
-			Player.setCoord(new point(0,canvasHeight - platformLength - 3));
+			Player.setCoord(new point(0,canvasHeight - platformLength - 1));
 		}
 	};
-	document.onkeydown = function (e) {
+	window.onkeydown = function (event) {
+		switch (event.keyCode) {
+			case me.input.keys["w"]: pressed["w"] = true; break;
+			case me.input.keys["s"]: pressed["s"] = true; break;
+		}
+	};
+	window.onkeyup = function (event) {
+		switch (event.keyCode) {
+			case me.input.keys["w"]: pressed["w"] = false; break;
+			case me.input.keys["s"]: pressed["s"] = false; break;
+		}
+	};
+	(function gameLoop() {
+		console.log('start');
+		currentTime = new Date;
 		var	playerPos = Player.getCoord(),
 			playerSize = Player.getSize();
-		if (e.keyCode === me.input.keys["w"]) {
-			if(playerPos.y < 0||playerPos.y+playerSize.y > canvasHeight)
-			{
-				moveToCanvas();
-			}
-			pressed["w"] = true;
-		}
-		if (e.keyCode === me.input.keys["s"]) {
-			if(playerPos.y < 0||playerPos.y+playerSize.y > canvasHeight)
-			{
-				moveToCanvas();
-			}
-			pressed["s"] = true;
-		}
-	};
-	document.onkeyup = function (e) {
-		if (e.keyCode === me.input.keys["w"]) {
-			pressed["w"] = false;
-		}
-		if (e.keyCode === me.input.keys["s"]) {
-			pressed["s"] = false;
-		}
-	}
-	function gameLoop() {
-		//me.core.clear("#gameArea");
-		currentTime = new Date;
+		if(playerPos.y < 0||playerPos.y+playerSize.y > canvasHeight) { moveToCanvas(); }
 		AIFunc();
 		ballFunc();
 		playerOneTxT.draw(gameContext,["40","bold","Arial"],PlayerOneScore,PlayerOneScoreCoord,"#66CD00","#66CD00");
 		delimeterTxT.draw(gameContext,["40","bold","Arial"],":",DelimeterCoord,"#66CD00","#66CD00");
 		playerTwoTxT.draw(gameContext,["40","bold","Arial"],PlayerTwoScore,PlayerTwoScoreCoord,"#66CD00","#66CD00");
-		shifty = (currentTime-startTime)*platformSpeed;
+		shifty = Math.floor((currentTime-startTime) * platformSpeed);
 		if (pressed["s"]) {
 			Player.setCoord(new point(0,Player.getCoord().y+shifty));
 		}
@@ -104,7 +91,6 @@ function initGame() {
 		fps = 1000/(currentTime-startTime);
 		startTime = currentTime;
 		fpsTxT.draw(gameContext,["20","bold","Arial"],fps,fpsCoord,"#66CD00","#66CD00");
-		me.utils.rAF(gameLoop);
-	}
-	gameLoop();
+		window.rAF(gameLoop);
+	}());
 }

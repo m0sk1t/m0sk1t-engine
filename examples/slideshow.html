@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Slideshow with m0sk1t::engine</title>
+		<script src="./../classes/meCore.js"></script>
+		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
+		<script src="./../classes/meAssets.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="bg" style="position: absolute; left: 0; top: 0; z-index: 1;">canvas</canvas>
+		<canvas id="main" style="position: absolute; left: 0; top: 0; z-index: 0;">canvas</canvas>
+	</body>
+	<script>
+		function init() {
+			me.core.init(["#main","#bg"], 800, 450);
+			me.assets.load('pic/',['cat','planet','waterfall'],'jpg');
+			me.assets.call(start);
+			function start () {
+				var animate = false, dir = "", index = 0,
+					cat = new me.assets.tile('cat',[0,0,800,450],[0,0,800,450]),
+					planet = new me.assets.tile('planet',[800,0,800,450],[0,0,800,450]),
+					waterfall = new me.assets.tile('waterfall',[800,0,800,450],[0,0,800,450]);
+	
+				var pic = [cat,planet,waterfall],
+					left = new me.primitive.circle({"x": 20, "y": 225}, 20, "fill","rgba(172,20,5,0.5)"),
+					right = new me.primitive.circle({"x": 780, "y": 225}, 20, "fill","rgba(172,20,5,0.5)");
+				
+				function flipImage (e) {
+					me.input.mPos(e);
+					var pt = {"x": me.input.mX, "y": me.input.mY};
+					if (me.core.circleAndPointCollision(left,pt)) {
+						dir = "left";
+						animate = true;
+						index--;
+						index >= 0?index = index: index = pic.length - 1;
+					}
+					if (me.core.circleAndPointCollision(right,pt)) {
+						dir = "right";
+						animate = true;
+						index++;
+						index < pic.length?index = index: index = 0;
+					}
+				};
+				
+				function update (direction) {
+					console.log(index);
+					var x = pic[index].getPos().x;
+					x <= 0?animate = false:pic[index].setPos({"x": x-Math.floor(x/50),"y":0});
+				};
+				
+				window.addEventListener('click',flipImage);
+				
+				(function loop () {
+					if (animate) {
+						update(dir);
+					}
+					pic[index].draw(me.core.layers["#bg"]);
+					left.draw(me.core.layers["#main"]);
+					right.draw(me.core.layers["#main"]);
+					rAF(loop);
+				}());
+			}
+		}
+	</script>
+</html>

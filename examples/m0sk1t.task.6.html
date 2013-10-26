@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Task 6 with m0sk1t::engine</title>
+		<script src="./../classes/meCore.js"></script>
+		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
+		<script src="./../classes/meAssets.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="main">canvas</canvas>
+	</body>
+	<script>
+		function init() {
+			me.core.init(["#main"]);
+			var h = Math.floor(me.core.canvas['#main'].height/2),
+				w = me.core.canvas['#main'].width;
+			me.assets.load('img/',['kuz','naf', 'step'],'png');
+			me.assets.call(loop);
+			
+			var kuz = new me.assets.tile('kuz',[0,0,158,170],[0,h,158,170]),
+				naf = new me.assets.tile('naf',[0,0,154,170],[0,h,154,170]),
+				step = new me.assets.tile('step',[0,0,50,50],[0,h,50,50]);
+			
+			function updateKuz () {
+				var tmp = kuz.getPos(),
+					x, y;
+				x = tmp.x;
+				y = tmp.y;
+				y += Math.floor((Math.pow(x+2,2)*Math.sin(3*x))/20);
+				x++;
+				kuz.setPos({"x": x, "y": y});
+				if (x % 50 === 0) {
+					step.setPos({"x": x, "y": y});
+					step.setPos({"x": x, "y": y});
+				}
+			};
+			
+			function updateNaf () {
+				var tmp = naf.getPos(),
+					x, y;
+				x = tmp.x;
+				y = tmp.y;
+				y += Math.floor((Math.pow(x+2,2)*Math.sin(3*x))/20);
+				x++;
+				naf.setPos({"x": x, "y": y});
+			};
+			
+			function loop (){
+				if (kuz.getPos().x <= w) {
+					updateKuz();
+					kuz.draw(me.core.layers["#main"]);
+					step.draw(me.core.layers["#main"]);
+				} else {
+					updateNaf();
+					naf.draw(me.core.layers["#main"]);
+				}
+				rAF(loop);
+			};
+		}
+	</script>
+</html>

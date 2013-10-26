@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>lab1.3 with m0sk1t::engine</title>
+		<script src="./../classes/meCore.js"></script>
+		<script src="./../classes/meUtils.js"></script>
+		<script src="./../classes/meInput.js"></script>
+		<script src="./../classes/mePrimitive.js"></script>
+	</head>
+	<body onload="init();">
+		<canvas id="main">canvas</canvas>
+	</body>
+	<script>
+		function init() {
+			me.core.init(["#main"],500,500);
+			var pt		= me.primitive.point,
+				rect	= me.primitive.rectangle,
+				circ	= me.primitive.circle;
+			var r = new rect(new pt(0,0), new pt(500,500),"#077","stroke"),
+				c = new circ(new pt(250,250),50,"fill","#337");
+			window.addEventListener("click", loop);
+			function getRND(min, max)
+			{
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			function loop(){
+				c.color = "rgb("+getRND(0,255)+","+getRND(0,255)+","+getRND(0,255)+")";
+				r.draw(me.core.layers["#main"]);
+				c.draw(me.core.layers["#main"]);
+			};
+		}
+	</script>
+</html>

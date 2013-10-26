@@ -16,12 +16,20 @@
 			me.core.init(["#main"]);
 			var h = Math.floor(me.core.canvas['#main'].height/2),
 				w = me.core.canvas['#main'].width;
+<<<<<<< HEAD
 			me.assets.load('img/',['kuz','naf', 'step'],'png');
 			me.assets.call(loop);
 			
 			var kuz = new me.assets.tile('kuz',[0,0,158,170],[0,h,158,170]),
 				naf = new me.assets.tile('naf',[0,0,154,170],[0,h,154,170]),
 				step = new me.assets.tile('step',[0,0,50,50],[0,h,50,50]);
+=======
+			me.assets.load('img/',['kuz','naf'],'png');
+			me.assets.call(loop);
+			
+			var kuz = new me.assets.tile('kuz',[0,0,158,170],[0,h,158,170]),
+				naf = new me.assets.tile('naf',[0,0,154,170],[0,h,154,170]);
+>>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 			
 			function updateKuz () {
 				var tmp = kuz.getPos(),
@@ -31,10 +39,13 @@
 				y += Math.floor((Math.pow(x+2,2)*Math.sin(3*x))/20);
 				x++;
 				kuz.setPos({"x": x, "y": y});
+<<<<<<< HEAD
 				if (x % 50 === 0) {
 					step.setPos({"x": x, "y": y});
 					step.setPos({"x": x, "y": y});
 				}
+=======
+>>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 			};
 			
 			function updateNaf () {
@@ -51,12 +62,19 @@
 				if (kuz.getPos().x <= w) {
 					updateKuz();
 					kuz.draw(me.core.layers["#main"]);
+<<<<<<< HEAD
 					step.draw(me.core.layers["#main"]);
+=======
+>>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 				} else {
 					updateNaf();
 					naf.draw(me.core.layers["#main"]);
 				}
+<<<<<<< HEAD
 				rAF(loop);
+=======
+				window.rAF(loop);
+>>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 			};
 		}
 	</script>

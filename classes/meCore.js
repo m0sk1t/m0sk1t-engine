@@ -40,7 +40,11 @@
 		var tmp = me.utils.find(namesArray);
 		for (var i = 0, len = tmp.length;i < len;i++) {
 			me.core.canvas[namesArray[i]] = tmp[i];
+<<<<<<< HEAD
 			me.core.canvas[namesArray[i]].width  = (width	|| document.width)	|| document.documentElement.clientWidth;
+=======
+			me.core.canvas[namesArray[i]].width = (width	|| document.width)	|| document.documentElement.clientWidth;
+>>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 			me.core.canvas[namesArray[i]].height = (height	|| document.height)	|| document.documentElement.clientHeight;
 			if (me.core.isCanvas(me.core.canvas[namesArray[i]])) {
 				me.core.layers[namesArray[i]] = me.core.canvas[namesArray[i]].getContext('2d');

@@ -42,7 +42,6 @@
 		return me.assets.cashe[fileName];
 	}
 
-<<<<<<< HEAD
 	me.assets.count = function () {
 		return me.assets.cashe.length;
 	}
@@ -55,14 +54,6 @@
 			var tmp = this.getPos();
 			this.prevPos[0] = tmp.x;
 			this.prevPos[1] = tmp.y;
-=======
-	me.assets.tile = function (image, tileArea, destArea) {
-		this.tileArea = tileArea;
-		this.prevPos = destArea;
-		this.destArea = destArea;
-		this.setPos = function (coordPoint) {
-			this.prevPos = this.destArea;
->>>>>>> 64b884ced17ea974fa446a2939bbb671242ed8b3
 			this.destArea[0] = coordPoint.x;
 			this.destArea[1] = coordPoint.y;
 		}

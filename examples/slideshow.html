@@ -22,11 +22,9 @@
 					cat = new me.assets.tile('cat',[0,0,800,450],[0,0,800,450]),
 					planet = new me.assets.tile('planet',[800,0,800,450],[0,0,800,450]),
 					waterfall = new me.assets.tile('waterfall',[800,0,800,450],[0,0,800,450]);
-	
 				var pic = [cat,planet,waterfall],
 					left = new me.primitive.circle({"x": 20, "y": 225}, 20, "fill","rgba(172,20,5,0.5)"),
 					right = new me.primitive.circle({"x": 780, "y": 225}, 20, "fill","rgba(172,20,5,0.5)");
-				
 				function flipImage (e) {
 					me.input.mPos(e);
 					var pt = {"x": me.input.mX, "y": me.input.mY};
@@ -35,23 +33,21 @@
 						animate = true;
 						index--;
 						index >= 0?index = index: index = pic.length - 1;
+						pic[index].setPos({"x": 800,"y":0});
 					}
 					if (me.core.circleAndPointCollision(right,pt)) {
 						dir = "right";
 						animate = true;
 						index++;
 						index < pic.length?index = index: index = 0;
+						pic[index].setPos({"x": 800,"y":0});
 					}
 				};
-				
 				function update (direction) {
-					console.log(index);
 					var x = pic[index].getPos().x;
-					x <= 0?animate = false:pic[index].setPos({"x": x-Math.floor(x/50),"y":0});
+					x < 0?animate = false:pic[index].setPos({"x": x - Math.floor(x/2),"y":0});
 				};
-				
 				window.addEventListener('click',flipImage);
-				
 				(function loop () {
 					if (animate) {
 						update(dir);

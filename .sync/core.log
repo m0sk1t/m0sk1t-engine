@@ -1,0 +1,1475 @@
+2013-Oct-27 13:22:01.068 Starting (0.1.1.281)...
+2013-Oct-27 13:22:01.254 Exclude list read error  ("Element not found")
+2013-Oct-27 13:22:01.461 Core INDEX
+2013-Oct-27 13:22:01.461 Digest bank initialized
+2013-Oct-27 13:22:01.461 IMAGE "classes, 2, "94cd96d3"
+2013-Oct-27 13:22:01.461 IMAGE "classes/meAssets.js, 1936, e825ff25, 1, "d2f10943"
+2013-Oct-27 13:22:01.462 IMAGE "classes/meCore.js, 5396, 97cf0850, 1, "ac3857e7"
+2013-Oct-27 13:22:01.462 IMAGE "classes/meInput.js, 1916, cd97ab37, 1, "8f05424c"
+2013-Oct-27 13:22:01.462 IMAGE "classes/mePrimitive.js, 4109, e850d74d, 1, "6b3e6aef"
+2013-Oct-27 13:22:01.462 IMAGE "classes/meUtils.js, 2678, ed0ba354, 1, "6881e475"
+2013-Oct-27 13:22:01.462 IMAGE "examples, 2, "d0e257b5"
+2013-Oct-27 13:22:01.462 IMAGE "examples/cdt.html, 1348, c5da2bd1, 1, "ac0663f3"
+2013-Oct-27 13:22:01.462 IMAGE "examples/example_01.html, 596, 96cb41ce, 1, "0e02c38a"
+2013-Oct-27 13:22:01.463 IMAGE "examples/example_01.js, 4530, c501ad5e, 1, "6b05e0ab"
+2013-Oct-27 13:22:01.463 Stable index read
+2013-Oct-27 13:22:01.463 IMAGE "examples/example_02.html, 580, f674c545, 1, "e54a10fd"
+2013-Oct-27 13:22:01.463 IMAGE "examples/example_02.js, 3529, 8c3806e4, 1, "59812e86"
+2013-Oct-27 13:22:01.463 IMAGE "examples/img, 2, "177255ce"
+2013-Oct-27 13:22:01.463 IMAGE "examples/img/kuz.png, 26168, 5ec8060e, 1, "27b776ee"
+2013-Oct-27 13:22:01.463 IMAGE "examples/img/naf.png, 27687, 7287eab9, 1, "15bcffde"
+2013-Oct-27 13:22:01.463 IMAGE "examples/img/smurf_sprite.png, 103359, 67dfff9f, 1, "9d2603f0"
+2013-Oct-27 13:22:01.464 IMAGE "examples/img/step.png, 1591, efec6c6e, 1, "e2f23111"
+2013-Oct-27 13:22:01.464 IMAGE "examples/lab1.1.html, 999, 15a5a6e5, 1, "857afac0"
+2013-Oct-27 13:22:01.464 IMAGE "examples/lab1.3.html, 994, 1d038ef1, 1, "b9d2828c"
+2013-Oct-27 13:22:01.464 IMAGE "examples/lab1.4.html, 1234, 1841392a, 1, "89e824e7"
+2013-Oct-27 13:22:01.464 IMAGE "examples/m0sk1t.task.6.html, 1640, c8a0c84b, 1, "cb860b42"
+2013-Oct-27 13:22:01.464 IMAGE "examples/pic, 2, "917e6cc9"
+2013-Oct-27 13:22:01.464 IMAGE "examples/pic/cat.jpg, 684408, 1c4955b8, 1, "5d3bc77b"
+2013-Oct-27 13:22:01.464 IMAGE "examples/pic/planet.jpg, 462890, f1a4edcc, 257, "ab26c135"
+2013-Oct-27 13:22:01.465 IMAGE "examples/pic/waterfall.jpg, 1041421, 622dae74, 1, "3bb03052"
+2013-Oct-27 13:22:01.465 IMAGE "examples/slideshow.html, 1999, e858db09, 1, "b2e0913a"
+2013-Oct-27 13:22:01.468 Adding monitor for "" in "/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me"
+2013-Oct-27 13:22:01.468 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 13:22:01.465 IMAGE "m0sk1t-engine.ru, 2, "28ba4a28"
+2013-Oct-27 13:22:01.473 IMAGE "m0sk1t-engine.ru/index.html, 761, 6b513233, 1, "f6fc0238"
+2013-Oct-27 13:22:01.473 IMAGE "m0sk1t-engine.ru/me.0.0.1.minified.js, 8006, 70c5ae0b, 1, "aea6be54"
+2013-Oct-27 13:22:01.473 IMAGE "m0sk1t-engine.ru/pong.js, 4620, 769395d3, 1, "19408839"
+2013-Oct-27 13:22:01.473 IMAGE "m0sk1t-engine.ru/style.css, 2881, 8755f9ae, 1, "924b1a63"
+2013-Oct-27 13:22:01.473 IMAGE "README.md, 895, c3c9de41, 1, "e3b28c71"
+2013-Oct-27 13:22:01.473 IMAGE "reference, 2, "b7faff94"
+2013-Oct-27 13:22:01.474 IMAGE "reference/meCore.md, 1537, 3bf95cd4, 1, "e8d60c34"
+2013-Oct-27 13:22:01.474 IMAGE "reference/meUtils.md, 2506, 205e13e1, 1, "e3fdcf0a"
+2013-Oct-27 13:22:01.474 IMAGE "server, 2, "05197d9f"
+2013-Oct-27 13:22:01.474 IMAGE "server/gameServer.js, 239, 1bc0890d, 1, "b36c5d47"
+2013-Oct-27 13:22:01.478 Remote index image 1382834892210262 read
+2013-Oct-27 13:22:01.481 XMPP connecting server push.xmpp.yandex.ru:5222 as m0sk1t@ya.ru
+2013-Oct-27 13:22:01.498 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 13:22:01.498 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 13:22:01.541 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 13:22:01.541 XMPP connecting server push.xmpp.yandex.ru:443 as m0sk1t@ya.ru
+2013-Oct-27 13:22:01.542 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 13:22:01.798 DIFF / missing remote index
+2013-Oct-27 13:22:06.461 Quota PROPFIND
+2013-Oct-27 13:22:06.543 XMPP connecting server push.xmpp.yandex.ru:5222 as m0sk1t@ya.ru
+2013-Oct-27 13:22:06.765 XMPP server connected
+2013-Oct-27 13:22:06.765 Queueing "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 13:22:06.767 Quota PROPFIND OK 340691095 / 10396727145 / 10737418240 / 338288642
+2013-Oct-27 13:22:06.767 Trash PROPFIND
+2013-Oct-27 13:22:06.768 DIFF / missing remote index
+2013-Oct-27 13:22:06.768 Index GET for version "1382834892210262"
+2013-Oct-27 13:22:06.866 Trash PROPFIND OK / not empty
+2013-Oct-27 13:22:06.979 Index GET / Content-Length: 0
+2013-Oct-27 13:22:06.979 Index version "1382834892210262" received
+2013-Oct-27 13:22:06.980 Ending "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 13:22:06.983 DIFF prepare 0 / 1
+2013-Oct-27 13:22:06.987 DIFF 1 / 1 / 3
+2013-Oct-27 13:22:06.987 Queueing "lajui7v9s0o8g744gbj0mg9m66" <upload of "examples/slideshow.html">
+2013-Oct-27 13:22:06.987 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 13:22:06.987 Core BUSY
+2013-Oct-27 13:22:07.038 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 13:22:07.038 "examples/slideshow.html" looking for a delta from e858db09 to faa8744f
+2013-Oct-27 13:22:07.040 "examples/slideshow.html" PUT gzip
+2013-Oct-27 13:22:07.040 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 13:22:07.040 Adding dependency on "lajui7v9s0o8g744gbj0mg9m66" <upload of "examples/slideshow.html">
+2013-Oct-27 13:22:07.285 State 4 ms for 169 items
+2013-Oct-27 13:22:07.295 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 13:22:07.295 "examples/slideshow.html" PUT 0 / 2198
+2013-Oct-27 13:22:07.296 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 13:22:07.296 Adding dependency on "lajui7v9s0o8g744gbj0mg9m66" <upload of "examples/slideshow.html">
+2013-Oct-27 13:22:07.296 "examples/slideshow.html" PUT 2198 / 2198
+2013-Oct-27 13:22:08.149 "examples/slideshow.html" PUT OK
+2013-Oct-27 13:22:08.149 Ending "lajui7v9s0o8g744gbj0mg9m66" <upload of "examples/slideshow.html">
+2013-Oct-27 13:22:08.222 XMPP "1382865726543800" to "1382865726712687", current "1382834892210262"
+2013-Oct-27 13:22:08.452 State 2 ms for 169 items
+2013-Oct-27 13:22:09.231 XMPP "1382834892210262" to "1382865726543800", current "1382834892210262"
+2013-Oct-27 13:22:09.232 XMPP "1382834892210262" delayed for 1999 ms
+2013-Oct-27 13:22:11.232 INDEX "examples/slideshow.html", 2198, faa8744f, 1, "086a7aa5"
+2013-Oct-27 13:22:11.232 XMPP "1382834892210262" to "1382865726543800" OK
+2013-Oct-27 13:22:11.232 INDEX "examples/slideshow.html", 2198, faa8744f, 1, "086a7aa5"
+2013-Oct-27 13:22:11.232 XMPP "1382865726543800" to "1382865726712687" OK
+2013-Oct-27 13:22:11.232 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 13:22:11.232 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 13:22:11.232 Core INDEX
+2013-Oct-27 13:22:11.534 DIFF prepare 0 / 1
+2013-Oct-27 13:22:11.534 State 1 ms for 169 items
+2013-Oct-27 13:22:11.535 DIFF 0 / 0 / 1
+2013-Oct-27 13:22:11.535 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 13:22:11.536 Core IDLE
+2013-Oct-27 13:22:11.536 Garbage collection started
+2013-Oct-27 13:22:11.536 Stable index written
+2013-Oct-27 13:22:11.557 Garbage collection completed
+2013-Oct-27 13:22:11.837 State 1 ms for 169 items
+2013-Oct-27 13:22:11.838 CHECK OK
+2013-Oct-27 13:22:16.981 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 13:22:18.149 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 13:22:21.537 Remote index image "1382865726712687" written
+2013-Oct-27 13:27:06.461 Quota PROPFIND
+2013-Oct-27 13:27:07.219 Quota PROPFIND OK 340691294 / 10396726946 / 10737418240 / 338288642
+2013-Oct-27 13:27:07.219 Trash PROPFIND
+2013-Oct-27 13:27:07.305 Trash PROPFIND OK / not empty
+2013-Oct-27 13:27:17.305 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 19:53:02.431 Core PAUSED
+2013-Oct-27 19:53:02.431 Stopped
+
+2013-Oct-27 19:53:02.432 Starting (0.1.1.281)...
+2013-Oct-27 19:53:02.432 Exclude list read error  ("Element not found")
+2013-Oct-27 19:53:02.432 IMAGE "classes, 2, "94cd96d3"
+2013-Oct-27 19:53:02.432 IMAGE "classes/meAssets.js, 1936, e825ff25, 1, "d2f10943"
+2013-Oct-27 19:53:02.432 IMAGE "classes/meCore.js, 5396, 97cf0850, 1, "ac3857e7"
+2013-Oct-27 19:53:02.432 IMAGE "classes/meInput.js, 1916, cd97ab37, 1, "8f05424c"
+2013-Oct-27 19:53:02.433 IMAGE "classes/mePrimitive.js, 4109, e850d74d, 1, "6b3e6aef"
+2013-Oct-27 19:53:02.433 IMAGE "classes/meUtils.js, 2678, ed0ba354, 1, "6881e475"
+2013-Oct-27 19:53:02.433 IMAGE "examples, 2, "d0e257b5"
+2013-Oct-27 19:53:02.433 IMAGE "examples/cdt.html, 1348, c5da2bd1, 1, "ac0663f3"
+2013-Oct-27 19:53:02.433 IMAGE "examples/example_01.html, 596, 96cb41ce, 1, "0e02c38a"
+2013-Oct-27 19:53:02.433 IMAGE "examples/example_01.js, 4530, c501ad5e, 1, "6b05e0ab"
+2013-Oct-27 19:53:02.433 IMAGE "examples/example_02.html, 580, f674c545, 1, "e54a10fd"
+2013-Oct-27 19:53:02.433 IMAGE "examples/example_02.js, 3529, 8c3806e4, 1, "59812e86"
+2013-Oct-27 19:53:02.433 IMAGE "examples/img, 2, "177255ce"
+2013-Oct-27 19:53:02.433 IMAGE "examples/img/kuz.png, 26168, 5ec8060e, 1, "27b776ee"
+2013-Oct-27 19:53:02.433 IMAGE "examples/img/naf.png, 27687, 7287eab9, 1, "15bcffde"
+2013-Oct-27 19:53:02.433 IMAGE "examples/img/smurf_sprite.png, 103359, 67dfff9f, 1, "9d2603f0"
+2013-Oct-27 19:53:02.433 IMAGE "examples/img/step.png, 1591, efec6c6e, 1, "e2f23111"
+2013-Oct-27 19:53:02.433 IMAGE "examples/lab1.1.html, 999, 15a5a6e5, 1, "857afac0"
+2013-Oct-27 19:53:02.434 IMAGE "examples/lab1.3.html, 994, 1d038ef1, 1, "b9d2828c"
+2013-Oct-27 19:53:02.434 IMAGE "examples/lab1.4.html, 1234, 1841392a, 1, "89e824e7"
+2013-Oct-27 19:53:02.434 IMAGE "examples/m0sk1t.task.6.html, 1640, c8a0c84b, 1, "cb860b42"
+2013-Oct-27 19:53:02.434 IMAGE "examples/pic, 2, "917e6cc9"
+2013-Oct-27 19:53:02.434 IMAGE "examples/pic/cat.jpg, 684408, 1c4955b8, 1, "5d3bc77b"
+2013-Oct-27 19:53:02.434 IMAGE "examples/pic/planet.jpg, 462890, f1a4edcc, 257, "ab26c135"
+2013-Oct-27 19:53:02.434 IMAGE "examples/pic/waterfall.jpg, 1041421, 622dae74, 1, "3bb03052"
+2013-Oct-27 19:53:02.434 IMAGE "examples/slideshow.html, 2198, faa8744f, 1, "086a7aa5"
+2013-Oct-27 19:53:02.434 IMAGE "m0sk1t-engine.ru, 2, "28ba4a28"
+2013-Oct-27 19:53:02.434 IMAGE "m0sk1t-engine.ru/index.html, 761, 6b513233, 1, "f6fc0238"
+2013-Oct-27 19:53:02.434 IMAGE "m0sk1t-engine.ru/me.0.0.1.minified.js, 8006, 70c5ae0b, 1, "aea6be54"
+2013-Oct-27 19:53:02.434 IMAGE "m0sk1t-engine.ru/pong.js, 4620, 769395d3, 1, "19408839"
+2013-Oct-27 19:53:02.434 IMAGE "m0sk1t-engine.ru/style.css, 2881, 8755f9ae, 1, "924b1a63"
+2013-Oct-27 19:53:02.434 IMAGE "README.md, 895, c3c9de41, 1, "e3b28c71"
+2013-Oct-27 19:53:02.435 IMAGE "reference, 2, "b7faff94"
+2013-Oct-27 19:53:02.435 IMAGE "reference/meCore.md, 1537, 3bf95cd4, 1, "e8d60c34"
+2013-Oct-27 19:53:02.435 IMAGE "reference/meUtils.md, 2506, 205e13e1, 1, "e3fdcf0a"
+2013-Oct-27 19:53:02.435 IMAGE "server, 2, "05197d9f"
+2013-Oct-27 19:53:02.435 IMAGE "server/gameServer.js, 239, 1bc0890d, 1, "b36c5d47"
+2013-Oct-27 19:53:02.435 Core INDEX
+2013-Oct-27 19:53:02.435 Digest bank initialized
+2013-Oct-27 19:53:02.436 Remote index image 1382865726712687 read
+2013-Oct-27 19:53:02.436 XMPP connecting server push.xmpp.yandex.ru:5222 as m0sk1t@ya.ru
+2013-Oct-27 19:53:02.437 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 19:53:02.437 XMPP connecting server push.xmpp.yandex.ru:443 as m0sk1t@ya.ru
+2013-Oct-27 19:53:02.437 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 19:53:02.437 Stable index read
+2013-Oct-27 19:53:02.440 Adding monitor for "" in "/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me"
+2013-Oct-27 19:53:02.440 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 19:53:02.464 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 19:53:02.466 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 19:53:02.764 DIFF / missing remote index
+2013-Oct-27 19:53:07.435 Quota PROPFIND
+2013-Oct-27 19:53:07.435 Quota PROPFIND request error  ("No such file or directory")
+2013-Oct-27 19:53:07.437 XMPP connecting server push.xmpp.yandex.ru:5222 as m0sk1t@ya.ru
+2013-Oct-27 19:53:07.438 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 19:53:07.438 XMPP connecting server push.xmpp.yandex.ru:443 as m0sk1t@ya.ru
+2013-Oct-27 19:53:07.438 XMPP error  connecting server ("No such file or directory")
+2013-Oct-27 19:53:12.436 Quota PROPFIND
+2013-Oct-27 19:53:12.438 XMPP connecting server push.xmpp.yandex.ru:5222 as m0sk1t@ya.ru
+2013-Oct-27 19:53:12.703 XMPP server connected
+2013-Oct-27 19:53:12.703 Queueing "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 19:53:12.807 Quota PROPFIND OK 340691294 / 10396726946 / 10737418240 / 338288642
+2013-Oct-27 19:53:12.807 Trash PROPFIND
+2013-Oct-27 19:53:12.807 DIFF / missing remote index
+2013-Oct-27 19:53:12.808 Index GET for version "1382865726712687"
+2013-Oct-27 19:53:12.887 Trash PROPFIND OK / not empty
+2013-Oct-27 19:53:13.021 Index GET / Content-Length: 0
+2013-Oct-27 19:53:13.021 Index version "1382865726712687" received
+2013-Oct-27 19:53:13.021 Ending "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 19:53:13.023 DIFF prepare 0 / 0
+2013-Oct-27 19:53:13.025 DIFF 1 / 1 / 2
+2013-Oct-27 19:53:13.025 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 19:53:13.026 Core IDLE
+2013-Oct-27 19:53:13.026 Garbage collection started
+2013-Oct-27 19:53:13.026 Garbage collection completed
+2013-Oct-27 19:53:13.324 CHECK OK
+2013-Oct-27 19:53:13.324 State 2 ms for 169 items
+2013-Oct-27 19:53:22.887 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 19:53:23.022 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:31:45.906 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:31:45.906 "examples" directory / update
+2013-Oct-27 20:31:45.906 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:31:45.906 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:31:45.907 "examples" directory / update
+2013-Oct-27 20:31:45.907 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:31:45.907 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:31:45.907 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:31:45.908 Core INDEX
+2013-Oct-27 20:31:45.908 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:31:46.209 State 2 ms for 169 items
+2013-Oct-27 20:31:46.908 DIGEST faa8744f read OK
+2013-Oct-27 20:31:46.908 "examples/slideshow.html" creating delta
+2013-Oct-27 20:31:46.908 "examples/slideshow.html" digest 0 / 2176
+2013-Oct-27 20:31:46.909 "examples/slideshow.html" delta completed
+2013-Oct-27 20:31:46.910 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:46.910 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:31:47.110 DIGEST befb5adc add OK
+2013-Oct-27 20:31:47.212 DIFF prepare 0 / 1
+2013-Oct-27 20:31:47.213 State 3 ms for 169 items
+2013-Oct-27 20:31:47.215 DIFF 1 / 0 / 2
+2013-Oct-27 20:31:47.215 Queueing "kr7fs3gfufletierqkqpnqs6o4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:31:47.216 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:47.216 Core BUSY
+2013-Oct-27 20:31:47.266 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:31:47.266 "examples/slideshow.html" looking for a delta from faa8744f to befb5adc
+2013-Oct-27 20:31:47.268 "examples/slideshow.html" PUT gzip
+2013-Oct-27 20:31:47.268 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:31:47.268 Adding dependency on "kr7fs3gfufletierqkqpnqs6o4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:31:48.209 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:31:48.210 "examples/slideshow.html" PUT 0 / 2176
+2013-Oct-27 20:31:48.211 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:31:48.211 Adding dependency on "kr7fs3gfufletierqkqpnqs6o4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:31:48.211 "examples/slideshow.html" PUT 2176 / 2176
+2013-Oct-27 20:31:49.094 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:31:49.094 Ending "kr7fs3gfufletierqkqpnqs6o4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:31:49.397 State 2 ms for 169 items
+2013-Oct-27 20:31:49.847 XMPP "1382891508749408" to "1382891509059185", current "1382865726712687"
+2013-Oct-27 20:31:49.847 Quota PROPFIND
+2013-Oct-27 20:31:49.925 Quota PROPFIND OK 340691272 / 10396726968 / 10737418240 / 338288642
+2013-Oct-27 20:31:49.925 Trash PROPFIND
+2013-Oct-27 20:31:50.009 Trash PROPFIND OK / not empty
+2013-Oct-27 20:31:50.033 XMPP "1382865726712687" to "1382891508749408", current "1382865726712687"
+2013-Oct-27 20:31:50.033 XMPP "1382865726712687" delayed for 1999 ms
+2013-Oct-27 20:31:52.033 INDEX "examples/slideshow.html", 2176, befb5adc, 1, "2389b16b"
+2013-Oct-27 20:31:52.034 XMPP "1382865726712687" to "1382891508749408" OK
+2013-Oct-27 20:31:52.034 INDEX "examples/slideshow.html", 2176, befb5adc, 1, "2389b16b"
+2013-Oct-27 20:31:52.034 XMPP "1382891508749408" to "1382891509059185" OK
+2013-Oct-27 20:31:52.034 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:31:52.034 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:52.034 Core INDEX
+2013-Oct-27 20:31:52.335 DIFF prepare 0 / 1
+2013-Oct-27 20:31:52.337 State 1 ms for 169 items
+2013-Oct-27 20:31:52.337 DIFF 0 / 0 / 1
+2013-Oct-27 20:31:52.337 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:52.337 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:31:52.338 Stable index written
+2013-Oct-27 20:31:52.348 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:52.348 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:31:52.649 DIFF prepare 0 / 1
+2013-Oct-27 20:31:52.651 DIFF 0 / 0 / 1
+2013-Oct-27 20:31:52.651 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:31:52.651 Core IDLE
+2013-Oct-27 20:31:52.953 CHECK OK
+2013-Oct-27 20:31:52.953 State 1 ms for 169 items
+2013-Oct-27 20:32:00.009 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:32:02.652 Remote index image "1382891509059185" written
+2013-Oct-27 20:36:49.847 Quota PROPFIND
+2013-Oct-27 20:36:51.121 Quota PROPFIND OK 340691272 / 10396726968 / 10737418240 / 338288642
+2013-Oct-27 20:36:51.121 Trash PROPFIND
+2013-Oct-27 20:36:51.207 Trash PROPFIND OK / not empty
+2013-Oct-27 20:37:01.207 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:41:46.759 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:41:46.759 "examples" directory / update
+2013-Oct-27 20:41:46.759 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:41:46.759 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:41:46.759 "examples" directory / update
+2013-Oct-27 20:41:46.760 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:41:46.760 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:41:46.760 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:41:46.761 Core INDEX
+2013-Oct-27 20:41:46.761 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:41:47.062 State 2 ms for 169 items
+2013-Oct-27 20:41:47.761 DIGEST befb5adc read OK
+2013-Oct-27 20:41:47.761 "examples/slideshow.html" creating delta
+2013-Oct-27 20:41:47.762 "examples/slideshow.html" digest 0 / 2194
+2013-Oct-27 20:41:47.762 "examples/slideshow.html" delta completed
+2013-Oct-27 20:41:47.762 "examples/slideshow.html" delta from befb5adc to 4a3c60fe
+2013-Oct-27 20:41:47.763 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:47.763 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:41:47.963 DIGEST 4a3c60fe add OK
+2013-Oct-27 20:41:48.067 DIFF prepare 0 / 2
+2013-Oct-27 20:41:48.067 State 4 ms for 169 items
+2013-Oct-27 20:41:48.070 DIFF 1 / 0 / 2
+2013-Oct-27 20:41:48.070 Queueing "dmh579ajhbub134dgujsmiia04" <upload of "examples/slideshow.html">
+2013-Oct-27 20:41:48.070 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:48.071 Core BUSY
+2013-Oct-27 20:41:48.121 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:41:48.122 "examples/slideshow.html" looking for a delta from befb5adc to 4a3c60fe
+2013-Oct-27 20:41:48.123 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:41:48.123 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:41:48.123 Adding dependency on "dmh579ajhbub134dgujsmiia04" <upload of "examples/slideshow.html">
+2013-Oct-27 20:41:48.275 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:41:48.275 "examples/slideshow.html" PUT 0 / 1113
+2013-Oct-27 20:41:48.275 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:41:48.276 Adding dependency on "dmh579ajhbub134dgujsmiia04" <upload of "examples/slideshow.html">
+2013-Oct-27 20:41:48.276 "examples/slideshow.html" PUT 1113 / 1113
+2013-Oct-27 20:41:49.898 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:41:49.898 Ending "dmh579ajhbub134dgujsmiia04" <upload of "examples/slideshow.html">
+2013-Oct-27 20:41:49.899 XMPP "1382891509059185" to "1382892109408127", current "1382891509059185"
+2013-Oct-27 20:41:49.899 XMPP "1382891509059185" delayed for 1999 ms
+2013-Oct-27 20:41:49.899 Quota PROPFIND
+2013-Oct-27 20:41:50.035 Quota PROPFIND OK 340691290 / 10396726950 / 10737418240 / 338288642
+2013-Oct-27 20:41:50.035 Trash PROPFIND
+2013-Oct-27 20:41:50.118 Trash PROPFIND OK / not empty
+2013-Oct-27 20:41:50.201 State 1 ms for 169 items
+2013-Oct-27 20:41:51.436 XMPP "1382892109408127" to "1382892109643028", current "1382891509059185"
+2013-Oct-27 20:41:51.899 INDEX "examples/slideshow.html", 2194, 4a3c60fe, 1, "2389b16b"
+2013-Oct-27 20:41:51.900 XMPP "1382891509059185" to "1382892109408127" OK
+2013-Oct-27 20:41:51.900 Dropping delta from befb5adc to 4a3c60fe
+2013-Oct-27 20:41:51.900 XMPP "1382892109408127" delayed for 1537 ms
+2013-Oct-27 20:41:51.900 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:41:51.900 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:51.901 Core INDEX
+2013-Oct-27 20:41:52.201 DIFF prepare 0 / 0
+2013-Oct-27 20:41:52.203 State 1 ms for 169 items
+2013-Oct-27 20:41:52.203 DIFF 0 / 0 / 1
+2013-Oct-27 20:41:52.203 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:52.204 Stable index written
+2013-Oct-27 20:41:53.437 INDEX "examples/slideshow.html", 2194, 4a3c60fe, 1, "2389b16b"
+2013-Oct-27 20:41:53.438 XMPP "1382892109408127" to "1382892109643028" OK
+2013-Oct-27 20:41:53.438 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:53.740 DIFF prepare 0 / 1
+2013-Oct-27 20:41:53.741 State 2 ms for 169 items
+2013-Oct-27 20:41:53.742 DIFF 1 / 0 / 2
+2013-Oct-27 20:41:53.743 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:53.743 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:41:53.757 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:53.757 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:41:54.060 DIFF prepare 0 / 1
+2013-Oct-27 20:41:54.062 DIFF 1 / 0 / 2
+2013-Oct-27 20:41:54.062 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:41:54.063 Core IDLE
+2013-Oct-27 20:41:54.365 CHECK OK
+2013-Oct-27 20:41:54.365 State 1 ms for 169 items
+2013-Oct-27 20:42:00.118 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:42:04.065 Remote index image "1382892109643028" written
+2013-Oct-27 20:43:38.384 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:43:38.385 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:43:38.385 "examples" directory / update
+2013-Oct-27 20:43:38.385 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:43:38.385 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:43:38.386 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:43:38.386 Core INDEX
+2013-Oct-27 20:43:38.688 State 2 ms for 169 items
+2013-Oct-27 20:43:39.386 DIGEST 4a3c60fe read OK
+2013-Oct-27 20:43:39.387 "examples/slideshow.html" creating delta
+2013-Oct-27 20:43:39.387 "examples/slideshow.html" digest 0 / 2237
+2013-Oct-27 20:43:39.387 "examples/slideshow.html" delta completed
+2013-Oct-27 20:43:39.387 "examples/slideshow.html" delta from 4a3c60fe to efce8eba
+2013-Oct-27 20:43:39.387 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:39.388 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:43:39.588 DIGEST efce8eba add OK
+2013-Oct-27 20:43:39.692 DIFF prepare 0 / 2
+2013-Oct-27 20:43:39.692 State 4 ms for 169 items
+2013-Oct-27 20:43:39.695 DIFF 1 / 0 / 2
+2013-Oct-27 20:43:39.695 Queueing "2ko419ddi1tfhpcvaqm0bj1152" <upload of "examples/slideshow.html">
+2013-Oct-27 20:43:39.695 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:39.695 Core BUSY
+2013-Oct-27 20:43:39.746 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:43:39.746 "examples/slideshow.html" looking for a delta from 4a3c60fe to efce8eba
+2013-Oct-27 20:43:39.747 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:43:39.747 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:43:39.747 Adding dependency on "2ko419ddi1tfhpcvaqm0bj1152" <upload of "examples/slideshow.html">
+2013-Oct-27 20:43:39.854 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:43:39.855 "examples/slideshow.html" PUT 0 / 1147
+2013-Oct-27 20:43:39.855 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:43:39.855 Adding dependency on "2ko419ddi1tfhpcvaqm0bj1152" <upload of "examples/slideshow.html">
+2013-Oct-27 20:43:39.856 "examples/slideshow.html" PUT 1147 / 1147
+2013-Oct-27 20:43:41.017 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:43:41.017 Ending "2ko419ddi1tfhpcvaqm0bj1152" <upload of "examples/slideshow.html">
+2013-Oct-27 20:43:41.320 State 2 ms for 169 items
+2013-Oct-27 20:43:41.936 XMPP "1382892109643028" to "1382892220802827", current "1382892109643028"
+2013-Oct-27 20:43:41.936 XMPP "1382892109643028" delayed for 1999 ms
+2013-Oct-27 20:43:41.998 XMPP "1382892220802827" to "1382892221000349", current "1382892109643028"
+2013-Oct-27 20:43:43.936 INDEX "examples/slideshow.html", 2237, efce8eba, 1, "2389b16b"
+2013-Oct-27 20:43:43.937 XMPP "1382892109643028" to "1382892220802827" OK
+2013-Oct-27 20:43:43.937 Dropping delta from 4a3c60fe to efce8eba
+2013-Oct-27 20:43:43.937 XMPP "1382892220802827" delayed for 61 ms
+2013-Oct-27 20:43:43.937 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:43:43.938 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:43.938 Core INDEX
+2013-Oct-27 20:43:43.999 INDEX "examples/slideshow.html", 2237, efce8eba, 1, "2389b16b"
+2013-Oct-27 20:43:43.999 XMPP "1382892220802827" to "1382892221000349" OK
+2013-Oct-27 20:43:44.239 DIFF prepare 0 / 0
+2013-Oct-27 20:43:44.240 DIFF 0 / 0 / 1
+2013-Oct-27 20:43:44.241 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:44.241 State 1 ms for 169 items
+2013-Oct-27 20:43:44.241 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:43:44.241 Stable index written
+2013-Oct-27 20:43:44.249 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:44.249 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:43:44.551 DIFF prepare 0 / 1
+2013-Oct-27 20:43:44.554 DIFF 1 / 0 / 2
+2013-Oct-27 20:43:44.554 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:43:44.554 Core IDLE
+2013-Oct-27 20:43:44.858 State 2 ms for 169 items
+2013-Oct-27 20:43:44.858 CHECK OK
+2013-Oct-27 20:43:51.018 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:43:54.557 Remote index image "1382892221000349" written
+2013-Oct-27 20:44:10.354 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:44:10.354 "examples" directory / update
+2013-Oct-27 20:44:10.355 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:44:10.355 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:44:10.355 "examples" directory / update
+2013-Oct-27 20:44:10.355 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:44:10.356 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:44:10.356 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:44:10.357 Core INDEX
+2013-Oct-27 20:44:10.357 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:44:10.657 State 2 ms for 169 items
+2013-Oct-27 20:44:11.356 DIGEST efce8eba read OK
+2013-Oct-27 20:44:11.356 "examples/slideshow.html" creating delta
+2013-Oct-27 20:44:11.356 "examples/slideshow.html" digest 0 / 2237
+2013-Oct-27 20:44:11.357 "examples/slideshow.html" delta completed
+2013-Oct-27 20:44:11.357 "examples/slideshow.html" delta from efce8eba to e7bfa36c
+2013-Oct-27 20:44:11.357 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:11.357 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:44:11.557 DIGEST e7bfa36c add OK
+2013-Oct-27 20:44:11.660 DIFF prepare 0 / 1
+2013-Oct-27 20:44:11.661 State 2 ms for 169 items
+2013-Oct-27 20:44:11.662 DIFF 1 / 0 / 2
+2013-Oct-27 20:44:11.663 Queueing "4u5ke6hjf4ovct4gvh3170jvi5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:11.663 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:11.663 Core BUSY
+2013-Oct-27 20:44:11.713 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:44:11.714 "examples/slideshow.html" looking for a delta from efce8eba to e7bfa36c
+2013-Oct-27 20:44:11.717 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:44:11.717 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:11.718 Adding dependency on "4u5ke6hjf4ovct4gvh3170jvi5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:11.829 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:11.829 "examples/slideshow.html" PUT 0 / 1125
+2013-Oct-27 20:44:11.830 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:11.830 Adding dependency on "4u5ke6hjf4ovct4gvh3170jvi5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:11.830 "examples/slideshow.html" PUT 1125 / 1125
+2013-Oct-27 20:44:12.856 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:44:12.856 Ending "4u5ke6hjf4ovct4gvh3170jvi5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:13.158 State 1 ms for 169 items
+2013-Oct-27 20:44:13.485 XMPP "1382892221000349" to "1382892252616456", current "1382892221000349"
+2013-Oct-27 20:44:13.485 XMPP "1382892221000349" delayed for 1999 ms
+2013-Oct-27 20:44:14.032 XMPP "1382892252616456" to "1382892252807196", current "1382892221000349"
+2013-Oct-27 20:44:15.485 INDEX "examples/slideshow.html", 2237, e7bfa36c, 1, "2389b16b"
+2013-Oct-27 20:44:15.486 XMPP "1382892221000349" to "1382892252616456" OK
+2013-Oct-27 20:44:15.486 Dropping delta from efce8eba to e7bfa36c
+2013-Oct-27 20:44:15.486 XMPP "1382892252616456" delayed for 547 ms
+2013-Oct-27 20:44:15.486 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:15.487 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:15.487 Core INDEX
+2013-Oct-27 20:44:15.788 DIFF prepare 0 / 0
+2013-Oct-27 20:44:15.789 DIFF 0 / 0 / 0
+2013-Oct-27 20:44:15.789 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:15.789 State 1 ms for 169 items
+2013-Oct-27 20:44:15.789 Stable index written
+2013-Oct-27 20:44:16.034 INDEX "examples/slideshow.html", 2237, e7bfa36c, 1, "2389b16b"
+2013-Oct-27 20:44:16.034 XMPP "1382892252616456" to "1382892252807196" OK
+2013-Oct-27 20:44:16.034 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:16.335 DIFF prepare 0 / 0
+2013-Oct-27 20:44:16.336 State 1 ms for 169 items
+2013-Oct-27 20:44:16.336 DIFF 0 / 0 / 0
+2013-Oct-27 20:44:16.336 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:16.336 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:44:16.343 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:16.343 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:44:16.644 DIFF prepare 0 / 0
+2013-Oct-27 20:44:16.647 DIFF 1 / 0 / 2
+2013-Oct-27 20:44:16.647 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:16.647 Core IDLE
+2013-Oct-27 20:44:16.949 State 1 ms for 169 items
+2013-Oct-27 20:44:16.949 CHECK OK
+2013-Oct-27 20:44:22.856 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:44:25.356 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:44:25.357 "examples" directory / update
+2013-Oct-27 20:44:25.357 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:44:25.357 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:44:25.357 "examples" directory / update
+2013-Oct-27 20:44:25.357 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:44:25.358 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:44:25.358 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:44:25.358 Core INDEX
+2013-Oct-27 20:44:25.358 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:44:25.660 State 2 ms for 169 items
+2013-Oct-27 20:44:26.358 DIGEST e7bfa36c read OK
+2013-Oct-27 20:44:26.358 "examples/slideshow.html" creating delta
+2013-Oct-27 20:44:26.358 "examples/slideshow.html" digest 0 / 2237
+2013-Oct-27 20:44:26.359 "examples/slideshow.html" delta completed
+2013-Oct-27 20:44:26.359 "examples/slideshow.html" delta from e7bfa36c to eb9b3179
+2013-Oct-27 20:44:26.359 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:26.359 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:44:26.559 DIGEST eb9b3179 add OK
+2013-Oct-27 20:44:26.648 Remote index image "1382892252807196" written
+2013-Oct-27 20:44:26.660 State 1 ms for 169 items
+2013-Oct-27 20:44:26.661 DIFF prepare 0 / 0
+2013-Oct-27 20:44:26.662 DIFF 0 / 0 / 1
+2013-Oct-27 20:44:26.662 Queueing "8u5b0vjgpdho75pvqvq3q086r3" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:26.662 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:26.662 Core BUSY
+2013-Oct-27 20:44:26.712 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:44:26.713 "examples/slideshow.html" looking for a delta from e7bfa36c to eb9b3179
+2013-Oct-27 20:44:26.713 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:44:26.713 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:26.713 Adding dependency on "8u5b0vjgpdho75pvqvq3q086r3" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:26.817 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:26.817 "examples/slideshow.html" PUT 0 / 1125
+2013-Oct-27 20:44:26.818 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:26.818 Adding dependency on "8u5b0vjgpdho75pvqvq3q086r3" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:26.818 "examples/slideshow.html" PUT 1125 / 1125
+2013-Oct-27 20:44:28.532 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:44:28.533 Ending "8u5b0vjgpdho75pvqvq3q086r3" <upload of "examples/slideshow.html">
+2013-Oct-27 20:44:28.534 XMPP "1382892252807196" to "1382892267525028", current "1382892252807196"
+2013-Oct-27 20:44:28.535 XMPP "1382892252807196" delayed for 1999 ms
+2013-Oct-27 20:44:28.836 State 2 ms for 169 items
+2013-Oct-27 20:44:29.509 XMPP "1382892267525028" to "1382892267807975", current "1382892252807196"
+2013-Oct-27 20:44:30.535 INDEX "examples/slideshow.html", 2237, eb9b3179, 1, "2389b16b"
+2013-Oct-27 20:44:30.535 XMPP "1382892252807196" to "1382892267525028" OK
+2013-Oct-27 20:44:30.536 Dropping delta from e7bfa36c to eb9b3179
+2013-Oct-27 20:44:30.536 XMPP "1382892267525028" delayed for 973 ms
+2013-Oct-27 20:44:30.536 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:44:30.536 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:30.537 Core INDEX
+2013-Oct-27 20:44:30.837 DIFF prepare 0 / 0
+2013-Oct-27 20:44:30.839 DIFF 0 / 0 / 1
+2013-Oct-27 20:44:30.839 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:30.839 State 1 ms for 169 items
+2013-Oct-27 20:44:30.840 Stable index written
+2013-Oct-27 20:44:31.510 INDEX "examples/slideshow.html", 2237, eb9b3179, 1, "2389b16b"
+2013-Oct-27 20:44:31.510 XMPP "1382892267525028" to "1382892267807975" OK
+2013-Oct-27 20:44:31.510 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:31.812 DIFF prepare 0 / 1
+2013-Oct-27 20:44:31.814 State 3 ms for 169 items
+2013-Oct-27 20:44:31.814 DIFF 1 / 0 / 1
+2013-Oct-27 20:44:31.814 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:31.814 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:44:31.826 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:31.826 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:44:32.129 DIFF prepare 0 / 1
+2013-Oct-27 20:44:32.131 DIFF 1 / 0 / 2
+2013-Oct-27 20:44:32.131 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:44:32.132 Core IDLE
+2013-Oct-27 20:44:32.436 CHECK OK
+2013-Oct-27 20:44:32.436 State 3 ms for 169 items
+2013-Oct-27 20:44:38.533 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:44:42.134 Remote index image "1382892267807975" written
+2013-Oct-27 20:45:03.887 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:03.887 "examples" directory / update
+2013-Oct-27 20:45:03.887 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:03.887 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:03.888 "examples" directory / update
+2013-Oct-27 20:45:03.888 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:45:03.888 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:03.888 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:03.889 Core INDEX
+2013-Oct-27 20:45:03.889 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:45:04.189 State 1 ms for 169 items
+2013-Oct-27 20:45:04.889 DIGEST eb9b3179 read OK
+2013-Oct-27 20:45:04.889 "examples/slideshow.html" creating delta
+2013-Oct-27 20:45:04.889 "examples/slideshow.html" digest 0 / 2236
+2013-Oct-27 20:45:04.889 "examples/slideshow.html" delta completed
+2013-Oct-27 20:45:04.890 "examples/slideshow.html" delta from eb9b3179 to 6093a87e
+2013-Oct-27 20:45:04.890 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:04.890 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:05.090 DIGEST 6093a87e add OK
+2013-Oct-27 20:45:05.191 State 1 ms for 169 items
+2013-Oct-27 20:45:05.191 DIFF prepare 0 / 0
+2013-Oct-27 20:45:05.193 DIFF 1 / 0 / 2
+2013-Oct-27 20:45:05.194 Queueing "gj4m0gelrvafje9fiaducmcde4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:05.194 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:05.194 Core BUSY
+2013-Oct-27 20:45:05.244 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:45:05.244 "examples/slideshow.html" looking for a delta from eb9b3179 to 6093a87e
+2013-Oct-27 20:45:05.245 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:45:05.245 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:05.245 Adding dependency on "gj4m0gelrvafje9fiaducmcde4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:10.523 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:10.523 "examples/slideshow.html" PUT 0 / 1124
+2013-Oct-27 20:45:10.524 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:10.524 Adding dependency on "gj4m0gelrvafje9fiaducmcde4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:10.524 "examples/slideshow.html" PUT 1124 / 1124
+2013-Oct-27 20:45:11.533 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:45:11.533 Ending "gj4m0gelrvafje9fiaducmcde4" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:11.835 State 1 ms for 169 items
+2013-Oct-27 20:45:13.516 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:13.516 "examples" directory / update
+2013-Oct-27 20:45:13.517 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:13.517 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:13.517 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:13.517 Core INDEX
+2013-Oct-27 20:45:13.517 "examples" directory / update
+2013-Oct-27 20:45:13.518 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:45:13.518 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:13.518 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:13.519 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:45:13.537 XMPP "1382892267807975" to "1382892311308921", current "1382892267807975"
+2013-Oct-27 20:45:13.537 XMPP "1382892267807975" delayed for 1999 ms
+2013-Oct-27 20:45:13.582 XMPP "1382892311308921" to "1382892311574139", current "1382892267807975"
+2013-Oct-27 20:45:13.817 Adding dependency on "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:13.819 State 2 ms for 169 items
+2013-Oct-27 20:45:14.518 DIGEST eb9b3179 read OK
+2013-Oct-27 20:45:14.519 "examples/slideshow.html" creating delta
+2013-Oct-27 20:45:14.519 "examples/slideshow.html" digest 0 / 2236
+2013-Oct-27 20:45:14.519 "examples/slideshow.html" delta completed
+2013-Oct-27 20:45:14.519 Dropping delta from eb9b3179 to 6093a87e
+2013-Oct-27 20:45:14.519 "examples/slideshow.html" delta from eb9b3179 to dabb9d16
+2013-Oct-27 20:45:14.520 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:14.720 DIGEST dabb9d16 add OK
+2013-Oct-27 20:45:14.823 State 2 ms for 169 items
+2013-Oct-27 20:45:15.538 INDEX "examples/slideshow.html", 2236, 6093a87e, 1, "2389b16b"
+2013-Oct-27 20:45:15.538 XMPP "1382892267807975" to "1382892311308921" OK
+2013-Oct-27 20:45:15.538 Dropping delta from eb9b3179 to dabb9d16
+2013-Oct-27 20:45:15.538 XMPP "1382892311308921" delayed for 44 ms
+2013-Oct-27 20:45:15.538 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:15.540 DIFF prepare 0 / 1
+2013-Oct-27 20:45:15.541 DIFF 0 / 0 / 1
+2013-Oct-27 20:45:15.542 Queueing "88npm7fm14fukaf1nt8ftca8u6" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:15.542 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:15.542 Core BUSY
+2013-Oct-27 20:45:15.583 INDEX "examples/slideshow.html", 2236, 6093a87e, 1, "2389b16b"
+2013-Oct-27 20:45:15.583 XMPP "1382892311308921" to "1382892311574139" OK
+2013-Oct-27 20:45:15.583 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:15.592 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:45:15.592 "examples/slideshow.html" looking for a delta from 6093a87e to dabb9d16
+2013-Oct-27 20:45:15.593 "examples/slideshow.html" PUT gzip
+2013-Oct-27 20:45:15.594 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:15.594 Adding dependency on "88npm7fm14fukaf1nt8ftca8u6" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:15.842 State 2 ms for 169 items
+2013-Oct-27 20:45:15.885 DIFF prepare 0 / 1
+2013-Oct-27 20:45:15.887 DIFF 1 / 0 / 1
+2013-Oct-27 20:45:15.887 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:17.027 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:17.027 "examples/slideshow.html" PUT 0 / 2236
+2013-Oct-27 20:45:17.028 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:17.028 Adding dependency on "88npm7fm14fukaf1nt8ftca8u6" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:17.028 "examples/slideshow.html" PUT 2236 / 2236
+2013-Oct-27 20:45:21.003 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:21.003 "examples" directory / update
+2013-Oct-27 20:45:21.003 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:21.003 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:21.004 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:21.004 Interrupting "88npm7fm14fukaf1nt8ftca8u6" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:21.004 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:21.004 "examples/slideshow.html" PUT response cancelled
+2013-Oct-27 20:45:21.004 Core INDEX
+2013-Oct-27 20:45:21.005 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:45:21.006 "examples" directory / update
+2013-Oct-27 20:45:21.006 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:21.006 Queueing "fa0gip8db7t1qoi9m844oshhi7" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:21.006 Dequeueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:21.006 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:45:21.304 Adding dependency on "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:21.307 State 2 ms for 169 items
+2013-Oct-27 20:45:22.007 DIGEST 6093a87e read OK
+2013-Oct-27 20:45:22.007 "examples/slideshow.html" creating delta
+2013-Oct-27 20:45:22.007 "examples/slideshow.html" digest 0 / 2236
+2013-Oct-27 20:45:22.008 "examples/slideshow.html" delta completed
+2013-Oct-27 20:45:22.008 "examples/slideshow.html" delta from 6093a87e to 3467604d
+2013-Oct-27 20:45:22.008 Ending "fa0gip8db7t1qoi9m844oshhi7" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:45:22.208 DIGEST 3467604d add OK
+2013-Oct-27 20:45:22.312 State 2 ms for 169 items
+2013-Oct-27 20:45:29.502 XMPP "1382892311574139" to "1382892328428534", current "1382892311574139"
+2013-Oct-27 20:45:29.502 XMPP "1382892311574139" delayed for 1999 ms
+2013-Oct-27 20:45:30.843 XMPP "1382892328428534" to "1382892329565472", current "1382892311574139"
+2013-Oct-27 20:45:31.503 INDEX "examples/slideshow.html", 2236, dabb9d16, 1, "d9be3df1"
+2013-Oct-27 20:45:31.503 XMPP "1382892311574139" to "1382892328428534" OK
+2013-Oct-27 20:45:31.503 Dropping delta from 6093a87e to 3467604d
+2013-Oct-27 20:45:31.503 XMPP "1382892328428534" delayed for 1341 ms
+2013-Oct-27 20:45:31.503 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:31.505 DIFF prepare 0 / 1
+2013-Oct-27 20:45:31.508 DIFF 1 / 0 / 2
+2013-Oct-27 20:45:31.508 Queueing "liagebdeudrfr7osbcq6h96oa7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:31.508 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:31.508 Core BUSY
+2013-Oct-27 20:45:31.558 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:45:31.559 "examples/slideshow.html" looking for a delta from dabb9d16 to 3467604d
+2013-Oct-27 20:45:31.560 "examples/slideshow.html" PUT gzip
+2013-Oct-27 20:45:31.560 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:31.560 Adding dependency on "liagebdeudrfr7osbcq6h96oa7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:31.806 State 2 ms for 169 items
+2013-Oct-27 20:45:32.669 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:32.669 "examples/slideshow.html" PUT 0 / 2236
+2013-Oct-27 20:45:32.670 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:32.670 Adding dependency on "liagebdeudrfr7osbcq6h96oa7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:32.670 "examples/slideshow.html" PUT 2236 / 2236
+2013-Oct-27 20:45:32.844 INDEX "examples/slideshow.html", 2236, dabb9d16, 1, "d9be3df1"
+2013-Oct-27 20:45:32.845 XMPP "1382892328428534" to "1382892329565472" OK
+2013-Oct-27 20:45:32.845 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:33.147 DIFF prepare 0 / 2
+2013-Oct-27 20:45:33.149 DIFF 1 / 0 / 1
+2013-Oct-27 20:45:33.149 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:33.150 State 2 ms for 169 items
+2013-Oct-27 20:45:33.533 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:45:33.533 Ending "liagebdeudrfr7osbcq6h96oa7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:45:33.836 State 2 ms for 169 items
+2013-Oct-27 20:45:34.534 XMPP "1382892333137551" to "1382892333439367", current "1382892329565472"
+2013-Oct-27 20:45:35.440 XMPP "1382892329565472" to "1382892333137551", current "1382892329565472"
+2013-Oct-27 20:45:35.440 XMPP "1382892329565472" delayed for 1999 ms
+2013-Oct-27 20:45:37.440 INDEX "examples/slideshow.html", 2236, 3467604d, 1, "571c076b"
+2013-Oct-27 20:45:37.440 XMPP "1382892329565472" to "1382892333137551" OK
+2013-Oct-27 20:45:37.441 INDEX "examples/slideshow.html", 2236, 3467604d, 1, "571c076b"
+2013-Oct-27 20:45:37.441 XMPP "1382892333137551" to "1382892333439367" OK
+2013-Oct-27 20:45:37.441 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:45:37.441 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:37.441 Core INDEX
+2013-Oct-27 20:45:37.743 DIFF prepare 0 / 1
+2013-Oct-27 20:45:37.744 State 2 ms for 169 items
+2013-Oct-27 20:45:37.746 DIFF 1 / 0 / 2
+2013-Oct-27 20:45:37.746 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:37.747 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:45:37.747 Stable index written
+2013-Oct-27 20:45:37.761 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:37.761 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:45:38.064 DIFF prepare 0 / 1
+2013-Oct-27 20:45:38.066 DIFF 1 / 0 / 1
+2013-Oct-27 20:45:38.066 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:45:38.067 Core IDLE
+2013-Oct-27 20:45:38.373 State 4 ms for 169 items
+2013-Oct-27 20:45:38.373 CHECK OK
+2013-Oct-27 20:45:43.533 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:45:48.068 Remote index image "1382892333439367" written
+2013-Oct-27 20:46:37.237 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:46:37.238 "examples" directory / update
+2013-Oct-27 20:46:37.238 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:46:37.238 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:46:37.238 "examples" directory / update
+2013-Oct-27 20:46:37.239 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:46:37.239 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:46:37.239 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:46:37.240 Core INDEX
+2013-Oct-27 20:46:37.240 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:46:37.541 State 2 ms for 169 items
+2013-Oct-27 20:46:38.240 DIGEST 3467604d read OK
+2013-Oct-27 20:46:38.240 "examples/slideshow.html" creating delta
+2013-Oct-27 20:46:38.240 "examples/slideshow.html" digest 0 / 2235
+2013-Oct-27 20:46:38.240 "examples/slideshow.html" delta completed
+2013-Oct-27 20:46:38.241 "examples/slideshow.html" delta from 3467604d to 116f083c
+2013-Oct-27 20:46:38.241 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:38.241 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:46:38.441 DIGEST 116f083c add OK
+2013-Oct-27 20:46:38.543 DIFF prepare 0 / 1
+2013-Oct-27 20:46:38.543 State 1 ms for 169 items
+2013-Oct-27 20:46:38.545 DIFF 0 / 0 / 1
+2013-Oct-27 20:46:38.545 Queueing "46kejocq8iv5l6385f41en8u22" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:38.545 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:38.545 Core BUSY
+2013-Oct-27 20:46:38.595 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:46:38.596 "examples/slideshow.html" looking for a delta from 3467604d to 116f083c
+2013-Oct-27 20:46:38.596 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:46:38.597 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:38.597 Adding dependency on "46kejocq8iv5l6385f41en8u22" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:38.698 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:38.698 "examples/slideshow.html" PUT 0 / 1124
+2013-Oct-27 20:46:38.699 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:38.699 Adding dependency on "46kejocq8iv5l6385f41en8u22" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:38.699 "examples/slideshow.html" PUT 1124 / 1124
+2013-Oct-27 20:46:40.308 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:46:40.308 Ending "46kejocq8iv5l6385f41en8u22" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:40.612 State 2 ms for 169 items
+2013-Oct-27 20:46:41.514 XMPP "1382892399837885" to "1382892400037301", current "1382892333439367"
+2013-Oct-27 20:46:41.587 XMPP "1382892333439367" to "1382892399837885", current "1382892333439367"
+2013-Oct-27 20:46:41.587 XMPP "1382892333439367" delayed for 1999 ms
+2013-Oct-27 20:46:43.587 INDEX "examples/slideshow.html", 2235, 116f083c, 1, "571c076b"
+2013-Oct-27 20:46:43.588 XMPP "1382892333439367" to "1382892399837885" OK
+2013-Oct-27 20:46:43.588 Dropping delta from 3467604d to 116f083c
+2013-Oct-27 20:46:43.588 INDEX "examples/slideshow.html", 2235, 116f083c, 1, "571c076b"
+2013-Oct-27 20:46:43.588 XMPP "1382892399837885" to "1382892400037301" OK
+2013-Oct-27 20:46:43.588 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:43.588 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:43.589 Core INDEX
+2013-Oct-27 20:46:43.890 DIFF prepare 0 / 1
+2013-Oct-27 20:46:43.894 DIFF 1 / 1 / 3
+2013-Oct-27 20:46:43.894 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:43.895 State 3 ms for 169 items
+2013-Oct-27 20:46:43.895 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:46:43.896 Stable index written
+2013-Oct-27 20:46:43.909 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:43.909 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:46:44.213 DIFF prepare 0 / 2
+2013-Oct-27 20:46:44.216 DIFF 1 / 0 / 2
+2013-Oct-27 20:46:44.216 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:44.216 Core IDLE
+2013-Oct-27 20:46:44.520 CHECK OK
+2013-Oct-27 20:46:44.520 State 2 ms for 169 items
+2013-Oct-27 20:46:49.422 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:46:49.422 "examples" directory / update
+2013-Oct-27 20:46:49.422 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:46:49.423 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:46:49.423 "examples" directory / update
+2013-Oct-27 20:46:49.423 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:46:49.424 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:46:49.424 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:46:49.424 Core INDEX
+2013-Oct-27 20:46:49.425 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:46:49.724 State 1 ms for 169 items
+2013-Oct-27 20:46:49.899 Quota PROPFIND
+2013-Oct-27 20:46:50.028 Quota PROPFIND OK 340691331 / 10396726909 / 10737418240 / 338288642
+2013-Oct-27 20:46:50.028 Trash PROPFIND
+2013-Oct-27 20:46:50.113 Trash PROPFIND OK / not empty
+2013-Oct-27 20:46:50.424 DIGEST 116f083c read OK
+2013-Oct-27 20:46:50.424 "examples/slideshow.html" creating delta
+2013-Oct-27 20:46:50.425 "examples/slideshow.html" digest 0 / 2234
+2013-Oct-27 20:46:50.425 "examples/slideshow.html" delta completed
+2013-Oct-27 20:46:50.425 "examples/slideshow.html" delta from 116f083c to c93c672d
+2013-Oct-27 20:46:50.425 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:50.426 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:46:50.626 DIGEST c93c672d add OK
+2013-Oct-27 20:46:50.727 DIFF prepare 0 / 1
+2013-Oct-27 20:46:50.727 State 1 ms for 169 items
+2013-Oct-27 20:46:50.729 DIFF 0 / 0 / 1
+2013-Oct-27 20:46:50.729 Queueing "rsaig1ftkf43tgcqtg9cpp3sg7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:50.729 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:50.730 Core BUSY
+2013-Oct-27 20:46:50.780 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:46:50.780 "examples/slideshow.html" looking for a delta from 116f083c to c93c672d
+2013-Oct-27 20:46:50.781 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:46:50.781 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:50.781 Adding dependency on "rsaig1ftkf43tgcqtg9cpp3sg7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:50.781 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:50.781 "examples/slideshow.html" PUT 0 / 1123
+2013-Oct-27 20:46:50.781 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:50.781 Adding dependency on "rsaig1ftkf43tgcqtg9cpp3sg7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:50.782 "examples/slideshow.html" PUT 1123 / 1123
+2013-Oct-27 20:46:52.537 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:46:52.537 Ending "rsaig1ftkf43tgcqtg9cpp3sg7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:46:52.840 State 2 ms for 169 items
+2013-Oct-27 20:46:53.508 XMPP "1382892411520559" to "1382892411715948", current "1382892400037301"
+2013-Oct-27 20:46:53.517 XMPP "1382892400037301" to "1382892411520559", current "1382892400037301"
+2013-Oct-27 20:46:53.517 XMPP "1382892400037301" delayed for 1999 ms
+2013-Oct-27 20:46:54.218 Remote index image "1382892400037301" written
+2013-Oct-27 20:46:55.517 INDEX "examples/slideshow.html", 2234, c93c672d, 1, "571c076b"
+2013-Oct-27 20:46:55.518 XMPP "1382892400037301" to "1382892411520559" OK
+2013-Oct-27 20:46:55.518 Dropping delta from 116f083c to c93c672d
+2013-Oct-27 20:46:55.518 INDEX "examples/slideshow.html", 2234, c93c672d, 1, "571c076b"
+2013-Oct-27 20:46:55.518 XMPP "1382892411520559" to "1382892411715948" OK
+2013-Oct-27 20:46:55.518 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:46:55.519 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:55.519 Core INDEX
+2013-Oct-27 20:46:55.821 DIFF prepare 0 / 1
+2013-Oct-27 20:46:55.822 State 2 ms for 169 items
+2013-Oct-27 20:46:55.823 DIFF 1 / 0 / 2
+2013-Oct-27 20:46:55.823 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:55.824 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:46:55.824 Stable index written
+2013-Oct-27 20:46:55.831 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:55.831 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:46:56.132 DIFF prepare 0 / 0
+2013-Oct-27 20:46:56.135 DIFF 1 / 0 / 2
+2013-Oct-27 20:46:56.135 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:46:56.135 Core IDLE
+2013-Oct-27 20:46:56.439 State 2 ms for 169 items
+2013-Oct-27 20:46:56.439 CHECK OK
+2013-Oct-27 20:47:00.833 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:00.833 "examples" directory / update
+2013-Oct-27 20:47:00.834 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:00.834 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:00.834 "examples" directory / update
+2013-Oct-27 20:47:00.834 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:47:00.835 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:00.835 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:00.835 Core INDEX
+2013-Oct-27 20:47:00.836 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:47:01.137 State 2 ms for 169 items
+2013-Oct-27 20:47:01.836 DIGEST c93c672d read OK
+2013-Oct-27 20:47:01.836 "examples/slideshow.html" creating delta
+2013-Oct-27 20:47:01.836 "examples/slideshow.html" digest 0 / 2234
+2013-Oct-27 20:47:01.836 "examples/slideshow.html" delta completed
+2013-Oct-27 20:47:01.837 "examples/slideshow.html" delta from c93c672d to d9c778e5
+2013-Oct-27 20:47:01.837 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:01.837 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:02.037 DIGEST d9c778e5 add OK
+2013-Oct-27 20:47:02.139 DIFF prepare 0 / 1
+2013-Oct-27 20:47:02.139 State 1 ms for 169 items
+2013-Oct-27 20:47:02.140 DIFF 0 / 0 / 1
+2013-Oct-27 20:47:02.140 Queueing "dr26doalsgsrpdit060qo45ar7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:02.140 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:02.140 Core BUSY
+2013-Oct-27 20:47:02.190 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:47:02.191 "examples/slideshow.html" looking for a delta from c93c672d to d9c778e5
+2013-Oct-27 20:47:02.192 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:47:02.192 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:02.192 Adding dependency on "dr26doalsgsrpdit060qo45ar7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:02.192 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:02.192 "examples/slideshow.html" PUT 0 / 1124
+2013-Oct-27 20:47:02.193 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:02.193 Adding dependency on "dr26doalsgsrpdit060qo45ar7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:02.193 "examples/slideshow.html" PUT 1124 / 1124
+2013-Oct-27 20:47:04.536 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:47:04.537 Ending "dr26doalsgsrpdit060qo45ar7" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:04.838 State 1 ms for 169 items
+2013-Oct-27 20:47:05.435 XMPP "1382892411715948" to "1382892423426299", current "1382892411715948"
+2013-Oct-27 20:47:05.435 XMPP "1382892411715948" delayed for 1999 ms
+2013-Oct-27 20:47:05.522 XMPP "1382892423426299" to "1382892423658453", current "1382892411715948"
+2013-Oct-27 20:47:06.136 Remote index image "1382892411715948" written
+2013-Oct-27 20:47:07.435 INDEX "examples/slideshow.html", 2234, d9c778e5, 1, "571c076b"
+2013-Oct-27 20:47:07.436 XMPP "1382892411715948" to "1382892423426299" OK
+2013-Oct-27 20:47:07.436 Dropping delta from c93c672d to d9c778e5
+2013-Oct-27 20:47:07.436 XMPP "1382892423426299" delayed for 86 ms
+2013-Oct-27 20:47:07.436 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:07.436 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:07.436 Core INDEX
+2013-Oct-27 20:47:07.523 INDEX "examples/slideshow.html", 2234, d9c778e5, 1, "571c076b"
+2013-Oct-27 20:47:07.523 XMPP "1382892423426299" to "1382892423658453" OK
+2013-Oct-27 20:47:07.737 DIFF prepare 0 / 0
+2013-Oct-27 20:47:07.738 DIFF 0 / 0 / 0
+2013-Oct-27 20:47:07.738 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:07.739 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:47:07.739 Stable index written
+2013-Oct-27 20:47:07.739 State 1 ms for 169 items
+2013-Oct-27 20:47:07.748 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:07.748 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:47:08.052 DIFF prepare 0 / 2
+2013-Oct-27 20:47:08.055 DIFF 1 / 1 / 3
+2013-Oct-27 20:47:08.055 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:08.057 Core IDLE
+2013-Oct-27 20:47:08.362 State 2 ms for 169 items
+2013-Oct-27 20:47:08.362 CHECK OK
+2013-Oct-27 20:47:14.537 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:47:18.060 Remote index image "1382892423658453" written
+2013-Oct-27 20:47:45.940 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:45.940 "examples" directory / update
+2013-Oct-27 20:47:45.940 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:45.941 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:45.942 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:45.942 Core INDEX
+2013-Oct-27 20:47:45.945 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:45.945 "examples" directory / update
+2013-Oct-27 20:47:45.946 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:45.947 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:46.242 State 1 ms for 169 items
+2013-Oct-27 20:47:46.942 DIGEST d9c778e5 read OK
+2013-Oct-27 20:47:46.942 "examples/slideshow.html" creating delta
+2013-Oct-27 20:47:46.942 "examples/slideshow.html" digest 0 / 2237
+2013-Oct-27 20:47:46.942 "examples/slideshow.html" delta completed
+2013-Oct-27 20:47:46.942 "examples/slideshow.html" delta from d9c778e5 to 4fec07f3
+2013-Oct-27 20:47:46.942 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:46.943 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:47.143 DIGEST 4fec07f3 add OK
+2013-Oct-27 20:47:47.244 DIFF prepare 0 / 1
+2013-Oct-27 20:47:47.244 State 1 ms for 169 items
+2013-Oct-27 20:47:47.246 DIFF 0 / 0 / 1
+2013-Oct-27 20:47:47.247 Queueing "sge5na2addsfnr8uv5dok10ag2" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:47.247 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:47.247 Core BUSY
+2013-Oct-27 20:47:47.297 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:47:47.298 "examples/slideshow.html" looking for a delta from d9c778e5 to 4fec07f3
+2013-Oct-27 20:47:47.299 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:47:47.299 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:47.299 Adding dependency on "sge5na2addsfnr8uv5dok10ag2" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:47.398 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:47.398 "examples/slideshow.html" PUT 0 / 1127
+2013-Oct-27 20:47:47.399 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:47.399 Adding dependency on "sge5na2addsfnr8uv5dok10ag2" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:47.399 "examples/slideshow.html" PUT 1127 / 1127
+2013-Oct-27 20:47:49.048 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:47:49.048 Ending "sge5na2addsfnr8uv5dok10ag2" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:49.350 State 1 ms for 169 items
+2013-Oct-27 20:47:49.933 XMPP "1382892423658453" to "1382892468314101", current "1382892423658453"
+2013-Oct-27 20:47:49.933 XMPP "1382892423658453" delayed for 1999 ms
+2013-Oct-27 20:47:49.977 XMPP "1382892468314101" to "1382892468673760", current "1382892423658453"
+2013-Oct-27 20:47:51.933 INDEX "examples/slideshow.html", 2237, 4fec07f3, 1, "571c076b"
+2013-Oct-27 20:47:51.934 XMPP "1382892423658453" to "1382892468314101" OK
+2013-Oct-27 20:47:51.934 Dropping delta from d9c778e5 to 4fec07f3
+2013-Oct-27 20:47:51.934 XMPP "1382892468314101" delayed for 44 ms
+2013-Oct-27 20:47:51.934 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:51.935 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:51.935 Core INDEX
+2013-Oct-27 20:47:51.979 INDEX "examples/slideshow.html", 2237, 4fec07f3, 1, "571c076b"
+2013-Oct-27 20:47:51.979 XMPP "1382892468314101" to "1382892468673760" OK
+2013-Oct-27 20:47:52.236 DIFF prepare 0 / 1
+2013-Oct-27 20:47:52.239 State 1 ms for 169 items
+2013-Oct-27 20:47:52.239 DIFF 1 / 0 / 2
+2013-Oct-27 20:47:52.239 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:52.239 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:47:52.240 Stable index written
+2013-Oct-27 20:47:52.250 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:52.250 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:47:52.553 DIFF prepare 0 / 1
+2013-Oct-27 20:47:52.554 DIFF 0 / 0 / 0
+2013-Oct-27 20:47:52.554 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:52.554 Core IDLE
+2013-Oct-27 20:47:52.856 State 1 ms for 169 items
+2013-Oct-27 20:47:52.856 CHECK OK
+2013-Oct-27 20:47:58.155 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:58.155 "examples" directory / update
+2013-Oct-27 20:47:58.155 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:58.155 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:47:58.156 "examples" directory / update
+2013-Oct-27 20:47:58.156 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:47:58.156 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:58.156 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:47:58.157 Core INDEX
+2013-Oct-27 20:47:58.158 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:47:58.458 State 2 ms for 169 items
+2013-Oct-27 20:47:59.049 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:47:59.156 DIGEST 4fec07f3 read OK
+2013-Oct-27 20:47:59.157 "examples/slideshow.html" creating delta
+2013-Oct-27 20:47:59.157 "examples/slideshow.html" digest 0 / 2238
+2013-Oct-27 20:47:59.157 "examples/slideshow.html" delta completed
+2013-Oct-27 20:47:59.157 "examples/slideshow.html" delta from 4fec07f3 to a077fe12
+2013-Oct-27 20:47:59.157 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:59.157 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:47:59.357 DIGEST a077fe12 add OK
+2013-Oct-27 20:47:59.460 DIFF prepare 0 / 2
+2013-Oct-27 20:47:59.461 State 3 ms for 169 items
+2013-Oct-27 20:47:59.462 DIFF 0 / 0 / 1
+2013-Oct-27 20:47:59.462 Queueing "0or30sfa3pl0f1ch6f8p5hhfb5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:59.462 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:47:59.462 Core BUSY
+2013-Oct-27 20:47:59.513 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:47:59.513 "examples/slideshow.html" looking for a delta from 4fec07f3 to a077fe12
+2013-Oct-27 20:47:59.514 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:47:59.514 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:59.514 Adding dependency on "0or30sfa3pl0f1ch6f8p5hhfb5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:59.613 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:59.613 "examples/slideshow.html" PUT 0 / 1126
+2013-Oct-27 20:47:59.614 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:47:59.614 Adding dependency on "0or30sfa3pl0f1ch6f8p5hhfb5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:47:59.614 "examples/slideshow.html" PUT 1126 / 1126
+2013-Oct-27 20:48:00.616 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:48:00.616 Ending "0or30sfa3pl0f1ch6f8p5hhfb5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:48:00.917 State 1 ms for 169 items
+2013-Oct-27 20:48:01.441 XMPP "1382892468673760" to "1382892480492476", current "1382892468673760"
+2013-Oct-27 20:48:01.441 XMPP "1382892468673760" delayed for 1999 ms
+2013-Oct-27 20:48:02.533 XMPP "1382892480492476" to "1382892480725874", current "1382892468673760"
+2013-Oct-27 20:48:02.555 Remote index image "1382892468673760" written
+2013-Oct-27 20:48:03.441 INDEX "examples/slideshow.html", 2238, a077fe12, 1, "571c076b"
+2013-Oct-27 20:48:03.442 XMPP "1382892468673760" to "1382892480492476" OK
+2013-Oct-27 20:48:03.442 Dropping delta from 4fec07f3 to a077fe12
+2013-Oct-27 20:48:03.442 XMPP "1382892480492476" delayed for 1091 ms
+2013-Oct-27 20:48:03.442 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:48:03.442 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:03.443 Core INDEX
+2013-Oct-27 20:48:03.745 DIFF prepare 0 / 2
+2013-Oct-27 20:48:03.747 DIFF 1 / 0 / 1
+2013-Oct-27 20:48:03.747 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:03.748 State 2 ms for 169 items
+2013-Oct-27 20:48:03.749 Stable index written
+2013-Oct-27 20:48:04.534 INDEX "examples/slideshow.html", 2238, a077fe12, 1, "571c076b"
+2013-Oct-27 20:48:04.534 XMPP "1382892480492476" to "1382892480725874" OK
+2013-Oct-27 20:48:04.534 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:04.836 DIFF prepare 0 / 1
+2013-Oct-27 20:48:04.837 DIFF 0 / 0 / 1
+2013-Oct-27 20:48:04.837 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:04.837 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:48:04.838 State 1 ms for 169 items
+2013-Oct-27 20:48:04.843 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:04.844 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:48:05.145 DIFF prepare 0 / 0
+2013-Oct-27 20:48:05.146 DIFF 0 / 0 / 1
+2013-Oct-27 20:48:05.146 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:48:05.147 Core IDLE
+2013-Oct-27 20:48:05.450 State 2 ms for 169 items
+2013-Oct-27 20:48:05.450 CHECK OK
+2013-Oct-27 20:48:10.616 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:48:15.148 Remote index image "1382892480725874" written
+2013-Oct-27 20:51:49.900 Quota PROPFIND
+2013-Oct-27 20:51:50.184 Quota PROPFIND OK 340691334 / 10396726906 / 10737418240 / 338288642
+2013-Oct-27 20:51:50.184 Trash PROPFIND
+2013-Oct-27 20:51:53.614 Trash PROPFIND OK / not empty
+2013-Oct-27 20:52:03.614 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:54:17.203 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:54:17.203 "examples" directory / update
+2013-Oct-27 20:54:17.203 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:17.203 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:54:17.204 "examples" directory / update
+2013-Oct-27 20:54:17.204 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:54:17.204 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:54:17.205 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:17.205 Core INDEX
+2013-Oct-27 20:54:17.205 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:54:17.506 State 2 ms for 169 items
+2013-Oct-27 20:54:18.205 DIGEST a077fe12 read OK
+2013-Oct-27 20:54:18.205 "examples/slideshow.html" creating delta
+2013-Oct-27 20:54:18.206 "examples/slideshow.html" digest 0 / 2239
+2013-Oct-27 20:54:18.206 "examples/slideshow.html" delta completed
+2013-Oct-27 20:54:18.206 "examples/slideshow.html" delta from a077fe12 to 0624c4f5
+2013-Oct-27 20:54:18.207 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:18.207 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:54:18.407 DIGEST 0624c4f5 add OK
+2013-Oct-27 20:54:18.508 DIFF prepare 0 / 0
+2013-Oct-27 20:54:18.508 State 1 ms for 169 items
+2013-Oct-27 20:54:18.511 DIFF 1 / 1 / 2
+2013-Oct-27 20:54:18.512 Queueing "vvsc2snb3alh17d2blsmhom0k5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:18.512 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:18.512 Core BUSY
+2013-Oct-27 20:54:18.563 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:54:18.563 "examples/slideshow.html" looking for a delta from a077fe12 to 0624c4f5
+2013-Oct-27 20:54:18.565 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:54:18.565 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:18.565 Adding dependency on "vvsc2snb3alh17d2blsmhom0k5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:18.663 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:18.663 "examples/slideshow.html" PUT 0 / 1127
+2013-Oct-27 20:54:18.663 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:18.664 Adding dependency on "vvsc2snb3alh17d2blsmhom0k5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:18.664 "examples/slideshow.html" PUT 1127 / 1127
+2013-Oct-27 20:54:20.317 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:54:20.317 Ending "vvsc2snb3alh17d2blsmhom0k5" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:20.406 XMPP "1382892480725874" to "1382892859510774", current "1382892480725874"
+2013-Oct-27 20:54:20.406 XMPP "1382892480725874" delayed for 1999 ms
+2013-Oct-27 20:54:20.621 State 2 ms for 169 items
+2013-Oct-27 20:54:22.156 XMPP "1382892859510774" to "1382892859794763", current "1382892480725874"
+2013-Oct-27 20:54:22.406 INDEX "examples/slideshow.html", 2239, 0624c4f5, 1, "571c076b"
+2013-Oct-27 20:54:22.406 XMPP "1382892480725874" to "1382892859510774" OK
+2013-Oct-27 20:54:22.406 Dropping delta from a077fe12 to 0624c4f5
+2013-Oct-27 20:54:22.406 XMPP "1382892859510774" delayed for 1749 ms
+2013-Oct-27 20:54:22.407 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:22.407 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:22.407 Core INDEX
+2013-Oct-27 20:54:22.708 DIFF prepare 0 / 0
+2013-Oct-27 20:54:22.709 DIFF 0 / 0 / 0
+2013-Oct-27 20:54:22.709 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:22.709 State 1 ms for 169 items
+2013-Oct-27 20:54:22.709 Stable index written
+2013-Oct-27 20:54:24.157 INDEX "examples/slideshow.html", 2239, 0624c4f5, 1, "571c076b"
+2013-Oct-27 20:54:24.157 XMPP "1382892859510774" to "1382892859794763" OK
+2013-Oct-27 20:54:24.157 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:24.459 DIFF prepare 0 / 2
+2013-Oct-27 20:54:24.460 State 2 ms for 169 items
+2013-Oct-27 20:54:24.462 DIFF 1 / 0 / 2
+2013-Oct-27 20:54:24.462 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:24.463 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:54:24.477 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:24.477 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:54:24.778 DIFF prepare 0 / 1
+2013-Oct-27 20:54:24.780 DIFF 1 / 0 / 1
+2013-Oct-27 20:54:24.780 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:24.781 Core IDLE
+2013-Oct-27 20:54:25.083 State 1 ms for 169 items
+2013-Oct-27 20:54:25.083 CHECK OK
+2013-Oct-27 20:54:30.318 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:54:31.031 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:54:31.032 "examples" directory / update
+2013-Oct-27 20:54:31.032 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:31.033 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:54:31.033 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:31.033 Core INDEX
+2013-Oct-27 20:54:31.035 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:54:31.035 "examples" directory / update
+2013-Oct-27 20:54:31.035 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:31.036 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:54:31.333 State 1 ms for 169 items
+2013-Oct-27 20:54:32.034 DIGEST 0624c4f5 read OK
+2013-Oct-27 20:54:32.034 "examples/slideshow.html" creating delta
+2013-Oct-27 20:54:32.038 "examples/slideshow.html" digest 0 / 2239
+2013-Oct-27 20:54:32.038 "examples/slideshow.html" delta completed
+2013-Oct-27 20:54:32.039 "examples/slideshow.html" delta from 0624c4f5 to 4c0f64f4
+2013-Oct-27 20:54:32.039 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:32.039 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:54:32.239 DIGEST 4c0f64f4 add OK
+2013-Oct-27 20:54:32.342 DIFF prepare 0 / 1
+2013-Oct-27 20:54:32.342 State 2 ms for 169 items
+2013-Oct-27 20:54:32.345 DIFF 1 / 1 / 2
+2013-Oct-27 20:54:32.345 Queueing "pme6n4mih1atlq46qqg0ra7jn1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:32.345 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:32.345 Core BUSY
+2013-Oct-27 20:54:32.396 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:54:32.396 "examples/slideshow.html" looking for a delta from 0624c4f5 to 4c0f64f4
+2013-Oct-27 20:54:32.397 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:54:32.397 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:32.397 Adding dependency on "pme6n4mih1atlq46qqg0ra7jn1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:33.704 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:33.704 "examples/slideshow.html" PUT 0 / 1126
+2013-Oct-27 20:54:33.704 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:33.704 Adding dependency on "pme6n4mih1atlq46qqg0ra7jn1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:33.705 "examples/slideshow.html" PUT 1126 / 1126
+2013-Oct-27 20:54:34.783 Remote index image "1382892859794763" written
+2013-Oct-27 20:54:35.540 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:54:35.540 Ending "pme6n4mih1atlq46qqg0ra7jn1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:54:35.541 XMPP "1382892859794763" to "1382892874371072", current "1382892859794763"
+2013-Oct-27 20:54:35.541 XMPP "1382892859794763" delayed for 1999 ms
+2013-Oct-27 20:54:35.841 State 1 ms for 169 items
+2013-Oct-27 20:54:36.508 XMPP "1382892874371072" to "1382892874746735", current "1382892859794763"
+2013-Oct-27 20:54:37.541 INDEX "examples/slideshow.html", 2239, 4c0f64f4, 1, "571c076b"
+2013-Oct-27 20:54:37.542 XMPP "1382892859794763" to "1382892874371072" OK
+2013-Oct-27 20:54:37.542 Dropping delta from 0624c4f5 to 4c0f64f4
+2013-Oct-27 20:54:37.542 XMPP "1382892874371072" delayed for 966 ms
+2013-Oct-27 20:54:37.542 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:54:37.543 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:37.543 Core INDEX
+2013-Oct-27 20:54:37.844 DIFF prepare 0 / 1
+2013-Oct-27 20:54:37.846 DIFF 0 / 0 / 1
+2013-Oct-27 20:54:37.846 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:37.846 State 2 ms for 169 items
+2013-Oct-27 20:54:37.847 Stable index written
+2013-Oct-27 20:54:38.509 INDEX "examples/slideshow.html", 2239, 4c0f64f4, 1, "571c076b"
+2013-Oct-27 20:54:38.509 XMPP "1382892874371072" to "1382892874746735" OK
+2013-Oct-27 20:54:38.509 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:38.810 DIFF prepare 0 / 0
+2013-Oct-27 20:54:38.813 DIFF 1 / 1 / 2
+2013-Oct-27 20:54:38.814 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:38.814 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:54:38.814 State 3 ms for 169 items
+2013-Oct-27 20:54:38.825 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:38.825 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:54:39.128 DIFF prepare 0 / 1
+2013-Oct-27 20:54:39.131 DIFF 1 / 1 / 3
+2013-Oct-27 20:54:39.131 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:54:39.131 Core IDLE
+2013-Oct-27 20:54:39.435 State 2 ms for 169 items
+2013-Oct-27 20:54:39.436 CHECK OK
+2013-Oct-27 20:54:45.541 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:54:49.133 Remote index image "1382892874746735" written
+2013-Oct-27 20:55:49.825 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:55:49.826 "examples" directory / update
+2013-Oct-27 20:55:49.826 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:55:49.826 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:55:49.826 "examples" directory / update
+2013-Oct-27 20:55:49.827 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:55:49.827 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:55:49.827 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:55:49.828 Core INDEX
+2013-Oct-27 20:55:49.828 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:55:50.129 State 2 ms for 169 items
+2013-Oct-27 20:55:50.828 DIGEST 4c0f64f4 read OK
+2013-Oct-27 20:55:50.828 "examples/slideshow.html" creating delta
+2013-Oct-27 20:55:50.828 "examples/slideshow.html" digest 0 / 2273
+2013-Oct-27 20:55:50.828 "examples/slideshow.html" delta completed
+2013-Oct-27 20:55:50.828 "examples/slideshow.html" delta from 4c0f64f4 to c9507bec
+2013-Oct-27 20:55:50.829 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:50.829 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:55:51.029 DIGEST c9507bec add OK
+2013-Oct-27 20:55:51.132 DIFF prepare 0 / 1
+2013-Oct-27 20:55:51.132 State 2 ms for 169 items
+2013-Oct-27 20:55:51.134 DIFF 1 / 0 / 2
+2013-Oct-27 20:55:51.135 Queueing "4909fie5s0091k65401vtqju71" <upload of "examples/slideshow.html">
+2013-Oct-27 20:55:51.135 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:51.135 Core BUSY
+2013-Oct-27 20:55:51.185 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:55:51.186 "examples/slideshow.html" looking for a delta from 4c0f64f4 to c9507bec
+2013-Oct-27 20:55:51.187 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:55:51.187 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:55:51.187 Adding dependency on "4909fie5s0091k65401vtqju71" <upload of "examples/slideshow.html">
+2013-Oct-27 20:55:51.291 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:55:51.291 "examples/slideshow.html" PUT 0 / 1160
+2013-Oct-27 20:55:51.292 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:55:51.292 Adding dependency on "4909fie5s0091k65401vtqju71" <upload of "examples/slideshow.html">
+2013-Oct-27 20:55:51.293 "examples/slideshow.html" PUT 1160 / 1160
+2013-Oct-27 20:55:54.539 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:55:54.539 Ending "4909fie5s0091k65401vtqju71" <upload of "examples/slideshow.html">
+2013-Oct-27 20:55:54.642 XMPP "1382892874746735" to "1382892953508135", current "1382892874746735"
+2013-Oct-27 20:55:54.643 XMPP "1382892874746735" delayed for 1999 ms
+2013-Oct-27 20:55:54.843 State 2 ms for 169 items
+2013-Oct-27 20:55:54.899 XMPP "1382892953508135" to "1382892953764740", current "1382892874746735"
+2013-Oct-27 20:55:56.643 INDEX "examples/slideshow.html", 2273, c9507bec, 1, "571c076b"
+2013-Oct-27 20:55:56.644 XMPP "1382892874746735" to "1382892953508135" OK
+2013-Oct-27 20:55:56.644 Dropping delta from 4c0f64f4 to c9507bec
+2013-Oct-27 20:55:56.644 XMPP "1382892953508135" delayed for 256 ms
+2013-Oct-27 20:55:56.644 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:55:56.644 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:56.644 Core INDEX
+2013-Oct-27 20:55:56.900 INDEX "examples/slideshow.html", 2273, c9507bec, 1, "571c076b"
+2013-Oct-27 20:55:56.900 XMPP "1382892953508135" to "1382892953764740" OK
+2013-Oct-27 20:55:56.947 DIFF prepare 0 / 1
+2013-Oct-27 20:55:56.947 State 2 ms for 169 items
+2013-Oct-27 20:55:56.948 DIFF 1 / 0 / 1
+2013-Oct-27 20:55:56.948 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:56.949 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:55:56.950 Stable index written
+2013-Oct-27 20:55:56.957 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:56.957 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:55:57.259 DIFF prepare 0 / 1
+2013-Oct-27 20:55:57.262 DIFF 1 / 1 / 2
+2013-Oct-27 20:55:57.262 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:55:57.263 Core IDLE
+2013-Oct-27 20:55:57.565 State 1 ms for 169 items
+2013-Oct-27 20:55:57.565 CHECK OK
+2013-Oct-27 20:56:00.934 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:00.934 "examples" directory / update
+2013-Oct-27 20:56:00.934 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:00.934 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:00.934 "examples" directory / update
+2013-Oct-27 20:56:00.935 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:56:00.935 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:00.935 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:00.936 Core INDEX
+2013-Oct-27 20:56:00.936 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:56:01.237 State 2 ms for 169 items
+2013-Oct-27 20:56:01.935 DIGEST c9507bec read OK
+2013-Oct-27 20:56:01.936 "examples/slideshow.html" creating delta
+2013-Oct-27 20:56:01.936 "examples/slideshow.html" digest 0 / 2275
+2013-Oct-27 20:56:01.936 "examples/slideshow.html" delta completed
+2013-Oct-27 20:56:01.936 "examples/slideshow.html" delta from c9507bec to cb4fa91f
+2013-Oct-27 20:56:01.937 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:01.937 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:02.137 DIGEST cb4fa91f add OK
+2013-Oct-27 20:56:02.240 State 2 ms for 169 items
+2013-Oct-27 20:56:02.240 DIFF prepare 0 / 1
+2013-Oct-27 20:56:02.242 DIFF 1 / 0 / 2
+2013-Oct-27 20:56:02.243 Queueing "qktaqr7da8ej8dkns26uj7ca05" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:02.243 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:02.243 Core BUSY
+2013-Oct-27 20:56:02.293 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:56:02.294 "examples/slideshow.html" looking for a delta from c9507bec to cb4fa91f
+2013-Oct-27 20:56:02.295 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:56:02.295 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:02.295 Adding dependency on "qktaqr7da8ej8dkns26uj7ca05" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:02.295 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:02.295 "examples/slideshow.html" PUT 0 / 1145
+2013-Oct-27 20:56:02.295 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:02.295 Adding dependency on "qktaqr7da8ej8dkns26uj7ca05" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:02.296 "examples/slideshow.html" PUT 1145 / 1145
+2013-Oct-27 20:56:02.984 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:56:02.985 Ending "qktaqr7da8ej8dkns26uj7ca05" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:03.287 State 1 ms for 169 items
+2013-Oct-27 20:56:04.264 XMPP "1382892953764740" to "1382892962926927", current "1382892953764740"
+2013-Oct-27 20:56:04.264 XMPP "1382892953764740" delayed for 1999 ms
+2013-Oct-27 20:56:05.533 XMPP "1382892962926927" to "1382892963081275", current "1382892953764740"
+2013-Oct-27 20:56:06.265 INDEX "examples/slideshow.html", 2275, cb4fa91f, 1, "571c076b"
+2013-Oct-27 20:56:06.265 XMPP "1382892953764740" to "1382892962926927" OK
+2013-Oct-27 20:56:06.265 Dropping delta from c9507bec to cb4fa91f
+2013-Oct-27 20:56:06.265 XMPP "1382892962926927" delayed for 1268 ms
+2013-Oct-27 20:56:06.266 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:06.266 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:06.266 Core INDEX
+2013-Oct-27 20:56:06.568 DIFF prepare 0 / 1
+2013-Oct-27 20:56:06.568 State 1 ms for 169 items
+2013-Oct-27 20:56:06.569 DIFF 0 / 0 / 1
+2013-Oct-27 20:56:06.569 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:06.570 Stable index written
+2013-Oct-27 20:56:07.265 Remote index image "1382892953764740" written
+2013-Oct-27 20:56:07.534 INDEX "examples/slideshow.html", 2275, cb4fa91f, 1, "571c076b"
+2013-Oct-27 20:56:07.534 XMPP "1382892962926927" to "1382892963081275" OK
+2013-Oct-27 20:56:07.534 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:07.837 DIFF prepare 0 / 1
+2013-Oct-27 20:56:07.838 State 3 ms for 169 items
+2013-Oct-27 20:56:07.840 DIFF 2 / 0 / 2
+2013-Oct-27 20:56:07.840 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:07.840 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:07.853 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:07.853 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:08.155 DIFF prepare 0 / 1
+2013-Oct-27 20:56:08.158 DIFF 1 / 0 / 2
+2013-Oct-27 20:56:08.158 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:08.158 Core IDLE
+2013-Oct-27 20:56:08.462 State 2 ms for 169 items
+2013-Oct-27 20:56:08.462 CHECK OK
+2013-Oct-27 20:56:09.698 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:09.699 "examples" directory / update
+2013-Oct-27 20:56:09.699 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:09.700 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:09.700 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:09.700 Core INDEX
+2013-Oct-27 20:56:09.702 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:09.702 "examples" directory / update
+2013-Oct-27 20:56:09.702 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:09.704 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:10.002 State 3 ms for 169 items
+2013-Oct-27 20:56:10.700 DIGEST cb4fa91f read OK
+2013-Oct-27 20:56:10.700 "examples/slideshow.html" creating delta
+2013-Oct-27 20:56:10.701 "examples/slideshow.html" digest 0 / 2238
+2013-Oct-27 20:56:10.701 "examples/slideshow.html" delta completed
+2013-Oct-27 20:56:10.701 "examples/slideshow.html" delta from cb4fa91f to a077fe12
+2013-Oct-27 20:56:10.701 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:10.701 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:10.901 DIGEST a077fe12 add OK
+2013-Oct-27 20:56:11.003 State 1 ms for 169 items
+2013-Oct-27 20:56:11.003 DIFF prepare 0 / 0
+2013-Oct-27 20:56:11.005 DIFF 1 / 0 / 2
+2013-Oct-27 20:56:11.006 Queueing "d68k79ns5jvlug76tprl88a094" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:11.006 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:11.006 Core BUSY
+2013-Oct-27 20:56:11.056 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:56:11.057 "examples/slideshow.html" looking for a delta from cb4fa91f to a077fe12
+2013-Oct-27 20:56:11.058 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:56:11.058 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:11.058 Adding dependency on "d68k79ns5jvlug76tprl88a094" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:11.058 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:11.059 "examples/slideshow.html" PUT 0 / 1107
+2013-Oct-27 20:56:11.059 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:11.059 Adding dependency on "d68k79ns5jvlug76tprl88a094" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:11.059 "examples/slideshow.html" PUT 1107 / 1107
+2013-Oct-27 20:56:13.533 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:56:13.534 Ending "d68k79ns5jvlug76tprl88a094" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:13.836 State 1 ms for 169 items
+2013-Oct-27 20:56:18.160 Remote index image "1382892963081275" written
+2013-Oct-27 20:56:23.534 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:56:28.534 "examples/slideshow.html" pending index
+2013-Oct-27 20:56:28.534 Queueing "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:28.535 Adding dependency on "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:28.535 Index GET for version "1382892963081275"
+2013-Oct-27 20:56:28.535 Core INDEX
+2013-Oct-27 20:56:28.700 Index GET / Content-Length: 140
+2013-Oct-27 20:56:28.746 INDEX "examples/slideshow.html", 2238, a077fe12, 1, "1dae6564"
+2013-Oct-27 20:56:28.747 Index version "1382892971921349" received
+2013-Oct-27 20:56:28.748 Dropping delta from cb4fa91f to a077fe12
+2013-Oct-27 20:56:28.749 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:28.749 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:28.749 Ending "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:28.750 Remote index image "1382892971921349" written
+2013-Oct-27 20:56:29.050 DIFF prepare 0 / 0
+2013-Oct-27 20:56:29.051 DIFF 0 / 0 / 0
+2013-Oct-27 20:56:29.051 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:29.051 State 1 ms for 169 items
+2013-Oct-27 20:56:29.051 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:29.052 Stable index written
+2013-Oct-27 20:56:29.069 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:29.069 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:29.371 DIFF prepare 0 / 1
+2013-Oct-27 20:56:29.373 DIFF 0 / 0 / 0
+2013-Oct-27 20:56:29.373 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:29.373 Core IDLE
+2013-Oct-27 20:56:29.676 CHECK OK
+2013-Oct-27 20:56:29.676 State 2 ms for 169 items
+2013-Oct-27 20:56:32.218 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:32.219 "examples" directory / update
+2013-Oct-27 20:56:32.219 Queueing "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:32.219 core_impl::on_monitor_modify("/home/m0sk1t/Documents/MyWork/Dropbox/HTML5/me", "examples/slideshow.html")
+2013-Oct-27 20:56:32.219 "examples" directory / update
+2013-Oct-27 20:56:32.220 Queueing "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:56:32.220 Queueing "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:32.220 Ending "kpevns7i7fenekpcfk4itivcg1" <local directory listing of "examples">
+2013-Oct-27 20:56:32.220 Core INDEX
+2013-Oct-27 20:56:32.221 Ending "p8gseeb0egbtd5tqbl0hkj7pe7" <local directory listing of "examples">
+2013-Oct-27 20:56:32.522 State 2 ms for 169 items
+2013-Oct-27 20:56:33.221 DIGEST a077fe12 read OK
+2013-Oct-27 20:56:33.221 "examples/slideshow.html" creating delta
+2013-Oct-27 20:56:33.221 "examples/slideshow.html" digest 0 / 2237
+2013-Oct-27 20:56:33.222 "examples/slideshow.html" delta completed
+2013-Oct-27 20:56:33.222 "examples/slideshow.html" delta from a077fe12 to 4fec07f3
+2013-Oct-27 20:56:33.222 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:33.223 Ending "7buug3vrqm2rlafj3vh2nbfpa4" <digest creation for "examples/slideshow.html">
+2013-Oct-27 20:56:33.423 DIGEST 4fec07f3 add OK
+2013-Oct-27 20:56:33.526 DIFF prepare 0 / 2
+2013-Oct-27 20:56:33.526 State 3 ms for 169 items
+2013-Oct-27 20:56:33.527 DIFF 0 / 0 / 0
+2013-Oct-27 20:56:33.528 Queueing "9m8tmrptbp67u3n44od2v7r7r1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:33.528 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:33.528 Core BUSY
+2013-Oct-27 20:56:33.578 "examples/slideshow.html" mime-type set to ""
+2013-Oct-27 20:56:33.579 "examples/slideshow.html" looking for a delta from a077fe12 to 4fec07f3
+2013-Oct-27 20:56:33.580 "examples/slideshow.html" PUT delta
+2013-Oct-27 20:56:33.580 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:33.580 Adding dependency on "9m8tmrptbp67u3n44od2v7r7r1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:33.580 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:33.580 "examples/slideshow.html" PUT 0 / 1125
+2013-Oct-27 20:56:33.580 Queueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:33.581 Adding dependency on "9m8tmrptbp67u3n44od2v7r7r1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:33.581 "examples/slideshow.html" PUT 1125 / 1125
+2013-Oct-27 20:56:35.537 "examples/slideshow.html" PUT OK
+2013-Oct-27 20:56:35.538 Ending "9m8tmrptbp67u3n44od2v7r7r1" <upload of "examples/slideshow.html">
+2013-Oct-27 20:56:35.842 State 3 ms for 169 items
+2013-Oct-27 20:56:45.538 Releasing request to https://webdav.yandex.ru:443
+2013-Oct-27 20:56:49.900 Quota PROPFIND
+2013-Oct-27 20:56:50.171 Quota PROPFIND OK 340691333 / 10396726907 / 10737418240 / 338288642
+2013-Oct-27 20:56:50.171 Trash PROPFIND
+2013-Oct-27 20:56:50.258 Trash PROPFIND OK / not empty
+2013-Oct-27 20:56:50.538 "examples/slideshow.html" pending index
+2013-Oct-27 20:56:50.538 Queueing "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:50.538 Adding dependency on "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:50.538 Index GET for version "1382892971921349"
+2013-Oct-27 20:56:50.539 Core INDEX
+2013-Oct-27 20:56:50.585 Index GET / Content-Length: 140
+2013-Oct-27 20:56:50.595 INDEX "examples/slideshow.html", 2237, 4fec07f3, 1, "e859e76e"
+2013-Oct-27 20:56:50.595 Index version "1382892994463647" received
+2013-Oct-27 20:56:50.596 Dropping delta from a077fe12 to 4fec07f3
+2013-Oct-27 20:56:50.596 Dequeueing "atviv7fhisugr3r4cdheb5n316" <pending "examples/slideshow.html">
+2013-Oct-27 20:56:50.596 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:50.596 Ending "4qeo9bhsgra319shrd0j65a4q1" <index>
+2013-Oct-27 20:56:50.598 Remote index image "1382892994463647" written
+2013-Oct-27 20:56:50.898 DIFF prepare 0 / 0
+2013-Oct-27 20:56:50.898 State 1 ms for 169 items
+2013-Oct-27 20:56:50.899 DIFF 0 / 0 / 1
+2013-Oct-27 20:56:50.899 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:50.900 Queueing "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:50.900 Stable index written
+2013-Oct-27 20:56:50.907 Queueing "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:50.907 Ending "5he0564o7hsmhpj2pi0go08ol3" <local directory listing of "">
+2013-Oct-27 20:56:51.208 DIFF prepare 0 / 0
+2013-Oct-27 20:56:51.210 DIFF 0 / 0 / 1
+2013-Oct-27 20:56:51.210 Ending "pe6vj628p814b45ibqmo4nicp7" <diff>
+2013-Oct-27 20:56:51.210 Core IDLE
+2013-Oct-27 20:56:51.512 State 1 ms for 169 items
+2013-Oct-27 20:56:51.512 CHECK OK
+2013-Oct-27 20:57:00.596 Releasing request to https://webdav.yandex.ru:443

@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #333;
+}
+
+header {
+	height: 40%;
+	color: #ABE;
+	font-family: Poiret One;
+	font-size: 7em;
+}
+
+section {
+	color: #ABC;
+	font-family: Comfortaa;
+	font-size: 1.1em;
+}
+
+article {
+	color: #ABC;
+	font-family: Comfortaa;
+	font-size: 1.1em;
+}
+
+section header {
+	color: #ABC;
+	font-family: Comfortaa;
+	font-size: 1.5em;
+}
+
+article header {
+	color: #ABC;
+	font-family: Comfortaa;
+	font-size: 1.1em;
+}
+
+i {
+	font-size: 2.3em;
+}
+
+#main {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	font-family: Comfortaa;
+	font-size: 1.1em;
+}
+
+#content {
+	padding-top: 3%;
+	font-family: Comfortaa;
+}
+
+#homebutton {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 1%;
+	width: 19%;
+	color: #333;
+	background: #8fc800;
+	font-family: Lobster;
+	font-size: 1.5em;
+}
+
+#downloadbutton {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 1%;
+	width: 19%;
+	color: #333;
+	background: #4096ee;
+	font-family: Lobster;
+	font-size: 1.5em;
+}
+
+#manualbutton {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 1%;
+	width: 19%;
+	color: #333;
+	background: #627d4d;
+	font-family: Lobster;
+	font-size: 1.5em;
+}
+
+#examplesbutton {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 1%;
+	width: 19%;
+	color: #333;
+	background: #ABED41;
+	font-family: Lobster;
+	font-size: 1.5em;
+}
+
+#donatebutton {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 1%;
+	width: 19%;
+	color: #333;
+	background: #ff3019;
+	font-family: Lobster;
+	font-size: 1.5em;
+}
+
+#layers {
+	margin-top: 3%;
+	width: 100%;
+	height: 100%;
+	font-family: Lobster;
+	font-size: 1.3em;
+}
+
+#home {
+	color: #EEE;
+}
+
+#download {
+	color: #EEE;
+}
+
+#manual {
+	color: #EEE;	
+}
+
+#examples {
+	color: #EEE;
+}
+
+#donate {
+	color: #EEE;
+}

@@ -1,17 +1,26 @@
 /**
  * @author m0sk1t
  */
+
+(function(window){
+	var btHome = me.utils.find('#homebutton')[0],
+		lHome = me.utils.find('#home')[0];
+	btHome.click(function (event) {
+		lHome.style.display = 'none';
+	});
+})(window);
+
 function initGame() {
 	var point = me.primitive.point, vect = me.primitive.vector, rect = me.primitive.rectangle, circ = me.primitive.circle;
 	var area = me.utils.find(["#area"]);
-	me.core.init(["#gameArea"],area.clientWidth, area.clientHeight);
+	me.core.init(["#gameArea"],640, 480);
 	me.input.setKeys();
 	var pressed = {"w":false,"s":false};
 	var startTime = new Date, currentTime = new Date, fps = 1;
 	var	gameCanvas = me.core.canvas["#gameArea"], gameContext = me.core.layers["#gameArea"];
 	var	canvasWidth = gameCanvas.width, canvasHeight = gameCanvas.height;
-	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 2, shifty = coordinate = 1,
-		ballRadius = 30, ballSpeedx = ballSpeedy = 5;
+	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 100, shifty = coordinate = 1,
+		ballRadius = 30, ballSpeedx = ballSpeedy = 4;
 	var	Player = new rect(new point(0,0), new point(20,platformLength),"#077","fill"),
 		Enemy = new rect(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
 		Ball = new circ(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
@@ -77,10 +86,7 @@ function initGame() {
 		if(playerPos.y < 0||playerPos.y+playerSize.y > canvasHeight) { moveToCanvas(); }
 		AIFunc();
 		ballFunc();
-		playerOneTxT.draw(gameContext,["40","bold","Arial"],PlayerOneScore,PlayerOneScoreCoord,"#66CD00","#66CD00");
-		delimeterTxT.draw(gameContext,["40","bold","Arial"],":",DelimeterCoord,"#66CD00","#66CD00");
-		playerTwoTxT.draw(gameContext,["40","bold","Arial"],PlayerTwoScore,PlayerTwoScoreCoord,"#66CD00","#66CD00");
-		shifty = Math.floor((currentTime-startTime) * platformSpeed);
+		shifty = Math.floor(platformSpeed/(currentTime-startTime));
 		if (pressed["s"]) {
 			Player.setCoord(new point(0,Player.getCoord().y+shifty));
 		}

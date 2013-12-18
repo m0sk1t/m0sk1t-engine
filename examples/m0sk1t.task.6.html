@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset='utf-8'>
@@ -13,7 +14,7 @@
 	</body>
 	<script>
 		function init() {
-			me.core.init(["#main"]);
+			me.core.init(["#main"], 600, 480);
 			var h = Math.floor(me.core.canvas['#main'].height/2),
 				w = me.core.canvas['#main'].width;
 			me.assets.load('img/',['kuz','naf', 'step'],'png');
@@ -28,11 +29,10 @@
 					x, y;
 				x = tmp.x;
 				y = tmp.y;
-				y += Math.floor((Math.pow(x+2,2)*Math.sin(3*x))/20);
-				x++;
+				y += Math.floor((Math.sin(3*x)));
+				x +=5 ;
 				kuz.setPos({"x": x, "y": y});
-				if (x % 50 === 0) {
-					step.setPos({"x": x, "y": y});
+				if (x % 10 === 0) {
 					step.setPos({"x": x, "y": y});
 				}
 			};
@@ -51,12 +51,13 @@
 				if (kuz.getPos().x <= w) {
 					updateKuz();
 					kuz.draw(me.core.layers["#main"]);
-					step.draw(me.core.layers["#main"]);
+					step.draw(me.core.layers["#main"], false);
 				} else {
 					updateNaf();
 					naf.draw(me.core.layers["#main"]);
 				}
-				rAF(loop);
+				//rAF(loop);
+				setTimeout(loop, 100);
 			};
 		}
 	</script>

@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/whhg.css" />
 		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Comfortaa:400,700,300&subset=latin,latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="me.0.0.1.minified.js"></script>
+		<title>Welcome to m0sk1t::engine official site. Easiest way to start game programming!</title>
 	</head>
-	<body onload="initGame();">
+	<body>
 		<div id="main">
-			<div id="header">m0sk1t::engine</div>
+			<header>m0sk1t::engine</header>
 			<div id="content">
-				<div id="homebutton">Home</div>
-				<div id="downloadbutton">Download</div>
-				<div id="docsbutton">Documentation</div>
-				<div id="examplesbutton">Examples</div>
-				<div id="donatebutton">Donate</div>
-				<div id="area">
-					<canvas id="gameArea"></canvas>
+				<nav>
+					<div id="homebutton"><i class="icon-house"> </i><span>About</span></div>
+					<div id="downloadbutton"><i class="icon-circledownload"> </i><span>Download</span></div>
+					<div id="manualbutton"><i class="icon-rawaccesslogs"> </i><span>Manual</span></div>
+					<div id="examplesbutton"><i class="icon-script"> </i><span>Examples</span></div>
+					<div id="donatebutton"><i class="icon-creditcard"> </i><span>Donate</span></div>
+				</nav>
+				<div id="layers">
+					<div id="home">
+						<section>
+							<header>About us</header>
+							<article>
+								<header>Hello! Glad to see you on this site!</header>
+								<p>Here you can learn how to easy start programming games</p>
+								<p>Also you can create simple multimedia applications <br /> such as slideshow, using HTML5 Canvas technology</p>
+								<aside>click to download source code</aside>
+								<footer>Want to help me to improve the engine?</footer>
+							</article>
+						</section>
+					</div>
+					<div id="download">download</div>
+					<div id="manual">manual</div>
+					<div id="examples">
+						<div id="area" width="640px" height="480px" onclick="initGame();">
+							<canvas id="gameArea" width="640px" height="480px">There is no spoon!</canvas>
+						</div>
+					</div>
+					<div id="donate">donate</div>
 				</div>
 			</div>
 		</div>

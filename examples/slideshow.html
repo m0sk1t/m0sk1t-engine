@@ -40,12 +40,15 @@
 						animate = true;
 						index++;
 						index < pic.length?index = index: index = 0;
-						pic[index].setPos({"x": 800,"y":0});
+						pic[index].setPos({"x": -800,"y":0});
 					}
 				};
 				function update (direction) {
 					var x = pic[index].getPos().x;
-					x < 0?animate = false:pic[index].setPos({"x": x - Math.floor(x/2),"y":0});
+					switch (dir) {
+						case "left":x < 0?animate = false:pic[index].setPos({"x": x - Math.floor(x/2),"y":0}); break;
+						case "right":x > 0?animate = false:pic[index].setPos({"x": x + Math.floor(Math.abs(x/2)),"y":0}); break;
+					}
 				};
 				window.addEventListener('click',flipImage);
 				(function loop () {

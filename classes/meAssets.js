@@ -60,9 +60,12 @@
 		this.getPos = function (coordPoint) {
 			return {x: this.destArea[0], y: this.destArea[1]};
 		}
-		this.draw = function (context) {
-			context.clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
-			context.clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
+		this.draw = function (context, clear) {
+			clear = (clear == undefined)?true:clear;
+			if (clear) {
+				context.clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
+				context.clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
+			}
 			context.drawImage(me.assets.get(image), this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 		};
 	}

@@ -1,6 +1,6 @@
-;(function () {
+;(function (me) {
 	// simple crossbrowser id/class/tagname selector
-	me.utils.find = function (attr) { 
+	me.utils.find = function (attr) {
 		var obj = document.querySelectorAll(attr);
 		if (obj.length === 0) {
 			throw "Element(s) not found!";
@@ -8,7 +8,7 @@
 			return obj;
 		}
 	};
-	
+
 	// logging into <div> element with ID equals meLog
 	me.utils.log = function (messageText, messageType) {
 		var logDiv = me.utils.$(['#meLog']).item(0) || false;
@@ -28,7 +28,7 @@
 			}
 		}
 	};
-	
+
 	// crossbrowser shorthand for requestAnimationFrame
 	(function () {
 		window.rAF = me.utils.rAF =
@@ -36,11 +36,11 @@
 			window.mozRequestAnimationFrame		||
 			window.oRequestAnimationFrame		||
 			window.msRequestAnimationFrame		||
-			function (callback, element) {
+			function (callback) {
 				window.setTimeout(callback, 1000 / 60);
 			};
 	})();
-	
+
 	// crossbrowser shorthand for toggleFullScreen
 	me.utils.tFS = function () {
 		if (!!document.fullscreenElement && !!document.mozFullScreenElement && !!document.webkitFullscreenElement)         {
@@ -61,7 +61,7 @@
 			}
 		}
 	};
-	
+
 	me.utils.globalize = function (functionName) {
 		var utilsList = functionName || ["$", "log", "rAF", "tFS"];
 		utilsList.forEach(function (key) {
@@ -72,4 +72,4 @@
 			}
 		});
 	};
-}());
+}(window.me));

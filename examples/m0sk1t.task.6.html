@@ -20,9 +20,9 @@
 			me.assets.load('img/',['kuz','naf', 'step'],'png');
 			me.assets.call(loop);
 			
-			var kuz = new me.assets.tile('kuz',[0,0,158,170],[0,h,158,170]),
-				naf = new me.assets.tile('naf',[0,0,154,170],[0,h,154,170]),
-				step = new me.assets.tile('step',[0,0,50,50],[0,h,50,50]);
+			var kuz = new me.assets.Tile('kuz',[0,0,158,170],[0,h,158,170]),
+				naf = new me.assets.Tile('naf',[0,0,154,170],[0,h,154,170]),
+				step = new me.assets.Tile('step',[0,0,50,50],[0,h,50,50]);
 			
 			function updateKuz () {
 				var tmp = kuz.getPos(),
@@ -35,7 +35,7 @@
 				if (x % 10 === 0) {
 					step.setPos({"x": x, "y": y});
 				}
-			};
+			}
 			
 			function updateNaf () {
 				var tmp = naf.getPos(),
@@ -45,9 +45,9 @@
 				y += Math.floor((Math.pow(x+2,2)*Math.sin(3*x))/20);
 				x++;
 				naf.setPos({"x": x, "y": y});
-			};
+			}
 			
-			function loop (){
+			function loop () {
 				if (kuz.getPos().x <= w) {
 					updateKuz();
 					kuz.draw(me.core.layers["#main"]);
@@ -58,7 +58,7 @@
 				}
 				//rAF(loop);
 				setTimeout(loop, 100);
-			};
+			}
 		}
 	</script>
 </html>

@@ -1,4 +1,4 @@
-;(function () {
+;(function (me) {
 	me.primitive.point = function (x, y) {
 		this.type = "point";
 		this.x = x;
@@ -26,9 +26,11 @@
 		this.setCoord = function (coordPoint) {
 			this.prevcoord = this.coord;
 			this.coord = coordPoint;
+			return this;
 		};
 		this.setRadius = function (radius) {
 			this.radius = radius;
+			return this;
 		};
 		this.draw = function (context) {
 			context.clearRect(this.prevcoord.x - this.radius, this.prevcoord.y - this.radius, this.radius * 2, this.radius * 2);
@@ -45,6 +47,7 @@
                     context.stroke();
                 }; break;
 			}
+			return this;
 		};
 		return this;
 	};
@@ -68,10 +71,12 @@
 		this.setCoord = function (coordPoint) {
 			this.prevcoord = this.coord;
 			this.coord = coordPoint;
+			return this;
 		};
 		this.setSize = function (sizePoint) {
 			this.width = sizePoint.x;
 			this.height = sizePoint.y;
+			return this;
 		};
 		this.draw = function (context) {
 			context.clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
@@ -86,6 +91,7 @@
                     context.strokeRect(this.coord.x, this.coord.y, this.width, this.height);
                 }; break;
 			}
+			return this;
 		};
 		return this;
 	};
@@ -102,12 +108,8 @@
 		}
 		context.closePath();
 		switch (this.method) {
-			case "fill": {
-				context.fill();
-			};  break;
-			case "stroke": {
-				context.stroke();
-			};  break;
+			case "fill": context.fill(); break;
+			case "stroke": context.stroke(); break;
 		}
 	};
 	
@@ -120,7 +122,9 @@
 			context.font = fontArray.join(" ");
 			context.clearRect(coordPoint.x,coordPoint.y - this.fontSize, text.toString().length * this.fontSize, this.fontSize);
 			context.fillText(text, coordPoint.x, coordPoint.y);
+			return this;
 		};
+		return this;
 	};
 	
 	me.primitive.TextStroke = function () {
@@ -128,6 +132,8 @@
 			context.strokeStyle = strokeStyle;
 			context.font = aFont;
 			context.strokeText(text, coordPoint.x, coordPoint.y);
+			return this;
 		};
+		return this;
 	};
-})();
+})(window.me);

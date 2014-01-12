@@ -1,4 +1,4 @@
-;(function () {
+;(function (me) {
 	me.assets.cashe = {};
 	me.assets.callbacks = [];
 	
@@ -32,41 +32,46 @@
 			}
 		}
 		return loaded;
-	}
+	};
 	
 	me.assets.call = function (callbacksArr) {
 		me.assets.callbacks.push(callbacksArr);
-	}
+	};
 	
 	me.assets.get = function (fileName) {
 		return me.assets.cashe[fileName];
-	}
+	};
 
 	me.assets.count = function () {
 		return me.assets.cashe.length;
-	}
-
-	me.assets.tile = function (image, tileArea, destArea) {
-		this.tileArea = tileArea;
-		this.prevPos = [0, 0, destArea[2], destArea[3]];
-		this.destArea = destArea;
-		this.setPos = function (coordPoint) {
+	};
+	//294948
+	me.assets.Tile = me.core.Class({
+		constructor: function (imageName, tileArea, destinationArea) {
+			this.tileArea = tileArea;
+			this.prevPos = [0, 0, destinationArea[2], destinationArea[3]];
+			this.destArea = destinationArea;
+			return this;
+		},
+		setPos: function (coordPoint) {
 			var tmp = this.getPos();
 			this.prevPos[0] = tmp.x;
 			this.prevPos[1] = tmp.y;
 			this.destArea[0] = coordPoint.x;
 			this.destArea[1] = coordPoint.y;
-		}
-		this.getPos = function (coordPoint) {
+			return this;
+		},
+		getPos: function () {
 			return {x: this.destArea[0], y: this.destArea[1]};
-		}
-		this.draw = function (context, clear) {
+		},
+		draw: function (context, clear) {
 			clear = (clear == undefined)?true:clear;
 			if (clear) {
 				context.clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
 				context.clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 			}
 			context.drawImage(me.assets.get(image), this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
-		};
-	}
-})();
+			return this;
+		}
+	});
+})(window.me);

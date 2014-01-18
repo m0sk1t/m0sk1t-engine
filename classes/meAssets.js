@@ -49,6 +49,7 @@
 	me.assets.Tile = me.core.Class({
 		constructor: function (imageName, tileArea, destinationArea) {
 			this.tileArea = tileArea;
+			this.img = me.assets.get(imageName);
 			this.prevPos = [0, 0, destinationArea[2], destinationArea[3]];
 			this.destArea = destinationArea;
 			return this;
@@ -70,8 +71,23 @@
 				context.clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
 				context.clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 			}
-			context.drawImage(me.assets.get(image), this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
+			context.drawImage(this.img, this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 			return this;
+		}
+	});
+	me.assets.Sprite = new Class({
+		constructor: function(imageName, spriteSize) {
+			this.img = me.assets.get(imageName);
+			this.spriteSize = spriteSize;
+			this.maxFrames = this.image.width / this.spriteSize.W;
+			this.currentFrame = 0;
+		},
+		draw: function(context) {
+			if (this.currentFrame >= this.maxFrames) {
+				this.currentFrame = 0;
+			}
+			context.drawImage(this.img, this.currentFrame*this.spriteSize.W, 0, this.spriteSize.W, this.spriteSize.H, this.coord.X, this.coord.Y, this.spriteSize.W, this.spriteSize.H);
+			this.currentFrame++;
 		}
 	});
 })(window.me);

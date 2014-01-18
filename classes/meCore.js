@@ -12,7 +12,7 @@
 	
 	me.core.Class = function (protoHash) {
 		var Child = protoHash.constructor || function () {}, i;
-		if (typeof protoHash.parent !== 'undefined') {
+		if (protoHash.parent) {
 			Child.prototype = new protoHash.parent();
 			Child.prototype.constructor = Child;
 		}

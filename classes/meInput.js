@@ -8,32 +8,29 @@
 		me.input.keys["up"] = 38;
 		me.input.keys["right"] = 39;
 		me.input.keys["down"] = 40;
-		
+
 		me.input.keys["w"] = 87;
 		me.input.keys["a"] = 65;
 		me.input.keys["s"] = 83;
 		me.input.keys["d"] = 68;
-/*		me.input.k[8] = "backspace";
-		me.input.k[9] = "tab";
-		me.input.k[13] = "enter";
-		me.input.k[16] = "shift";
-		me.input.k[17] = "ctrl";
-		me.input.k[18] = "alt";
-		me.input.k[19] = "pause";
-		me.input.k[20] = "capslock";
-		me.input.k[27] = "esc";
-		me.input.k[32] = "space";
-		me.input.k[33] = "pageup";
-		me.input.k[34] = "pagedown";
-		me.input.k[35] = "end";
-		me.input.k[36] = "home";
-		me.input.k[37] = "left";
-		me.input.k[38] = "up";
-		me.input.k[39] = "right";
-		me.input.k[40] = "down";
-		me.input.k[45] = "insert";
-		me.input.k[46] = "delete";
-		
+
+		me.input.keys["bs"] = 8;
+		me.input.keys["tab"] = 9;
+		me.input.k["enter"] = 13;
+		me.input.k["shift"] = 16;
+		me.input.k["ctrl"] = 17;
+		me.input.k["alt"] = 18;
+		me.input.k["pause"] = 19;
+		me.input.k["capslock"] = 20;
+		me.input.k["esc"] = 27;
+		me.input.k["space"] = 32;
+		me.input.k["pageup"] = 33;
+		me.input.k["pagedown"] = 34;
+		me.input.k["end"] = 35;
+		me.input.k["home"] = 36;
+		me.input.k["insert"] = 45;
+		me.input.k["delete"] = 46;
+/*
 		me.input.k[91] = "left_window_key leftwindowkey";
 		me.input.k[92] = "right_window_key rightwindowkey";
 		me.input.k[93] = "select_key selectkey";

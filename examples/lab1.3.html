@@ -13,9 +13,9 @@
 	<script>
 		function init() {
 			me.core.init(["#main"],500,500);
-			var pt		= me.primitive.point,
-				rect	= me.primitive.rectangle,
-				circ	= me.primitive.circle;
+			var pt		= me.primitive.Point,
+				rect	= me.primitive.Rect,
+				circ	= me.primitive.Circle;
 			var r = new rect(new pt(0,0), new pt(500,500),"#077","stroke"),
 				c = new circ(new pt(250,250),50,"fill","#337");
 			window.addEventListener("click", loop);
@@ -28,7 +28,7 @@
 				c.color = "rgb("+getRND(0,255)+","+getRND(0,255)+","+getRND(0,255)+")";
 				r.draw(me.core.layers["#main"]);
 				c.draw(me.core.layers["#main"]);
-			};
+			}
 		}
 	</script>
 </html>

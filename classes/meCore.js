@@ -1,7 +1,7 @@
-;(function () {
+;(function (window) {
 	if (!!window.me) {
 		window.me = {};
-		var vClassList = ["core", "utils", "primitive", "assets", "physics", "input"];
+		var vClassList = ["core", "utils", "primitive", "assets", "input"];
 		vClassList.forEach(function (key) { window.me[key] = {}; });
 	}
 	
@@ -22,16 +22,27 @@
 		return Child;
 	};
 	
-	me.core.canvas = [];
-	me.core.layers = [];
+	me.core.canvas = {};
+	me.core.layers = {};
 
 	me.core.init = function (namesArray, width, height) {
 		var tmp = me.utils.find(namesArray);
-		for (var i = 0, len = tmp.length;i < len;i++) {
-			me.core.canvas[namesArray[i]] = tmp[i];
-			me.core.canvas[namesArray[i]].width  = (width	|| document.width)	|| document.documentElement.clientWidth;
-			me.core.canvas[namesArray[i]].height = (height	|| document.height)	|| document.documentElement.clientHeight;
-			if (me.core.isCanvas(me.core.canvas[namesArray[i]])) {
+		var i = 0, len = 0;
+		if (tmp) {
+			for (i = 0, len = tmp.length; i < len; i++) {
+				me.core.canvas[namesArray[i]] = tmp[i];
+				me.core.canvas[namesArray[i]].width  = (width	|| document.width)	|| document.documentElement.clientWidth;
+				me.core.canvas[namesArray[i]].height = (height	|| document.height)	|| document.documentElement.clientHeight;
+				if (me.core.isCanvas(me.core.canvas[namesArray[i]])) {
+					me.core.layers[namesArray[i]] = me.core.canvas[namesArray[i]].getContext('2d');
+				}
+			}
+		}
+		else {
+			for (i = 0, len = namesArray.length; i < len; i++) {
+				me.core.canvas[namesArray[i]] = document.createElement('canvas');
+				me.core.canvas[namesArray[i]].width  = (width	|| document.width)	|| document.documentElement.clientWidth;
+				me.core.canvas[namesArray[i]].height = (height	|| document.height)	|| document.documentElement.clientHeight;
 				me.core.layers[namesArray[i]] = me.core.canvas[namesArray[i]].getContext('2d');
 			}
 		}
@@ -58,10 +69,10 @@
 		switch (firstObject["type"]) {
 			case "circle":{
 				switch (secondObject["type"]) {
-					case "point":		coll = me.core.circleAndPointCollision(firstObject,secondObject);		break;
-					case "vector":		coll = me.core.circleAndLineCollision(firstObject,secondObject);		break;
-					case "circle":		coll = me.core.circleCollision(firstObject,secondObject);				break;
-					case "rectangle": 	coll = me.core.circleAndRectangleCollision(firstObject,secondObject);	break;
+					case "Point":		coll = me.core.circleAndPointCollision(firstObject,secondObject);		break;
+					case "Vector":		coll = me.core.circleAndLineCollision(firstObject,secondObject);		break;
+					case "Circle":		coll = me.core.circleCollision(firstObject,secondObject);				break;
+					case "Rectangle": 	coll = me.core.circleAndRectangleCollision(firstObject,secondObject);	break;
 				}
             }
         }
@@ -133,4 +144,4 @@
 	me.core.isFunction = function (object) {
 		return (me.core.toStr(object) === "[object Function]");
 	};
-})();
+})(window);

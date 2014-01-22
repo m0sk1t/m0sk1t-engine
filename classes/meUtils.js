@@ -3,27 +3,32 @@
 	me.utils.find = function (attr) {
 		var obj = document.querySelectorAll(attr);
 		if (obj.length === 0) {
-			throw "Element(s) not found!";
-		} else {
+			me.utils.log('Element(s) not found!','e');
+			return null;
+		}
+		else {
 			return obj;
 		}
 	};
 
 	// logging into <div> element with ID equals meLog
 	me.utils.log = function (messageText, messageType) {
-		var logDiv = me.utils.$(['#meLog']).item(0) || false;
+		var logDiv = me.utils.find(['#meLog']).item(0);
 		if (logDiv) {
 			if (logDiv.innerHTML !== '') {
 				switch (messageType) {
-					case 'm': logDiv.innerHTML += '<span style="color:green;">' + messageText + '</span><br />\n\r';	break;
-					case 'w': logDiv.innerHTML += '<span style="color:yellow;">' + messageText + '</span><br />\n\r';	break;
-					case 'e': logDiv.innerHTML += '<span style="color:red;">' + messageText + '</span><br />\n\r';	break;
+					case 'm': logDiv.innerHTML += '<span style="color:green;">' + messageText + '</span><br />\n\r'; break;
+					case 'w': logDiv.innerHTML += '<span style="color:yellow;">' + messageText + '</span><br />\n\r';break;
+					case 'e': logDiv.innerHTML += '<span style="color:red;">' + messageText + '</span><br />\n\r';	 break;
+					default : logDiv.innerHTML += '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r'; break;
 				}
-			} else {
+			}
+			else {
 				switch (messageType) {
-					case 'm': logDiv.innerHTML = '<span style="color:green;">' + messageText + '</span><br />\n\r';	break;
-					case 'w': logDiv.innerHTML = '<span style="color:yellow;">' + messageText + '</span><br />\n\r';	break;
-					case 'e': logDiv.innerHTML = '<span style="color:red;">' + messageText + '</span><br />\n\r';	break;
+					case 'm': logDiv.innerHTML = '<span style="color:green;">' + messageText + '</span><br />\n\r';         	break;
+					case 'w': logDiv.innerHTML = '<span style="color:yellow;">' + messageText + '</span><br />\n\r';        	break;
+					case 'e': logDiv.innerHTML = '<span style="color:red;">' + messageText + '</span><br />\n\r';       	break;
+					default : logDiv.innerHTML = '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r';	break;
 				}
 			}
 		}
@@ -46,28 +51,34 @@
 		if (!!document.fullscreenElement && !!document.mozFullScreenElement && !!document.webkitFullscreenElement)         {
 			if (document.documentElement.requestFullscreen) {
 				document.documentElement.requestFullscreen();
-			} else if (document.documentElement.mozRequestFullScreen) {
+			}
+			else if (document.documentElement.mozRequestFullScreen) {
 				document.documentElement.mozRequestFullScreen();
-			} else if (document.documentElement.webkitRequestFullscreen) {
+			}
+			else if (document.documentElement.webkitRequestFullscreen) {
 				document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
 			}
-		} else {
+		}
+		else {
 			if (document.cancelFullScreen) {
 				document.cancelFullScreen();
-			} else if (document.mozCancelFullScreen) {
+			}
+			else if (document.mozCancelFullScreen) {
 				document.mozCancelFullScreen();
-			} else if (document.webkitCancelFullScreen) {
+			}
+			else if (document.webkitCancelFullScreen) {
 				document.webkitCancelFullScreen();
 			}
 		}
 	};
 
 	me.utils.globalize = function (functionName) {
-		var utilsList = functionName || ["$", "log", "rAF", "tFS"];
+		var utilsList = functionName || ["find", "log", "rAF", "tFS"];
 		utilsList.forEach(function (key) {
 			if (!!window[key]) {
 				window[key] = me.utils[key];
-			} else {
+			}
+			else {
 				console.log(key + ' already exists in global namespace');
 			}
 		});

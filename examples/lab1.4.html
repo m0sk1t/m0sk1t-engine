@@ -14,9 +14,9 @@
 		function init() {
 			me.core.init(["#main"],500,500);
 			var start = false;
-			var pt		= me.primitive.point,
-				rect	= me.primitive.rectangle,
-				circ	= me.primitive.circle;
+			var pt		= me.primitive.Point,
+				rect	= me.primitive.Rectangle,
+				circ	= me.primitive.Circle;
 			var r = new rect(new pt(0,0), new pt(500,500),"#077","stroke"),
 				r2 = new rect(new pt(0,0), new pt(50,20),"#077","fill"),
 				c = new circ(new pt(250,250),30,"fill","#337");

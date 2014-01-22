@@ -19,12 +19,12 @@
 			me.assets.call(start);
 			function start () {
 				var animate = false, dir = "", index = 0,
-					cat = new me.assets.tile('cat',[0,0,800,450],[0,0,800,450]),
-					planet = new me.assets.tile('planet',[800,0,800,450],[0,0,800,450]),
-					waterfall = new me.assets.tile('waterfall',[800,0,800,450],[0,0,800,450]);
+					cat = new me.assets.Tile('cat',[0,0,800,450],[0,0,800,450]),
+					planet = new me.assets.Tile('planet',[800,0,800,450],[0,0,800,450]),
+					waterfall = new me.assets.Tile('waterfall',[800,0,800,450],[0,0,800,450]);
 				var pic = [cat,planet,waterfall],
-					left = new me.primitive.circle({"x": 20, "y": 225}, 20, "fill","rgba(172,20,5,0.5)"),
-					right = new me.primitive.circle({"x": 780, "y": 225}, 20, "fill","rgba(172,20,5,0.5)");
+					left = new me.primitive.Circle({"x": 20, "y": 225}, 20, "fill","rgba(172,20,5,0.5)"),
+					right = new me.primitive.Circle({"x": 780, "y": 225}, 20, "fill","rgba(172,20,5,0.5)");
 				function flipImage (e) {
 					me.input.mPos(e);
 					var pt = {"x": me.input.mX, "y": me.input.mY};
@@ -42,14 +42,14 @@
 						index < pic.length?index = index: index = 0;
 						pic[index].setPos({"x": -800,"y":0});
 					}
-				};
+				}
 				function update (direction) {
 					var x = pic[index].getPos().x;
 					switch (dir) {
 						case "left":x < 0?animate = false:pic[index].setPos({"x": x - Math.floor(x/2),"y":0}); break;
 						case "right":x > 0?animate = false:pic[index].setPos({"x": x + Math.floor(Math.abs(x/2)),"y":0}); break;
 					}
-				};
+				}
 				window.addEventListener('click',flipImage);
 				(function loop () {
 					if (animate) {

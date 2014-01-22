@@ -1,18 +1,18 @@
 function initGame() {
-	var point = me.primitive.point, vect = me.primitive.vector;
+	var point = me.primitive.Point, vect = me.primitive.Vector;
 	me.core.init(["#gameArea","#bg"]);
 	me.input.setKeys();
 	var pressed = {"w":false,"s":false};
-	var startTime = new Date, currentTime = new Date, fps = 1;
+	var startTime = new Date(), currentTime = new Date(), fps = 1;
 	var	gameCanvas = me.core.canvas["#gameArea"],
 		gameContext = me.core.layers["#gameArea"];
 	var	canvasWidth = gameCanvas.width,
 		canvasHeight = gameCanvas.height;
 	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 2, shifty = coordinate = 1,
 		ballRadius = 30, ballSpeedx = ballSpeedy = 5;
-	var	Player = new me.primitive.rectangle(new point(0,0), new point(20,platformLength),"#077","fill"),
-		Enemy = new me.primitive.rectangle(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
-		Ball = new me.primitive.circle(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
+	var	Player = new me.primitive.Rect(new point(0,0), new point(20,platformLength),"#077","fill"),
+		Enemy = new me.primitive.Rect(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
+		Ball = new me.primitive.Circle(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
 	var	PlayerOneScoreCoord = new point(Math.floor(canvasWidth/2)-50,50),
 		DelimeterCoord = new point(Math.floor(canvasWidth/2),50),
 		PlayerTwoScoreCoord = new point(Math.floor(canvasWidth/2)+50,50),
@@ -22,8 +22,8 @@ function initGame() {
 		right = new vect(new point(canvasWidth,0),new point(canvasWidth,canvasHeight)),
 		top = new vect(new point(0,0),new point(canvasWidth,0)),
 		bottom = new vect(new point(0,canvasHeight),new point(canvasWidth,canvasHeight));
-	var	playerOneTxT = new me.primitive.TextFill, playerTwoTxT = new me.primitive.TextFill,
-		delimeterTxT = new me.primitive.TextFill, fpsTxT = new me.primitive.TextFill;
+	var	playerOneTxT = new me.primitive.TextFill(), playerTwoTxT = new me.primitive.TextFill(),
+		delimeterTxT = new me.primitive.TextFill(), fpsTxT = new me.primitive.TextFill();
 	var ballFunc = function() {
 		var	currentBallCoord = {},
 			ballCoord = Ball.getCoord();

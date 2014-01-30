@@ -1,4 +1,4 @@
-;(function(me) {
+;(function (me) {
 	me.input.mX = 0;
 	me.input.mY = 0;
 	me.input.keys = [];
@@ -16,20 +16,20 @@
 
 		me.input.keys["bs"] = 8;
 		me.input.keys["tab"] = 9;
-		me.input.k["enter"] = 13;
-		me.input.k["shift"] = 16;
-		me.input.k["ctrl"] = 17;
-		me.input.k["alt"] = 18;
-		me.input.k["pause"] = 19;
-		me.input.k["capslock"] = 20;
-		me.input.k["esc"] = 27;
-		me.input.k["space"] = 32;
-		me.input.k["pageup"] = 33;
-		me.input.k["pagedown"] = 34;
-		me.input.k["end"] = 35;
-		me.input.k["home"] = 36;
-		me.input.k["insert"] = 45;
-		me.input.k["delete"] = 46;
+		me.input.keys["enter"] = 13;
+		me.input.keys["shift"] = 16;
+		me.input.keys["ctrl"] = 17;
+		me.input.keys["alt"] = 18;
+		me.input.keys["pause"] = 19;
+		me.input.keys["capslock"] = 20;
+		me.input.keys["esc"] = 27;
+		me.input.keys["space"] = 32;
+		me.input.keys["pageup"] = 33;
+		me.input.keys["pagedown"] = 34;
+		me.input.keys["end"] = 35;
+		me.input.keys["home"] = 36;
+		me.input.keys["insert"] = 45;
+		me.input.keys["delete"] = 46;
 /*
 		me.input.k[91] = "left_window_key leftwindowkey";
 		me.input.k[92] = "right_window_key rightwindowkey";
@@ -59,4 +59,4 @@
 		me.input.mX	= (e.pageX || e.clientX);
 		me.input.mY	= (e.pageY || e.clientY);
 	};
-})(window.me);
+}(window.me));

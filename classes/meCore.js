@@ -1,5 +1,5 @@
 ;(function (window) {
-	if (!!window.me) {
+	if (!window.me) {
 		window.me = {};
 		var vClassList = ["core", "utils", "primitive", "assets", "input"];
 		vClassList.forEach(function (key) { window.me[key] = {}; });
@@ -9,14 +9,14 @@
 		if (iterable instanceof Array) for (var i = 0; i < iterable.length; i++) func.call(iterable, iterable[i]);
 		else if (iterable instanceof Object) for (field in iterable) if (iterable.hasOwnProperty(field)) func.call(iterable, iterable[field], field);
 	};
-	
+	//298873
 	me.core.Class = function (protoHash) {
-		var Child = protoHash.constructor || function () {}, i;
+		var Child = protoHash.init || function () {}, i;
 		if (protoHash.parent) {
 			Child.prototype = new protoHash.parent();
 			Child.prototype.constructor = Child;
 		}
-		for (i in protoHash) if (protoHash.hasOwnProperty(i) && i !== 'constructor') {
+		for (i in protoHash) if (protoHash.hasOwnProperty(i) && i !== 'init') {
 			Child.prototype[i] = protoHash[i];
 		}
 		return Child;
@@ -67,7 +67,7 @@
 	me.core.isCollide = function (firstObject,secondObject) {
 		var coll=false;
 		switch (firstObject["type"]) {
-			case "circle":{
+			case "Circle":{
 				switch (secondObject["type"]) {
 					case "Point":		coll = me.core.circleAndPointCollision(firstObject,secondObject);		break;
 					case "Vector":		coll = me.core.circleAndLineCollision(firstObject,secondObject);		break;
@@ -94,17 +94,17 @@
 	
 	me.core.circleAndLineCollision = function (circle, vector) {
 		var tmpPoint = {"x": 0, "y": 0};
-		if (vector.first.x === vector.second.x) {
-			tmpPoint.x = vector.first.x;
-			tmpPoint.y = circle.coord.y;
-		} else if (vector.first.y === vector.second.y) {
+		if (vector.start.x === vector.end.x) {
+			tmpPoint.x = vector.start.x;
+			tmpPoint.y = circle.end.y;
+		} else if (vector.start.y === vector.end.y) {
 			tmpPoint.x = circle.coord.x;
-			tmpPoint.y = vector.first.y;
+			tmpPoint.y = vector.start.y;
 		} else {
-			var xA = vector.first.x,
-				yA = vector.first.y,
-				xB = vector.second.x,
-				yB = vector.second.y,
+			var xA = vector.start.x,
+				yA = vector.start.y,
+				xB = vector.end.x,
+				yB = vector.end.y,
 				xP = circle.coord.x,
 				yP = circle.coord.y;
 			tmpPoint.x =	(xA * Math.pow(yB - yA, 2) + xP * Math.pow(xB -xA, 2) + (xB - xA) * (yB - yA) * (yP- yA))/
@@ -144,4 +144,4 @@
 	me.core.isFunction = function (object) {
 		return (me.core.toStr(object) === "[object Function]");
 	};
-})(window);
+}(window));

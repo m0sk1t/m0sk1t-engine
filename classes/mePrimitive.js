@@ -1,6 +1,6 @@
 ;(function (me) {
 	me.primitive.Point = me.core.Class({
-		constructor: function(x, y) {
+		init: function(x, y) {
 			this.type = "Point";
 			this.x = x;
 			this.y = y;
@@ -9,7 +9,7 @@
 	});
 
 	me.primitive.Vector = me.core.Class({
-		constructor: function(startPoint, endPoint) {
+		init: function(startPoint, endPoint) {
 			this.type = "Vector";
 			this.start = startPoint;
 			this.end = endPoint;
@@ -40,7 +40,7 @@
 	});
 
 	me.primitive.Circle = me.core.Class({
-		constructor: function (centerPoint, radius, method, color) {
+		init: function (centerPoint, radius, method, color) {
 			this.type = "Circle";
 			this.color = color;
 			this.prevcoord = centerPoint;
@@ -85,7 +85,7 @@
 	});
 
 	me.primitive.Rect = me.core.Class({
-		constructor: function (coordPoint, sizePoint, color, method) {
+		init: function (coordPoint, sizePoint, color, method) {
 			this.type = "Rect";
 			this.color = color;
 			this.prevcoord = coordPoint;
@@ -132,7 +132,7 @@
 	});
 
 	me.primitive.Polygon = me.core.Class({
-		constructor: function (context, pointSet, color, method) {
+		init: function (context, pointSet, color, method) {
 			this.type = "Polygon";
 			this.pts = pointSet;
 			this.method = method;
@@ -173,4 +173,4 @@
 		};
 		return this;
 	};
-})(window.me);
+}(window.me));

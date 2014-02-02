@@ -30,29 +30,27 @@
 		me.input.keys["home"] = 36;
 		me.input.keys["insert"] = 45;
 		me.input.keys["delete"] = 46;
-/*
-		me.input.k[91] = "left_window_key leftwindowkey";
-		me.input.k[92] = "right_window_key rightwindowkey";
-		me.input.k[93] = "select_key selectkey";
-		me.input.k[106] = "multiply *";
-		me.input.k[107] = "add plus +";
-		me.input.k[109] = "subtract minus -";
-		me.input.k[110] = "decimalpoint";
-		me.input.k[111] = "divide /";
-		
-		me.input.k[144] = "numlock";
-		me.input.k[145] = "scrollock";
-		me.input.k[186] = "semicolon ;";
-		me.input.k[187] = "equalsign =";
-		me.input.k[188] = "comma ,";
-		me.input.k[189] = "dash -";
-		me.input.k[190] = "period .";
-		me.input.k[191] = "forwardslash /";
-		me.input.k[192] = "graveaccent `";
-		me.input.k[219] = "openbracket [";
-		me.input.k[220] = "backslash \\";
-		me.input.k[221] = "closebracket ]";
-		me.input.k[222] = "singlequote '"; */
+		me.input.keys["leftwnd"] = 91;
+		me.input.keys["rightwnd"] = 92;
+		me.input.keys["select"] = 93;
+		me.input.keys["mul"] = 106;
+		me.input.keys["plus"] = 107;
+		me.input.keys["minus"] = 109;
+		me.input.keys["point"] = 110;
+		me.input.keys["/"] = 111;
+		me.input.keys["num"] = 144;
+		me.input.keys["scroll"] = 145;
+		me.input.keys[";"] = 186;
+		me.input.keys["="] = 187;
+		me.input.keys[","] = 188;
+		me.input.keys["-"] = 189;
+		me.input.keys["."] = 190;
+		me.input.keys["/"] = 191;
+		me.input.keys["`"] = 192;
+		me.input.keys["["] = 219;
+		me.input.keys["\\"] = 220;
+		me.input.keys["]"] = 221;
+		me.input.keys["\'"] = 222;
 	};
 	me.input.mPos = function(e) {
 		e = e || window.event;

@@ -3,17 +3,18 @@
  */
 
 (function() {
-	var butterfly = null,
+	var butterfly = null, bg = null,
 		butterflyDirection = null,
 		left = false, right = false, up = false, down = false;
 
-	me.core.init(["#main"]);
+	me.core.init(["#main"], 500, 500);
 	me.input.setKeys();
-	me.assets.load('',['but.png']);
+	me.assets.load('img/',['but.png', "star_sky.jpg"]);
 	me.assets.callback(setup);
 
 	function setup() {
 		butterfly = new me.assets.Sprite('but.png', {"x": 0, "y": 0}, {"W": 80, "H": 80});
+		bg = new me.assets.Tile('star_sky.jpg');
 		loop();
 	}
 

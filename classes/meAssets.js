@@ -75,11 +75,14 @@
 			return this;
 		}
 	});
+
 	me.assets.Sprite = me.core.Class({
-		init: function(imageName, coord, spriteSize) {
+		init: function(imageName, coord, spriteSize, speed, accel) {
 			this.img = me.assets.get(imageName);
 			this.prevcoord = coord;
 			this.coord = coord;
+			this.speed = speed;
+			this.accel = accel;
 			this.spriteSize = spriteSize;
 			this.maxFrames = this.img.width / this.spriteSize.W;
 			this.currentFrame = 0;

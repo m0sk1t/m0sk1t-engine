@@ -21,6 +21,7 @@
 	me.assets.load = function (path, resourceArray) {
 		resourceArray.forEach(function (key) {
 			me.assets.loadImage(path + key, key);
+			console.log(path + key + ' loaded');
 		});
 	};
 	
@@ -77,12 +78,11 @@
 	});
 
 	me.assets.Sprite = me.core.Class({
-		init: function(imageName, coord, spriteSize, speed, accel) {
+		init: function(imageName, spriteSize, offset, coord) {
 			this.img = me.assets.get(imageName);
 			this.prevcoord = coord;
+			this.offset = offset;
 			this.coord = coord;
-			this.speed = speed;
-			this.accel = accel;
 			this.spriteSize = spriteSize;
 			this.maxFrames = this.img.width / this.spriteSize.W;
 			this.currentFrame = 0;
@@ -107,7 +107,7 @@
 			}
 			context.clearRect(this.prevcoord.x, this.prevcoord.y, this.spriteSize.W, this.spriteSize.H);
 			context.clearRect(this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
-			context.drawImage(this.img, this.currentFrame*this.spriteSize.W, 0, this.spriteSize.W, this.spriteSize.H, this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
+			context.drawImage(this.img, this.currentFrame*this.spriteSize.W, this.offset.x*this.spriteSize.H, this.spriteSize.W, this.spriteSize.H, this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
 			this.currentFrame++;
 			return this;
 		}

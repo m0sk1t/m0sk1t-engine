@@ -3,18 +3,18 @@
  */
 
 (function() {
-	var butterfly = null, bg = null,
-		butterflyDirection = null,
+	var man = null, bg = null,
+		manDir = null,
 		left = false, right = false, up = false, down = false;
 
 	me.core.init(["#main"], 500, 500);
 	me.input.setKeys();
-	me.assets.load('img/',['but.png', "star_sky.jpg"]);
+	me.assets.load('img/',['spritemap.png', 'star_sky.jpg']);
 	me.assets.callback(setup);
 
 	function setup() {
-		butterfly = new me.assets.Sprite('but.png', {"x": 0, "y": 0}, {"W": 80, "H": 80});
-		bg = new me.assets.Tile('star_sky.jpg');
+		man = new me.assets.Sprite('spritemap.png', {"W": 50, "H": 50}, {"x": 0, "y": 0}, {"x": 0, "y": 0});
+		bg = new me.assets.Tile('star_sky.jpg', [0,0,500,500], [0,0,500,500]);
 		loop();
 	}
 
@@ -41,18 +41,19 @@
 
 	function loop() {
 		switch (true) {
-			case ( up && (!left && !right && !down) ) : butterflyDirection = new me.primitive.Point(0, -10); break;
-			case ( down && (!left && !right && !up) ) : butterflyDirection = new me.primitive.Point(0, 10); break;
-			case ( left && (!down && !right && !up) ) : butterflyDirection = new me.primitive.Point(-10, 0); break;
-			case ( right && (!left && !down && !up) ) : butterflyDirection = new me.primitive.Point(10, 0); break;
-			case ( right && up ) : butterflyDirection = new me.primitive.Point(10, -10); break;
-			case ( right && down ) : butterflyDirection = new me.primitive.Point(10, 10); break;
-			case ( left && down ) : butterflyDirection = new me.primitive.Point(-10, 10); break;
-			case ( left && up ) : butterflyDirection = new me.primitive.Point(-10, -10); break;
-			default: butterflyDirection = new me.primitive.Point(0, 0); break;
+			case ( up && (!left && !right && !down) ) : manDir = new me.primitive.Point(0, -10); break;
+			case ( down && (!left && !right && !up) ) : manDir = new me.primitive.Point(0, 10); break;
+			case ( left && (!down && !right && !up) ) : manDir = new me.primitive.Point(-10, 0); break;
+			case ( right && (!left && !down && !up) ) : manDir = new me.primitive.Point(10, 0); break;
+			case ( right && up ) : manDir = new me.primitive.Point(10, -10); break;
+			case ( right && down ) : manDir = new me.primitive.Point(10, 10); break;
+			case ( left && down ) : manDir = new me.primitive.Point(-10, 10); break;
+			case ( left && up ) : manDir = new me.primitive.Point(-10, -10); break;
+			default: manDir = new me.primitive.Point(0, 0); break;
 		}
-		butterfly.appendPos(butterflyDirection).draw(me.core.layers["#main"]);
-		setTimeout(loop, 77);
-		//rAF(loop);
+		bg.draw(me.core.layers["#main"]);
+		man.appendPos(manDir).draw(me.core.layers["#main"]);
+		//setTimeout(loop, 77);
+		rAF(loop);
 	}
 }());

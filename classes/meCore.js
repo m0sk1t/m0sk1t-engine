@@ -78,25 +78,25 @@
         }
 		return coll;
 	};
-	
-	me.core.circleCollision = function (firstObject, secondObject) {
-		return ((firstObject.radius+secondObject.radius) > Math.sqrt(Math.pow(firstObject.coord.x-secondObject.coord.x,2)+Math.pow(firstObject.coord.y-secondObject.coord.y,2)));
+
+	me.core.circleCollision = function (firstCircle, secondCircle) {
+		return (Math.pow((firstCircle.radius+secondCircle.radius),2) > Math.pow(firstCircle.coord.x-secondCircle.coord.x,2)+Math.pow(firstCircle.coord.y-secondCircle.coord.y,2));
 	};
-	
-	me.core.rectangleCollision = function (firstObject, secondObject) {
-		return  ((((firstObject.coord.x+firstObject.width) < secondObject.coord.x) || (firstObject.coord.x > (secondObject.coord.x+secondObject.width)))||
-		        (((firstObject.coord.y+firstObject.height) < secondObject.coord.y) || (firstObject.coord.y > (secondObject.coord.y+secondObject.height))));
+
+	me.core.rectangleCollision = function (firstRect, secondRect) {
+		return  ((((firstRect.coord.x+firstRect.width) < secondRect.coord.x) || (firstRect.coord.x > (secondRect.coord.x+secondRect.width)))||
+		        (((firstRect.coord.y+firstRect.height) < secondRect.coord.y) || (firstRect.coord.y > (secondRect.coord.y+secondRect.height))));
 	};
-	
+
 	me.core.circleAndPointCollision = function (circle, point) {
 		return (circle.radius > Math.sqrt(Math.pow(circle.coord.x-point.x,2)+Math.pow(circle.coord.y-point.y,2)));
 	};
-	
+
 	me.core.circleAndLineCollision = function (circle, vector) {
 		var tmpPoint = {"x": 0, "y": 0};
 		if (vector.start.x === vector.end.x) {
 			tmpPoint.x = vector.start.x;
-			tmpPoint.y = circle.end.y;
+			tmpPoint.y = circle.coord.y;
 		} else if (vector.start.y === vector.end.y) {
 			tmpPoint.x = circle.coord.x;
 			tmpPoint.y = vector.start.y;

@@ -50,7 +50,7 @@
 	me.assets.Tile = me.core.Class({
 		init: function (imageName, tileArea, destinationArea) {
 			this.tileArea = tileArea;
-			this.img = me.assets.get(imageName);
+			this.img = imageName;
 			this.prevPos = [0, 0, destinationArea[2], destinationArea[3]];
 			this.destArea = destinationArea;
 			return this;
@@ -69,22 +69,22 @@
 		draw: function (context, clear) {
 			clear = (clear == undefined)?true:clear;
 			if (clear) {
-				context.clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
+				me.core.layers[context].clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
 				//context.clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 			}
-			context.drawImage(this.img, this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
+			me.core.layers[context].drawImage(me.assets.get(this.img), this.tileArea[0], this.tileArea[1], this.tileArea[2], this.tileArea[3], this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
 			return this;
 		}
 	});
 
 	me.assets.Sprite = me.core.Class({
 		init: function(imageName, spriteSize, offset, coord) {
-			this.img = me.assets.get(imageName);
+			this.img = imageName;
 			this.prevcoord = coord;
 			this.offset = offset;
 			this.coord = coord;
 			this.spriteSize = spriteSize;
-			this.maxFrames = this.img.width / this.spriteSize.W;
+			this.maxFrames = me.assets.get(this.img).width / this.spriteSize.W;
 			this.currentFrame = 0;
 			return this;
 		},
@@ -105,9 +105,8 @@
 			if (this.currentFrame >= this.maxFrames) {
 				this.currentFrame = 0;
 			}
-			context.clearRect(this.prevcoord.x, this.prevcoord.y, this.spriteSize.W, this.spriteSize.H);
-			context.clearRect(this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
-			context.drawImage(this.img, this.currentFrame*this.spriteSize.W, this.offset.x*this.spriteSize.H, this.spriteSize.W, this.spriteSize.H, this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
+			me.core.layers[context].clearRect(this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
+			me.core.layers[context].drawImage(me.assets.get(this.img), this.currentFrame*this.spriteSize.W, this.offset.x*this.spriteSize.H, this.spriteSize.W, this.spriteSize.H, this.coord.x, this.coord.y, this.spriteSize.W, this.spriteSize.H);
 			this.currentFrame++;
 			return this;
 		}

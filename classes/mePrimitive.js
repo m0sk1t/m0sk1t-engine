@@ -30,11 +30,11 @@
 			return this.end;
 		},
 		draw: function (context) {
-			context.beginPath();
-			context.moveTo(this.start.x, this.start.y);
-			context.lineTo(this.end.x, this.end.y);
-			context.closePath();
-			context.stroke();
+			me.core.layers[context].beginPath();
+			me.core.layers[context].moveTo(this.start.x, this.start.y);
+			me.core.layers[context].lineTo(this.end.x, this.end.y);
+			me.core.layers[context].closePath();
+			me.core.layers[context].stroke();
 			return this;
 		}
 	});
@@ -65,18 +65,18 @@
 			this.color = color;
 		},
 		draw: function (context) {
-			context.clearRect(this.prevcoord.x - this.radius, this.prevcoord.y - this.radius, this.radius * 2, this.radius * 2);
+			me.core.layers[context].clearRect(this.prevcoord.x - this.radius, this.prevcoord.y - this.radius, this.radius * 2, this.radius * 2);
 //			context.clearRect(this.coord.x - this.radius, this.coord.y - this.radius, this.radius * 2, this.radius * 2);
-			context.beginPath();
-			context.arc(this.coord.x, this.coord.y, this.radius, 0, Math.PI * 2, true);
+			me.core.layers[context].beginPath();
+			me.core.layers[context].arc(this.coord.x, this.coord.y, this.radius, 0, Math.PI * 2, true);
 			switch (this.method) {
                 case "fill": {
-                    context.fillStyle = this.color;
-                    context.fill();
+	                me.core.layers[context].fillStyle = this.color;
+	                me.core.layers[context].fill();
                 } break;
                 case "stroke": {
-                    context.strokeStyle = this.color;
-                    context.stroke();
+	                me.core.layers[context].strokeStyle = this.color;
+	                me.core.layers[context].stroke();
                 } break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
@@ -114,16 +114,16 @@
 			return this;
 		},
 		draw: function (context) {
-			context.clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
+			me.core.layers[context].clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
 //			context.clearRect(this.coord.x, this.coord.y, this.width, this.height);
 			switch (this.method) {
                 case "fill": {
-					context.fillStyle = this.color;
-					context.fillRect(this.coord.x, this.coord.y, this.width, this.height);
+	                me.core.layers[context].fillStyle = this.color;
+	                me.core.layers[context].fillRect(this.coord.x, this.coord.y, this.width, this.height);
                 } break;
                 case "stroke": {
-                    context.strokeStyle = this.color;
-                    context.strokeRect(this.coord.x, this.coord.y, this.width, this.height);
+	                me.core.layers[context].strokeStyle = this.color;
+	                me.core.layers[context].strokeRect(this.coord.x, this.coord.y, this.width, this.height);
                 } break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
@@ -136,29 +136,29 @@
 			this.type = "Polygon";
 			this.pts = pointSet;
 			this.method = method;
-			context.fillStyle = color;
-			context.beginPath();
-			context.moveTo(this.pts[0].x, this.pts[0].y);
+			me.core.layers[context].fillStyle = color;
+			me.core.layers[context].beginPath();
+			me.core.layers[context].moveTo(this.pts[0].x, this.pts[0].y);
 			for (var i = 1, len = this.pts.length; i < len; i++) {
-				context.lineTo(this.pts[i].x, this.pts[i].y);
+				me.core.layers[context].lineTo(this.pts[i].x, this.pts[i].y);
 			}
-			context.closePath();
+			me.core.layers[context].closePath();
 			switch (this.method) {
-				case "fill": context.fill(); break;
-				case "stroke": context.stroke(); break;
+				case "fill": me.core.layers[context].fill(); break;
+				case "stroke": me.core.layers[context].stroke(); break;
 			}
 		}
 	});
 
 	me.primitive.TextFill = function () {
 		this.draw = function (context, fontArray, text, coordPoint, fillStyle, strokeStyle) {
-			context.fillStyle = fillStyle;
-			context.strokeStyle = strokeStyle;
+			me.core.layers[context].fillStyle = fillStyle;
+			me.core.layers[context].strokeStyle = strokeStyle;
 			this.fontSize = Number(fontArray[0]);
 			fontArray[0] += 'px';
-			context.font = fontArray.join(" ");
-			context.clearRect(coordPoint.x,coordPoint.y - this.fontSize, text.toString().length * this.fontSize, this.fontSize);
-			context.fillText(text, coordPoint.x, coordPoint.y);
+			me.core.layers[context].font = fontArray.join(" ");
+			me.core.layers[context].clearRect(coordPoint.x,coordPoint.y - this.fontSize, text.toString().length * this.fontSize, this.fontSize);
+			me.core.layers[context].fillText(text, coordPoint.x, coordPoint.y);
 			return this;
 		};
 		return this;
@@ -166,9 +166,9 @@
 
 	me.primitive.TextStroke = function () {
 		this.draw = function (context, font, text, coordPoint, strokeStyle) {
-			context.strokeStyle = strokeStyle;
-			context.font = aFont;
-			context.strokeText(text, coordPoint.x, coordPoint.y);
+			me.core.layers[context].strokeStyle = strokeStyle;
+			me.core.layers[context].font = aFont;
+			me.core.layers[context].strokeText(text, coordPoint.x, coordPoint.y);
 			return this;
 		};
 		return this;

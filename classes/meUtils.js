@@ -35,7 +35,7 @@
 	};
 
 	// crossbrowser shorthand for requestAnimationFrame
-	(function () {
+	(function (window) {
 		window.rAF = me.utils.rAF =
 			window.webkitRequestAnimationFrame	||
 			window.mozRequestAnimationFrame		||
@@ -44,7 +44,7 @@
 			function (callback) {
 				window.setTimeout(callback, 1000 / 60);
 			};
-	})();
+	})(window);
 
 	// crossbrowser shorthand for toggleFullScreen
 	me.utils.tFS = function () {

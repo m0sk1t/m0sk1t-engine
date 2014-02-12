@@ -1,9 +1,10 @@
-;(function (me) {
+;(function (me, d) {
 	me.input.mX = 0;
 	me.input.mY = 0;
 	me.input.keys = [];
-	me.input.isPressed = [];
-	me.input.setKeys = function() {
+	me.input.pressedKeys = [];
+
+	(function() {
 		me.input.keys["left"] = 37;
 		me.input.keys["up"] = 38;
 		me.input.keys["right"] = 39;
@@ -51,10 +52,28 @@
 		me.input.keys["\\"] = 220;
 		me.input.keys["]"] = 221;
 		me.input.keys["\'"] = 222;
+		for (var key in me.input.keys) if (me.input.keys.hasOwnProperty(key)) { me.input.pressedKeys[me.input.keys[key]] = false; }
+	})();
+
+	me.input.isPressed = function (key) {
+		return me.input.pressedKeys[me.input.keys[key]];
 	};
+
+	me.input.setKey = function(keyCode, status) {
+		me.input.pressedKeys[keyCode] = Boolean(status);
+	};
+
+	document.addEventListener('keydown', function(e) {
+		me.input.setKey(e.keyCode, true);
+	});
+
+	document.addEventListener('keyup', function(e) {
+		me.input.setKey(e.keyCode, false);
+	});
+
 	me.input.mPos = function(e) {
 		e = e || window.event;
 		me.input.mX	= (e.pageX || e.clientX);
 		me.input.mY	= (e.pageY || e.clientY);
 	};
-}(window.me));
+}(window.me, document));

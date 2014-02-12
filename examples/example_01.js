@@ -1,8 +1,6 @@
 function initGame() {
 	var point = me.primitive.Point, vect = me.primitive.Vector;
 	me.core.init(["#gameArea","#bg"]);
-	me.input.setKeys();
-	var pressed = {"w":false,"s":false};
 	var startTime = new Date(), currentTime = new Date(), fps = 1;
 	var	canvasWidth = me.core.canvas["#gameArea"].width,
 		canvasHeight = me.core.canvas["#gameArea"].height;
@@ -22,8 +20,7 @@ function initGame() {
 	var	playerOneTxT = new me.primitive.TextFill(), playerTwoTxT = new me.primitive.TextFill(),
 		delimeterTxT = new me.primitive.TextFill(), fpsTxT = new me.primitive.TextFill();
 	var ballFunc = function() {
-		var	currentBallCoord = {},
-			ballCoord = Ball.getCoord();
+		var	currentBallCoord = {}, ballCoord = Ball.getCoord();
 		fpsCoord.x = Math.floor(canvasWidth-(20*fps.toString.length));
 		PlayerOneScoreCoord.x = Math.floor(canvasWidth/2)-(50*PlayerOneScore.toString.length);
 		if (me.core.circleAndLineCollision(Ball,top) || me.core.circleAndLineCollision(Ball,bottom)) {
@@ -45,24 +42,8 @@ function initGame() {
 		Enemy.setCoord({x:canvasWidth-20, y:Ball.getCoord().y-ballRadius}); // godlike =)
 	};
 	var moveToCanvas = function() {
-		if (Player.getCoord().y < 0) {
-			Player.setCoord(new point(0,1));
-		}
-		if (Player.getCoord().y + platformLength > canvasHeight) {
-			Player.setCoord(new point(0,canvasHeight - platformLength - 1));
-		}
-	};
-	window.onkeydown = function (event) {
-		switch (event.keyCode) {
-			case me.input.keys["w"]: pressed["w"] = true; break;
-			case me.input.keys["s"]: pressed["s"] = true; break;
-		}
-	};
-	window.onkeyup = function (event) {
-		switch (event.keyCode) {
-			case me.input.keys["w"]: pressed["w"] = false; break;
-			case me.input.keys["s"]: pressed["s"] = false; break;
-		}
+		if (Player.getCoord().y < 0) { Player.setCoord(new point(0,1)); }
+		if (Player.getCoord().y + platformLength > canvasHeight) { Player.setCoord(new point(0,canvasHeight - platformLength - 1)); }
 	};
 	(function gameLoop() {
 		console.log('start');
@@ -76,12 +57,8 @@ function initGame() {
 		delimeterTxT.draw("#gameArea",["40","bold","Arial"],":",DelimeterCoord,"#66CD00","#66CD00");
 		playerTwoTxT.draw("#gameArea",["40","bold","Arial"],PlayerTwoScore,PlayerTwoScoreCoord,"#66CD00","#66CD00");
 		shifty = Math.floor((currentTime-startTime) * platformSpeed);
-		if (pressed["s"]) {
-			Player.setCoord(new point(0,Player.getCoord().y+shifty));
-		}
-		if (pressed["w"]) {
-			Player.setCoord(new point(0,Player.getCoord().y-shifty));
-		}
+		if (me.input.isPressed("s")) { Player.setCoord(new point(0,Player.getCoord().y+shifty)); }
+		if (me.input.isPressed("w")) { Player.setCoord(new point(0,Player.getCoord().y-shifty)); }
 		Player.draw("#gameArea");
 		Enemy.draw("#gameArea");
 		Ball.draw("#gameArea");

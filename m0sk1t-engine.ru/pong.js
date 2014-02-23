@@ -1,43 +1,26 @@
-/**
- * @author m0sk1t
- */
-
-(function(window){
-	var btHome = me.utils.find('#homebutton')[0],
-		lHome = me.utils.find('#home')[0];
-	btHome.click(function (event) {
-		lHome.style.display = 'none';
-	});
-})(window);
-
 function initGame() {
-	var point = me.primitive.point, vect = me.primitive.vector, rect = me.primitive.rectangle, circ = me.primitive.circle;
-	var area = me.utils.find(["#area"]);
-	me.core.init(["#gameArea"],640, 480);
-	me.input.setKeys();
-	var pressed = {"w":false,"s":false};
-	var startTime = new Date, currentTime = new Date, fps = 1;
-	var	gameCanvas = me.core.canvas["#gameArea"], gameContext = me.core.layers["#gameArea"];
-	var	canvasWidth = gameCanvas.width, canvasHeight = gameCanvas.height;
-	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 100, shifty = coordinate = 1,
-		ballRadius = 30, ballSpeedx = ballSpeedy = 4;
-	var	Player = new rect(new point(0,0), new point(20,platformLength),"#077","fill"),
-		Enemy = new rect(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
-		Ball = new circ(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
+	var point = me.primitive.Point, vect = me.primitive.Vector;
+	me.core.init(["#gameArea","#bg"], 800, 500);
+	var startTime = new Date(), currentTime = new Date(), fps = 1;
+	var	canvasWidth = me.core.canvas["#gameArea"].width,
+		canvasHeight = me.core.canvas["#gameArea"].height;
+	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 2, shifty = 1, ballRadius = 30, ballSpeedx = 5, ballSpeedy = 5;
+	var	Player = new me.primitive.Rect(new point(0,0), new point(20,platformLength),"#077","fill"),
+		Enemy = new me.primitive.Rect(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
+		Ball = new me.primitive.Circle(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
 	var	PlayerOneScoreCoord = new point(Math.floor(canvasWidth/2)-50,50),
 		DelimeterCoord = new point(Math.floor(canvasWidth/2),50),
 		PlayerTwoScoreCoord = new point(Math.floor(canvasWidth/2)+50,50),
 		fpsCoord = new point(canvasWidth-20,20),
-		PlayerOneScore = PlayerTwoScore = 0;
+		PlayerOneScore = 0, PlayerTwoScore = 0;
 	var left = new vect(new point(0,0),new point(0,canvasHeight)),
 		right = new vect(new point(canvasWidth,0),new point(canvasWidth,canvasHeight)),
 		top = new vect(new point(0,0),new point(canvasWidth,0)),
 		bottom = new vect(new point(0,canvasHeight),new point(canvasWidth,canvasHeight));
-	var	playerOneTxT = new me.primitive.TextFill, playerTwoTxT = new me.primitive.TextFill,
-		delimeterTxT = new me.primitive.TextFill, fpsTxT = new me.primitive.TextFill;
+	var	playerOneTxT = new me.primitive.TextFill(), playerTwoTxT = new me.primitive.TextFill(),
+		delimeterTxT = new me.primitive.TextFill(), fpsTxT = new me.primitive.TextFill();
 	var ballFunc = function() {
-		var	currentBallCoord = {},
-			ballCoord = Ball.getCoord();
+		var	currentBallCoord = {}, ballCoord = Ball.getCoord();
 		fpsCoord.x = Math.floor(canvasWidth-(20*fps.toString.length));
 		PlayerOneScoreCoord.x = Math.floor(canvasWidth/2)-(50*PlayerOneScore.toString.length);
 		if (me.core.circleAndLineCollision(Ball,top) || me.core.circleAndLineCollision(Ball,bottom)) {
@@ -59,46 +42,29 @@ function initGame() {
 		Enemy.setCoord({x:canvasWidth-20, y:Ball.getCoord().y-ballRadius}); // godlike =)
 	};
 	var moveToCanvas = function() {
-		if (Player.getCoord().y < 0) {
-			Player.setCoord(new point(0,1));
-		}
-		if (Player.getCoord().y + platformLength > canvasHeight) {
-			Player.setCoord(new point(0,canvasHeight - platformLength - 1));
-		}
-	};
-	window.onkeydown = function (event) {
-		switch (event.keyCode) {
-			case me.input.keys["w"]: pressed["w"] = true; break;
-			case me.input.keys["s"]: pressed["s"] = true; break;
-		}
-	};
-	window.onkeyup = function (event) {
-		switch (event.keyCode) {
-			case me.input.keys["w"]: pressed["w"] = false; break;
-			case me.input.keys["s"]: pressed["s"] = false; break;
-		}
+		if (Player.getCoord().y < 0) { Player.setCoord(new point(0,1)); }
+		if (Player.getCoord().y + platformLength > canvasHeight) { Player.setCoord(new point(0,canvasHeight - platformLength - 1)); }
 	};
 	(function gameLoop() {
-		console.log('loop');
+		console.log('start');
 		currentTime = new Date;
 		var	playerPos = Player.getCoord(),
 			playerSize = Player.getSize();
 		if(playerPos.y < 0||playerPos.y+playerSize.y > canvasHeight) { moveToCanvas(); }
 		AIFunc();
 		ballFunc();
-		shifty = Math.floor(platformSpeed/(currentTime-startTime));
-		if (pressed["s"]) {
-			Player.setCoord(new point(0,Player.getCoord().y+shifty));
-		}
-		if (pressed["w"]) {
-			Player.setCoord(new point(0,Player.getCoord().y-shifty));
-		}
-		Player.draw(gameContext);
-		Enemy.draw(gameContext);
-		Ball.draw(gameContext);
+		playerOneTxT.draw("#gameArea",["40","bold","Arial"],PlayerOneScore,PlayerOneScoreCoord,"#66CD00","#66CD00");
+		delimeterTxT.draw("#gameArea",["40","bold","Arial"],":",DelimeterCoord,"#66CD00","#66CD00");
+		playerTwoTxT.draw("#gameArea",["40","bold","Arial"],PlayerTwoScore,PlayerTwoScoreCoord,"#66CD00","#66CD00");
+		shifty = Math.floor((currentTime-startTime) * platformSpeed);
+		if (me.input.isPressed("s")) { Player.setCoord(new point(0,Player.getCoord().y+shifty)); }
+		if (me.input.isPressed("w")) { Player.setCoord(new point(0,Player.getCoord().y-shifty)); }
+		Player.draw("#gameArea");
+		Enemy.draw("#gameArea");
+		Ball.draw("#gameArea");
 		fps = 1000/(currentTime-startTime);
 		startTime = currentTime;
-		fpsTxT.draw(gameContext,["20","bold","Arial"],fps,fpsCoord,"#66CD00","#66CD00");
-		rAF(gameLoop);
+		fpsTxT.draw("#gameArea",["20","bold","Arial"],fps,fpsCoord,"#66CD00","#66CD00");
+		window.rAF(gameLoop);
 	}());
 }

@@ -24,7 +24,7 @@
 			console.log(path + key + ' loaded');
 		});
 	};
-	//303767
+	
 	me.assets.isLoaded = function () {
 		var loaded = true;
 		for (var k in me.assets.cashe) {
@@ -34,15 +34,15 @@
 		}
 		return loaded;
 	};
-	//304006
+	
 	me.assets.callback = function (callbacksArr) {
 		me.assets.callbacks.push(callbacksArr);
 	};
-	//303964
+	
 	me.assets.get = function (fileName) {
 		return me.assets.cashe[fileName];
 	};
-	//302871
+
 	me.assets.count = function () {
 		return me.assets.cashe.length;
 	};
@@ -76,7 +76,7 @@
 			return this;
 		}
 	});
-	//303328
+
 	me.assets.Sprite = me.core.Class({
 		init: function(imageName, spriteSize, offset, coord, scale) {
 			this.img = imageName;

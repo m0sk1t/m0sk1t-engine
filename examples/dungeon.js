@@ -26,14 +26,14 @@
 			[1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1],
 			[1,1,1,1,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1],
 			[1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1],
-			[1,1,0,0,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1],
-			[1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1]
+			[1,1,0,0,0,1,1,1,1,0,1,1,1,0,1,0,0,0,0,1],
+			[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 		],
 		player = new me.assets.Sprite('spritemap.png', {"W": 50, "H": 50}, {"x": 0, "y": 0}, {"x": 0, "y": 0}, 0.4),
 		pass = new me.assets.Tile('map.png',[0,0,20,20], [0,0,20,20]),
 		stop = new me.assets.Tile('map.png',[20,0,20,20], [0,0,20,20]),
 		f = Math.floor;
-		player.setPos({x:18*20, y:19*20}).draw('#main');
+		player.setPos({x:18*20, y:18*20}).draw('#main');
 		function drawMap() {
 			for (var i = 0, l1 = map.length; i < l1; i++) {
 				for(var j = 0, l2 = map[i].length; j < l2; j++) {
@@ -46,7 +46,7 @@
 				}
 			}
 		}
-
+		//304342
 		function collisionDetector(dir) {
 			var x = player.getCoord().x,
 				y = player.getCoord().y;
@@ -62,7 +62,7 @@
 				default: return false;
 			}
 		}
-
+		//304334
 		function draw() {
 			drawMap();
 			switch (true) {
@@ -72,7 +72,7 @@
 				case me.input.isPressed('d'): !collisionDetector('right') && player.appendPos({x:+20,y:0}).draw('#main'); break;
 				default: player.draw('#main'); break;
 			}
-			setTimeout(draw, 100);
+			setTimeout(draw, 33);
 		}
 		draw();
 	}

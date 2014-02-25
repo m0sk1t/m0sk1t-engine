@@ -67,7 +67,7 @@
 			return {x: this.destArea[0], y: this.destArea[1]};
 		},
 		draw: function (context, clear) {
-			clear = (clear == undefined)?true:clear;
+			clear = (clear === undefined)?true:clear;
 			if (clear) {
 				//me.core.layers[context].clearRect(this.prevPos[0], this.prevPos[1], this.prevPos[2], this.prevPos[3]);
 				me.core.layers[context].clearRect(this.destArea[0], this.destArea[1], this.destArea[2], this.destArea[3]);
@@ -103,11 +103,14 @@
 			this.coord = pt;
 			return this;
 		},
-		draw: function(context) {
+		draw: function(context, clear) {
+			clear = (clear === undefined)?true:clear;
 			if (this.currentFrame >= this.maxFrames) {
 				this.currentFrame = 0;
 			}
-			me.core.layers[context].clearRect(this.coord.x, this.coord.y, this.spriteSize.W*this.scale, this.spriteSize.H*this.scale);
+			if (clear) {
+				me.core.layers[context].clearRect(this.coord.x, this.coord.y, this.spriteSize.W*this.scale, this.spriteSize.H*this.scale);
+			}
 			me.core.layers[context].drawImage(me.assets.get(this.img), this.currentFrame*this.spriteSize.W, this.offset.x*this.spriteSize.H, this.spriteSize.W, this.spriteSize.H, this.coord.x, this.coord.y, this.spriteSize.W*this.scale, this.spriteSize.H*this.scale);
 			this.currentFrame++;
 			return this;

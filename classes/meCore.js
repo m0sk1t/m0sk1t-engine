@@ -7,7 +7,7 @@
 	
 	me.core.each = function (iterable, func) {
 		if (iterable instanceof Array) for (var i = 0; i < iterable.length; i++) func.call(iterable, iterable[i]);
-		else if (iterable instanceof Object) for (field in iterable) if (iterable.hasOwnProperty(field)) func.call(iterable, iterable[field], field);
+		else if (iterable instanceof Object) for (var field in iterable) if (iterable.hasOwnProperty(field)) func.call(iterable, iterable[field], field);
 	};
 	//298873
 	me.core.Class = function (protoHash) {
@@ -61,18 +61,18 @@
 	};
 	
 	me.core.distance = function (firstPoint, secondPoint) {
-		return Math.sqrt(Math.pow(firstPoint.x-secondPoint.x,2)+Math.pow(firstPoint.y-secondPoint.y,2))
+		return Math.sqrt(Math.pow(firstPoint.x-secondPoint.x,2)+Math.pow(firstPoint.y-secondPoint.y,2));
 	};
 	
 	me.core.isCollide = function (firstObject,secondObject) {
-		var coll=false;
-		switch (firstObject["type"]) {
+		var coll = false;
+		switch (firstObject.type) {
 			case "Circle":{
-				switch (secondObject["type"]) {
+				switch (secondObject.type) {
 					case "Point":		coll = me.core.circleAndPointCollision(firstObject,secondObject);		break;
 					case "Vector":		coll = me.core.circleAndLineCollision(firstObject,secondObject);		break;
 					case "Circle":		coll = me.core.circleCollision(firstObject,secondObject);				break;
-					case "Rectangle": 	coll = me.core.circleAndRectangleCollision(firstObject,secondObject);	break;
+					case "Rectangle":   coll = me.core.circleAndRectangleCollision(firstObject,secondObject);	break;
 				}
             }
         }
@@ -85,7 +85,7 @@
 
 	me.core.rectangleCollision = function (firstRect, secondRect) {
 		return  ((((firstRect.coord.x+firstRect.width) < secondRect.coord.x) || (firstRect.coord.x > (secondRect.coord.x+secondRect.width)))||
-		        (((firstRect.coord.y+firstRect.height) < secondRect.coord.y) || (firstRect.coord.y > (secondRect.coord.y+secondRect.height))));
+				(((firstRect.coord.y+firstRect.height) < secondRect.coord.y) || (firstRect.coord.y > (secondRect.coord.y+secondRect.height))));
 	};
 
 	me.core.circleAndPointCollision = function (circle, point) {

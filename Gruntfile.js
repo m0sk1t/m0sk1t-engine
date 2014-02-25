@@ -6,11 +6,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		jshint: {
 			build: {
-				src: ['classes/meCore.js','classes/meAssets.js','classes/mePrimitive.js','classes/meInput.js']
+				src: ['classes/meCore.js','classes/meAssets.js','classes/mePrimitive.js']
 			}
 		},
 		concat: {
-			build: {
+			dist: {
 				src: ['classes/meCore.js','classes/meAssets.js','classes/mePrimitive.js','classes/meInput.js'],
 				dest: '<%= pkg.name %>.js'
 			},
@@ -22,9 +22,10 @@ module.exports = function(grunt) {
 			options: {
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 			},
-			build: {
-				src: '<%= pkg.name %>.js',
-				dest: '<%= pkg.name %>.min.js'
+			dist:{
+				files:{
+					'<%= pkg.name %>.min.js': '<%= pkg.name %>.js'
+				}
 			}
 		}
 	});

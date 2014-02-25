@@ -70,14 +70,14 @@
 			me.core.layers[context].beginPath();
 			me.core.layers[context].arc(this.coord.x, this.coord.y, this.radius, 0, Math.PI * 2, true);
 			switch (this.method) {
-                case "fill": {
-	                me.core.layers[context].fillStyle = this.color;
-	                me.core.layers[context].fill();
-                } break;
-                case "stroke": {
-	                me.core.layers[context].strokeStyle = this.color;
-	                me.core.layers[context].stroke();
-                } break;
+				case "fill":
+					me.core.layers[context].fillStyle = this.color;
+					me.core.layers[context].fill();
+					break;
+				case "stroke":
+					me.core.layers[context].strokeStyle = this.color;
+					me.core.layers[context].stroke();
+					break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
 			return this;
@@ -115,14 +115,14 @@
 			me.core.layers[context].clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
 //			context.clearRect(this.coord.x, this.coord.y, this.width, this.height);
 			switch (this.method) {
-                case "fill": {
-	                me.core.layers[context].fillStyle = this.color;
-	                me.core.layers[context].fillRect(this.coord.x, this.coord.y, this.width, this.height);
-                } break;
-                case "stroke": {
-	                me.core.layers[context].strokeStyle = this.color;
-	                me.core.layers[context].strokeRect(this.coord.x, this.coord.y, this.width, this.height);
-                } break;
+                case "fill":
+					me.core.layers[context].fillStyle = this.color;
+					me.core.layers[context].fillRect(this.coord.x, this.coord.y, this.width, this.height);
+					break;
+				case "stroke":
+					me.core.layers[context].strokeStyle = this.color;
+					me.core.layers[context].strokeRect(this.coord.x, this.coord.y, this.width, this.height);
+					break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
 			return this;

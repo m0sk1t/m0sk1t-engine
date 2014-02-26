@@ -116,4 +116,4 @@
 			return this;
 		}
 	});
-}(window.me))
+})(window.me);

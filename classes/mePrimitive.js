@@ -2,8 +2,8 @@
 	me.primitive.Point = me.core.Class({
 		init: function(x, y) {
 			this.type = "Point";
-			this.x = x;
-			this.y = y;
+			this.x = x || 0;
+			this.y = y || 0;
 			return this;
 		}
 	});
@@ -11,8 +11,8 @@
 	me.primitive.Vector = me.core.Class({
 		init: function(startPoint, endPoint) {
 			this.type = "Vector";
-			this.start = startPoint;
-			this.end = endPoint;
+			this.start = startPoint || {"x": 0, "y": 0};
+			this.end = endPoint || {"x": 0, "y": 0};
 			return this;
 		},
 		setStart: function(Point) {
@@ -40,44 +40,55 @@
 	});
 
 	me.primitive.Circle = me.core.Class({
-		init: function (centerPoint, radius, method, color) {
+		init: function (params, method, color) {
 			this.type = "Circle";
 			this.color = color;
-			this.prevcoord = centerPoint;
-			this.coord = centerPoint;
-			this.radius = radius;
 			this.method = method;
+			this._x = ~~params[0];
+			this._y = ~~params[1];
+			this.x = ~~params[0];
+			this.y = ~~params[1];
+			this.r = ~~params[2];
 			return this;
 		},
 		getCoord: function () {
-			return this.coord;
+			return new me.primitive.Point(this.x, this.y);
 		},
-		setCoord: function (coordPoint) {
-			this.prevcoord = this.coord;
-			this.coord = coordPoint;
+		setCoord: function (coordArray) {
+			this._x = this.x;
+			this._y = this.y;
+			this.x = ~~coordArray[0];
+			this.y = ~~coordArray[1];
+			return this;
+		},
+		appendCoord: function (coordArray) {
+			this._x = this.x;
+			this._y = this.y;
+			this.x += ~~coordArray[0];
+			this.y += ~~coordArray[1];
 			return this;
 		},
 		setRadius: function (radius) {
-			this.radius = radius;
+			this.r = radius;
 			return this;
 		},
 		setColor: function (color) {
 			this.color = color;
 		},
 		draw: function (context) {
-			me.core.layers[context].clearRect(this.prevcoord.x - this.radius, this.prevcoord.y - this.radius, this.radius * 2, this.radius * 2);
-//			context.clearRect(this.coord.x - this.radius, this.coord.y - this.radius, this.radius * 2, this.radius * 2);
+			me.core.layers[context].clearRect(this._x - this.r, this._y - this.r, this.r * 2, this.r * 2);
+//			context.clearRect(this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
 			me.core.layers[context].beginPath();
-			me.core.layers[context].arc(this.coord.x, this.coord.y, this.radius, 0, Math.PI * 2, true);
+			me.core.layers[context].arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
 			switch (this.method) {
-                case "fill": {
-	                me.core.layers[context].fillStyle = this.color;
-	                me.core.layers[context].fill();
-                } break;
-                case "stroke": {
-	                me.core.layers[context].strokeStyle = this.color;
-	                me.core.layers[context].stroke();
-                } break;
+				case "fill": {
+					me.core.layers[context].fillStyle = this.color;
+					me.core.layers[context].fill();
+				} break;
+				case "stroke": {
+					me.core.layers[context].strokeStyle = this.color;
+					me.core.layers[context].stroke();
+				} break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
 			return this;
@@ -85,46 +96,61 @@
 	});
 
 	me.primitive.Rect = me.core.Class({
-		init: function (coordPoint, sizePoint, color, method) {
+		init: function (params, color, method) {
 			this.type = "Rect";
 			this.color = color;
-			this.prevcoord = coordPoint;
-			this.coord = coordPoint;
-			this.width = sizePoint.x;
-			this.height = sizePoint.y;
-			this.halfWidth = this.width/2;
-			this.halfHeight = this.height/2;
+			this._x = ~~params[0];
+			this._y = ~~params[1];
+			this.x = ~~params[0];
+			this.y = ~~params[1];
+			this.w = ~~params[2];
+			this.h = ~~params[3];
+			this.halfWidth = ~~(this.w/2);
+			this.halfHeight = ~~(this.h/2);
 			this.method = method;
+			this.left = this.x;
+			this.right = this.x + this.w;
+			this.top = this.y;
+			this.bottom = this.y + this.h;
 			return this;
 		},
 		getCoord: function () {
-			return this.coord;
+			return new me.primitive.Point(this.x, this.y);
 		},
 		getSize: function () {
-			return {x: this.width, y: this.height};
+			return new me.primitive.Point(this.w, this.h);
 		},
-		setCoord: function (coordPoint) {
-			this.prevcoord = this.coord;
-			this.coord = coordPoint;
+		setCoord: function (coordArray) {
+			this._x = this.x;
+			this._y = this.y;
+			this.x = ~~coordArray[0];
+			this.y = ~~coordArray[1];
 			return this;
 		},
-		setSize: function (sizePoint) {
-			this.width = sizePoint.x;
-			this.height = sizePoint.y;
+		appendCoord: function (coordArray) {
+			this._x = this.x;
+			this._y = this.y;
+			this.x += ~~coordArray[0];
+			this.y += ~~coordArray[1];
+			return this;
+		},
+		setSize: function (sizeArray) {
+			this.w = ~~sizeArray[0];
+			this.h = ~~sizeArray[1];
 			return this;
 		},
 		draw: function (context) {
-			me.core.layers[context].clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
-//			context.clearRect(this.coord.x, this.coord.y, this.width, this.height);
+			me.core.layers[context].clearRect(this._x - (this.x - this._x), this._y - (this.y - this._y), this.w, this.h);
+//			context.clearRect(this.x, this.y, this.w, this.h);
 			switch (this.method) {
-                case "fill": {
-	                me.core.layers[context].fillStyle = this.color;
-	                me.core.layers[context].fillRect(this.coord.x, this.coord.y, this.width, this.height);
-                } break;
-                case "stroke": {
-	                me.core.layers[context].strokeStyle = this.color;
-	                me.core.layers[context].strokeRect(this.coord.x, this.coord.y, this.width, this.height);
-                } break;
+				case "fill": {
+					me.core.layers[context].fillStyle = this.color;
+					me.core.layers[context].fillRect(this.x, this.y, this.w, this.h);
+				} break;
+				case "stroke": {
+					me.core.layers[context].strokeStyle = this.color;
+					me.core.layers[context].strokeRect(this.x, this.y, this.w, this.h);
+				} break;
 				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
 			return this;
@@ -146,6 +172,7 @@
 			switch (this.method) {
 				case "fill": me.core.layers[context].fill(); break;
 				case "stroke": me.core.layers[context].stroke(); break;
+				default: me.utils.log('Unknown draw type "'+this.method+'" in class "'+this.type+'"','e');
 			}
 		}
 	});
@@ -173,4 +200,4 @@
 		};
 		return this;
 	};
-}(window.me))
+})(window.me);

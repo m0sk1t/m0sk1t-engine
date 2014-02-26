@@ -83,4 +83,4 @@
 			}
 		});
 	};
-}(window.me))
+})(window.me);

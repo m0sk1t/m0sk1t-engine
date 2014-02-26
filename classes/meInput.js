@@ -76,4 +76,4 @@
 		me.input.mX	= (e.pageX || e.clientX);
 		me.input.mY	= (e.pageY || e.clientY);
 	};
-}(window.me, document))
+})(window.me, document);

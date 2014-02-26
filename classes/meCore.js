@@ -80,45 +80,45 @@
 	};
 
 	me.core.circleCollision = function (firstCircle, secondCircle) {
-		return (Math.pow((firstCircle.radius+secondCircle.radius),2) > Math.pow(firstCircle.coord.x-secondCircle.coord.x,2)+Math.pow(firstCircle.coord.y-secondCircle.coord.y,2));
+		return (Math.pow((firstCircle.r+secondCircle.r),2) > Math.pow(firstCircle.x-secondCircle.x,2)+Math.pow(firstCircle.y-secondCircle.y,2));
 	};
 
 	me.core.rectangleCollision = function (firstRect, secondRect) {
-		return  ((((firstRect.coord.x+firstRect.width) < secondRect.coord.x) || (firstRect.coord.x > (secondRect.coord.x+secondRect.width)))||
-				(((firstRect.coord.y+firstRect.height) < secondRect.coord.y) || (firstRect.coord.y > (secondRect.coord.y+secondRect.height))));
+		return  ((((firstRect.x+firstRect.w) < secondRect.x) || (firstRect.x > (secondRect.x+secondRect.w)))||
+				(((firstRect.y+firstRect.h) < secondRect.y) || (firstRect.y > (secondRect.y+secondRect.h))));
 	};
 
 	me.core.circleAndPointCollision = function (circle, point) {
-		return (circle.radius > Math.sqrt(Math.pow(circle.coord.x-point.x,2)+Math.pow(circle.coord.y-point.y,2)));
+		return (circle.r * circle.r > Math.pow(circle.x-point.x,2)+Math.pow(circle.y-point.y,2));
 	};
 
 	me.core.circleAndLineCollision = function (circle, vector) {
 		var tmpPoint = {"x": 0, "y": 0};
 		if (vector.start.x === vector.end.x) {
 			tmpPoint.x = vector.start.x;
-			tmpPoint.y = circle.coord.y;
+			tmpPoint.y = circle.y;
 		} else if (vector.start.y === vector.end.y) {
-			tmpPoint.x = circle.coord.x;
+			tmpPoint.x = circle.x;
 			tmpPoint.y = vector.start.y;
 		} else {
 			var xA = vector.start.x,
 				yA = vector.start.y,
 				xB = vector.end.x,
 				yB = vector.end.y,
-				xP = circle.coord.x,
-				yP = circle.coord.y;
+				xP = circle.x,
+				yP = circle.y;
 			tmpPoint.x =	(xA * Math.pow(yB - yA, 2) + xP * Math.pow(xB -xA, 2) + (xB - xA) * (yB - yA) * (yP- yA))/
 							(Math.pow(yB - yA, 2) + Math.pow(xB - xA, 2));
 			tmpPoint.y = ((xB - xA) * (xP - tmpPoint.x)/(yB - yA)) + yP;			
 		}
-		return (circle.radius > me.core.distance(circle.coord,tmpPoint));
+		return (circle.r > me.core.distance({"x":circle.x, "y":circle.y},tmpPoint));
 	};
 	
 	me.core.circleAndRectangleCollision = function (circle, rect) {
-		return ((circle.coord.x >= rect.coord.x - circle.radius)&&
-				(circle.coord.x <= rect.coord.x + rect.width + circle.radius)&&
-				(circle.coord.y >= rect.coord.y - circle.radius)&&
-				(circle.coord.y <= rect.coord.y + rect.height + circle.radius));
+		return ((circle.x >= rect.x - circle.r)&&
+				(circle.x <= rect.x + rect.w + circle.r)&&
+				(circle.y >= rect.y - circle.r)&&
+				(circle.y <= rect.y + rect.h + circle.r));
 	};
 	
 	me.core.isImage = function (object)  {
@@ -144,4 +144,4 @@
 	me.core.isFunction = function (object) {
 		return (me.core.toStr(object) === "[object Function]");
 	};
-}(window))
+})(window);

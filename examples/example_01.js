@@ -5,9 +5,9 @@ function initGame() {
 	var	canvasWidth = me.core.canvas["#gameArea"].width,
 		canvasHeight = me.core.canvas["#gameArea"].height;
 	var	platformLength = Math.floor(canvasHeight/5), platformSpeed = 2, shifty = 1, ballRadius = 30, ballSpeedx = 5, ballSpeedy = 5;
-	var	Player = new me.primitive.Rect(new point(0,0), new point(20,platformLength),"#077","fill"),
-		Enemy = new me.primitive.Rect(new point(canvasWidth-20,0), new point(20,platformLength),"#733","fill"),
-		Ball = new me.primitive.Circle(new point(Math.floor(canvasWidth/2),Math.floor(canvasHeight/2)),ballRadius,"fill","#337");
+	var	Player = new me.primitive.Rect([0,0, 20, platformLength],"#077","fill"),
+		Enemy = new me.primitive.Rect([canvasWidth-20,0, 20,platformLength],"#733","fill"),
+		Ball = new me.primitive.Circle([canvasWidth/2, canvasHeight/2,ballRadius],"fill","#337");
 	var	PlayerOneScoreCoord = new point(Math.floor(canvasWidth/2)-50,50),
 		DelimeterCoord = new point(Math.floor(canvasWidth/2),50),
 		PlayerTwoScoreCoord = new point(Math.floor(canvasWidth/2)+50,50),
@@ -20,30 +20,30 @@ function initGame() {
 	var	playerOneTxT = new me.primitive.TextFill(), playerTwoTxT = new me.primitive.TextFill(),
 		delimeterTxT = new me.primitive.TextFill(), fpsTxT = new me.primitive.TextFill();
 	var ballFunc = function() {
-		var	currentBallCoord = {}, ballCoord = Ball.getCoord();
+		var	currentBallCoord = [];
 		fpsCoord.x = Math.floor(canvasWidth-(20*fps.toString.length));
 		PlayerOneScoreCoord.x = Math.floor(canvasWidth/2)-(50*PlayerOneScore.toString.length);
 		if (me.core.circleAndLineCollision(Ball,top) || me.core.circleAndLineCollision(Ball,bottom)) {
 			ballSpeedy *= -1;
-			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
+			currentBallCoord = [ballSpeedx,ballSpeedy];
 		} else if (me.core.circleAndLineCollision(Ball,left)) {
-			PlayerTwoScore++; currentBallCoord = {x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)};
+			PlayerTwoScore++; currentBallCoord = [canvasWidth/2, canvasHeight/2];
 		} else if (me.core.circleAndLineCollision(Ball,right)) {
-			PlayerOneScore++; currentBallCoord = {x:Math.floor(canvasWidth/2),y:Math.floor(canvasHeight/2)};
+			PlayerOneScore++; currentBallCoord = [canvasWidth/2,canvasHeight/2];
 		} else if (me.core.circleAndRectangleCollision(Ball, Player) || me.core.circleAndRectangleCollision(Ball, Enemy)) {
 			ballSpeedx *= -1;
-			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
+			currentBallCoord = [ballSpeedx,ballSpeedy];
 		} else {
-			currentBallCoord = {x:ballSpeedx + ballCoord.x,y:ballSpeedy + ballCoord.y};
+			currentBallCoord = [ballSpeedx,ballSpeedy];
 		}
-		Ball.setCoord(currentBallCoord);
+		Ball.appendCoord(currentBallCoord);
 	};
 	var AIFunc = function() {
-		Enemy.setCoord({x:canvasWidth-20, y:Ball.getCoord().y-ballRadius}); // godlike =)
+		Enemy.setCoord([canvasWidth-20, Ball.getCoord().y-ballRadius]); // godlike =)
 	};
 	var moveToCanvas = function() {
-		if (Player.getCoord().y < 0) { Player.setCoord(new point(0,1)); }
-		if (Player.getCoord().y + platformLength > canvasHeight) { Player.setCoord(new point(0,canvasHeight - platformLength - 1)); }
+		if (Player.getCoord().y < 0) { Player.setCoord([0,1]); }
+		if (Player.getCoord().y + platformLength > canvasHeight) { Player.setCoord([0,canvasHeight - platformLength - 1]); }
 	};
 	(function gameLoop() {
 		console.log('start');
@@ -57,8 +57,8 @@ function initGame() {
 		delimeterTxT.draw("#gameArea",["40","bold","Arial"],":",DelimeterCoord,"#66CD00","#66CD00");
 		playerTwoTxT.draw("#gameArea",["40","bold","Arial"],PlayerTwoScore,PlayerTwoScoreCoord,"#66CD00","#66CD00");
 		shifty = Math.floor((currentTime-startTime) * platformSpeed);
-		if (me.input.isPressed("s")) { Player.setCoord(new point(0,Player.getCoord().y+shifty)); }
-		if (me.input.isPressed("w")) { Player.setCoord(new point(0,Player.getCoord().y-shifty)); }
+		if (me.input.isPressed("s")) { Player.appendCoord([0,shifty]); }
+		if (me.input.isPressed("w")) { Player.appendCoord([0,-shifty]); }
 		Player.draw("#gameArea");
 		Enemy.draw("#gameArea");
 		Ball.draw("#gameArea");

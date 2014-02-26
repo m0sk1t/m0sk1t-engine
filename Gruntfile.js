@@ -6,12 +6,12 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		jshint: {
 			build: {
-				src: ['classes/meCore.js','classes/meAssets.js','classes/mePrimitive.js']
+				src: ['classes/meCore.js', 'classes/meUtils.js','classes/meAssets.js','classes/mePrimitive.js']
 			}
 		},
 		concat: {
 			dist: {
-				src: ['classes/meCore.js','classes/meAssets.js','classes/mePrimitive.js','classes/meInput.js'],
+				src: ['classes/meCore.js', 'classes/meUtils.js','classes/meAssets.js','classes/mePrimitive.js','classes/meInput.js'],
 				dest: '<%= pkg.name %>.js'
 			},
 			options: {

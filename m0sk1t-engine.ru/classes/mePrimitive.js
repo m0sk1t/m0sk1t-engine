@@ -1,4 +1,4 @@
-;(function (me) {
+(function (me) {
 	me.primitive.Point = me.core.Class({
 		init: function(x, y) {
 			this.type = "Point";
@@ -115,7 +115,7 @@
 			me.core.layers[context].clearRect(this.prevcoord.x - (this.coord.x - this.prevcoord.x), this.prevcoord.y - (this.coord.y - this.prevcoord.y), this.width, this.height);
 //			context.clearRect(this.coord.x, this.coord.y, this.width, this.height);
 			switch (this.method) {
-                case "fill":
+				case "fill":
 					me.core.layers[context].fillStyle = this.color;
 					me.core.layers[context].fillRect(this.coord.x, this.coord.y, this.width, this.height);
 					break;
@@ -171,4 +171,4 @@
 		};
 		return this;
 	};
-}(window.me));
+}(window.me))

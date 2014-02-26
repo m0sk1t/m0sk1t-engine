@@ -1,4 +1,4 @@
-;(function (me) {
+(function (me) {
 	me.assets.cashe = {};
 	me.assets.callbacks = [];
 	//298874
@@ -116,4 +116,4 @@
 			return this;
 		}
 	});
-}(window.me));
+}(window.me))

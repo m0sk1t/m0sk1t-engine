@@ -1,4 +1,4 @@
-;(function (window) {
+(function (window) {
 	if (!window.me) {
 		window.me = {};
 		var vClassList = ["core", "utils", "primitive", "assets", "input"];
@@ -144,4 +144,4 @@
 	me.core.isFunction = function (object) {
 		return (me.core.toStr(object) === "[object Function]");
 	};
-}(window));
+}(window))

@@ -1,4 +1,4 @@
-;(function (me) {
+(function (me) {
 	// simple crossbrowser id/class/tagname selector
 	me.utils.find = function (attr) {
 		var obj = document.querySelectorAll(attr);
@@ -17,18 +17,18 @@
 		if (logDiv) {
 			if (logDiv.innerHTML !== '') {
 				switch (messageType) {
-					case 'm': logDiv.innerHTML += '<span style="color:green;">' + messageText + '</span><br />\n\r'; break;
-					case 'w': logDiv.innerHTML += '<span style="color:yellow;">' + messageText + '</span><br />\n\r';break;
-					case 'e': logDiv.innerHTML += '<span style="color:red;">' + messageText + '</span><br />\n\r';	 break;
-					default : logDiv.innerHTML += '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r'; break;
+					case 'm': logDiv.innerHTML += '<span style="color:green;">' + messageText + '</span><br />\n\r';    break;
+					case 'w': logDiv.innerHTML += '<span style="color:yellow;">' + messageText + '</span><br />\n\r';   break;
+					case 'e': logDiv.innerHTML += '<span style="color:red;">' + messageText + '</span><br />\n\r';      break;
+					default : logDiv.innerHTML += '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r';    break;
 				}
 			}
 			else {
 				switch (messageType) {
-					case 'm': logDiv.innerHTML = '<span style="color:green;">' + messageText + '</span><br />\n\r';         	break;
-					case 'w': logDiv.innerHTML = '<span style="color:yellow;">' + messageText + '</span><br />\n\r';        	break;
-					case 'e': logDiv.innerHTML = '<span style="color:red;">' + messageText + '</span><br />\n\r';       	break;
-					default : logDiv.innerHTML = '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r';	break;
+					case 'm': logDiv.innerHTML = '<span style="color:green;">' + messageText + '</span><br />\n\r';     break;
+					case 'w': logDiv.innerHTML = '<span style="color:yellow;">' + messageText + '</span><br />\n\r';    break;
+					case 'e': logDiv.innerHTML = '<span style="color:red;">' + messageText + '</span><br />\n\r';       break;
+					default : logDiv.innerHTML = '<span style="color:red;">INVALID MESSAGE TYPE!</span><br />\n\r';     break;
 				}
 			}
 		}
@@ -83,4 +83,4 @@
 			}
 		});
 	};
-}(window.me));
+}(window.me))

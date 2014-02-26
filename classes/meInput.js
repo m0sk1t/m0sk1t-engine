@@ -1,4 +1,4 @@
-;(function (me, d) {
+(function (me, d) {
 	me.input.mX = 0;
 	me.input.mY = 0;
 	me.input.keys = [];
@@ -76,4 +76,4 @@
 		me.input.mX	= (e.pageX || e.clientX);
 		me.input.mY	= (e.pageY || e.clientY);
 	};
-}(window.me, document));
+}(window.me, document))

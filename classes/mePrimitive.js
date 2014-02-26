@@ -1,4 +1,4 @@
-;(function (me) {
+(function (me) {
 	me.primitive.Point = me.core.Class({
 		init: function(x, y) {
 			this.type = "Point";
@@ -173,4 +173,4 @@
 		};
 		return this;
 	};
-}(window.me));
+}(window.me))
